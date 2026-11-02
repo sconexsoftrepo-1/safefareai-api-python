@@ -1,0 +1,28 @@
+# Archive files
+*.zip
+
+# Markdown files
+*.md
+
+# Environment files
+.env
+.env.example
+
+# Project folders
+/python-Safe-fare-APIS/
+/tests/
+/.venv/
+/python-api/
+
+# PDF and Excel files
+*.pdf
+*.xls
+*.xlsx
+*.xlsm
+*.xlsb
+
+# Test token generator
+/generate_test_token.py
+
+# SQL files
+*.sql
