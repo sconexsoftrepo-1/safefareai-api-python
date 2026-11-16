@@ -1,0 +1,514 @@
+[
+ {
+  "id": "API-001",
+  "module": "Dashboard",
+  "question": "Which API gives the dashboard overview?",
+  "expected_document": "modules/dashboard_overview_api.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 2,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/platform_overview_api.md",
+   "modules/dashboard_overview_api.md",
+   "api_reference.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "API-002",
+  "module": "Historical Video",
+  "question": "Which API lists recordings?",
+  "expected_document": "modules/historical_video_api.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/historical_video_api.md",
+   "api_reference.md",
+   "backend_gaps.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "API-003",
+  "module": "Driver Assignments",
+  "question": "Which API creates an assignment?",
+  "expected_document": "modules/driver_assignments_api.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 3,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/dispatch_api.md",
+   "modules/device_groups_api.md",
+   "modules/driver_assignments_api.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "API-004",
+  "module": "AI alarms",
+  "question": "Which API returns AI alarms?",
+  "expected_document": "modules/ai_alarms_api.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 2,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "README.md",
+   "modules/ai_alarms_api.md",
+   "modules/alerts_incidents_api.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "API-005",
+  "module": "Routine alarms",
+  "question": "Is /alarms/routine/recent used?",
+  "expected_document": "modules/routine_alarms_api.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/routine_alarms_api.md",
+   "api_reference.md",
+   "modules/dashboard_overview_api.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "API-006",
+  "module": "Routine alarms",
+  "question": "Which API lists routine alarms?",
+  "expected_document": "modules/routine_alarms_api.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/routine_alarms_api.md",
+   "api_reference.md",
+   "modules/dashboard_overview_api.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "API-007",
+  "module": "Safety scores",
+  "question": "Which API returns driver scores?",
+  "expected_document": "modules/safety_scores_api.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/safety_scores_api.md",
+   "modules/safety_analytics_api.md",
+   "api_reference.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "API-008",
+  "module": "Geofences",
+  "question": "Which API returns geofence events?",
+  "expected_document": "modules/geofences_api.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/geofences_api.md",
+   "api_reference.md",
+   "modules/drivers_api.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "API-009",
+  "module": "Auth",
+  "question": "Which API signs in?",
+  "expected_document": "modules/authentication_login_api.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/authentication_login_api.md",
+   "modules/platform_overview_api.md",
+   "api_reference.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "API-010",
+  "module": "Dashboard",
+  "question": "Which endpoint gives online and offline device counts?",
+  "expected_document": "modules/live_monitoring_api.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 2,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/dashboard_overview_api.md",
+   "modules/live_monitoring_api.md",
+   "backend_gaps.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "API-011",
+  "module": "Vehicles",
+  "question": "Which API counts registered vehicles?",
+  "expected_document": "modules/vehicle_registry_api.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/vehicle_registry_api.md",
+   "modules/platform_overview_api.md",
+   "modules/devices_vehicles_assets_api.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "API-012",
+  "module": "Vehicles",
+  "question": "Which API lists vehicles without a device?",
+  "expected_document": "modules/vehicle_registry_api.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/vehicle_registry_api.md",
+   "modules/devices_vehicles_assets_api.md",
+   "modules/maintenance_api.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "API-013",
+  "module": "Devices",
+  "question": "Which API lists devices?",
+  "expected_document": "modules/devices_vehicles_assets_api.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 2,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/historical_video_api.md",
+   "modules/devices_vehicles_assets_api.md",
+   "modules/dashboard_overview_api.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "API-014",
+  "module": "Drivers",
+  "question": "Which API lists drivers?",
+  "expected_document": "modules/drivers_api.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 6,
+  "retrieval_top3": "FAIL",
+  "top3": [
+   "modules/devices_vehicles_assets_api.md",
+   "modules/dispatch_api.md",
+   "modules/ai_alarms_api.md"
+  ],
+  "answerable_in_top3": "FAIL"
+ },
+ {
+  "id": "API-015",
+  "module": "Drivers",
+  "question": "Which API returns licence expiries?",
+  "expected_document": "modules/drivers_api.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/drivers_api.md",
+   "modules/iris_assistant_api.md",
+   "api_reference.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "API-016",
+  "module": "Trips",
+  "question": "Which API returns trips?",
+  "expected_document": "modules/trips_tracking_api.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/trips_tracking_api.md",
+   "api_reference.md",
+   "modules/driver_my_work_api.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "API-017",
+  "module": "Alerts",
+  "question": "Which API lists alerts with filters?",
+  "expected_document": "modules/alerts_incidents_api.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 3,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/live_monitoring_api.md",
+   "modules/devices_vehicles_assets_api.md",
+   "modules/alerts_incidents_api.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "API-018",
+  "module": "Leave",
+  "question": "Which API lists leave requests?",
+  "expected_document": "modules/leave_management_api.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/leave_management_api.md",
+   "api_reference.md",
+   "modules/driver_my_work_api.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "API-019",
+  "module": "Workforce",
+  "question": "Which API returns driver availability?",
+  "expected_document": "modules/workforce_shifts_api.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/workforce_shifts_api.md",
+   "README.md",
+   "api_reference.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "API-020",
+  "module": "Dispatch",
+  "question": "Which API lists dispatches?",
+  "expected_document": "modules/dispatch_api.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/dispatch_api.md",
+   "api_reference.md",
+   "modules/driver_my_work_api.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "API-021",
+  "module": "Safety",
+  "question": "Which API returns safety analytics?",
+  "expected_document": "modules/safety_analytics_api.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/safety_analytics_api.md",
+   "modules/safety_scores_api.md",
+   "api_reference.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "API-022",
+  "module": "Notifications",
+  "question": "Which API returns the unread notification count?",
+  "expected_document": "modules/notifications_api.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/notifications_api.md",
+   "api_reference.md",
+   "backend_gaps.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "API-023",
+  "module": "Driver app",
+  "question": "Which API returns the driver's current shift?",
+  "expected_document": "modules/driver_my_work_api.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/driver_my_work_api.md",
+   "api_reference.md",
+   "modules/workforce_shifts_api.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "API-024",
+  "module": "Driver app",
+  "question": "Which API returns the driver's assigned vehicle?",
+  "expected_document": "modules/driver_my_work_api.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 7,
+  "retrieval_top3": "FAIL",
+  "top3": [
+   "api_reference.md",
+   "modules/vehicle_registry_api.md",
+   "modules/drivers_api.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "API-025",
+  "module": "Tenants",
+  "question": "Which API lists tenants for the Safe-Fare Admin?",
+  "expected_document": "modules/tenants_organizations_api.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 4,
+  "retrieval_top3": "FAIL",
+  "top3": [
+   "modules/platform_overview_api.md",
+   "modules/app_shell_navigation_api.md",
+   "modules/devices_vehicles_assets_api.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "API-026",
+  "module": "Sensors",
+  "question": "Which API returns the passenger summary?",
+  "expected_document": "modules/sensors_passenger_counting_api.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/sensors_passenger_counting_api.md",
+   "README.md",
+   "api_reference.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "API-027",
+  "module": "Auth",
+  "question": "Which API returns my permissions?",
+  "expected_document": "modules/authentication_login_api.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 6,
+  "retrieval_top3": "FAIL",
+  "top3": [
+   "README.md",
+   "api_reference.md",
+   "modules/platform_overview_api.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "API-028",
+  "module": "Permissions",
+  "question": "Which operations need alarm.handle?",
+  "expected_document": "permission_api_map.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 3,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/alerts_incidents_api.md",
+   "api_reference.md",
+   "permission_api_map.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "API-029",
+  "module": "Conventions",
+  "question": "What does VENDOR_EMPTY mean in a response?",
+  "expected_document": "api_reference.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "api_reference.md",
+   "README.md",
+   "modules/trips_tracking_api.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "API-030",
+  "module": "Conventions",
+  "question": "What does TENANT_REQUIRED mean?",
+  "expected_document": "api_reference.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "api_reference.md",
+   "modules/tenants_organizations_api.md",
+   "README.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "API-031",
+  "module": "Gaps",
+  "question": "Why can't Iris list offline vehicles directly?",
+  "expected_document": "backend_gaps.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 3,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/live_monitoring_api.md",
+   "modules/dashboard_overview_api.md",
+   "backend_gaps.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "API-032",
+  "module": "Trips",
+  "question": "Which API returns trips?",
+  "expected_document": "modules/trips_tracking_api.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/trips_tracking_api.md",
+   "api_reference.md",
+   "modules/driver_my_work_api.md"
+  ],
+  "answerable_in_top3": "PASS"
+ }
+]

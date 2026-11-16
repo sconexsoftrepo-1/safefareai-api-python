@@ -1,0 +1,1034 @@
+[
+  {
+    "source": "application_overview.md",
+    "chunk_number": 0,
+    "content": "---\ntitle: SafeFare application overview\ncategory: overview\n---\n\n# What is SafeFare?\n\n**SafeFare AI** (\"Smarter Fleet. Safer Journey.\") is an AI-powered **fleet management and driver-safety** application. Fleet operators use it to track vehicles live on a map, review camera-based AI safety events and alarms, manage vehicles, tracking devices, drivers, dispatches, shifts and leave, and analyse safety and mileage. Drivers use its **My Work** section to see their trips, shifts, leave, checklist and safety score.\n\n- **Web app:** \"SafeFare AI — Fleet Management UI\" (formerly \"Drive Vision\"), used in the browser on desktop, tablet and phone.\n- **SafeFare server:** stores the organisation's data and connects to the GPS/video provider **GPSTrackTech**, which supplies device positions, alarms and video.\n- **Organisations:** multi-tenant. Each organisation (tenant) sees only its own data; the Safe-Fare Admin manages all tenants.\n\n## Who uses it\n| User | Typical work |\n|---|---|\n| Safe-Fare Admin",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "application_overview.md",
+    "chunk_number": 1,
+    "content": "nisation (tenant) sees only its own data; the Safe-Fare Admin manages all tenants.\n\n## Who uses it\n| User | Typical work |\n|---|---|\n| Safe-Fare Admin (platform) | Tenants, global roles and permissions, platform-wide view |\n| Tenant admin / Fleet owner / fleet manager | Dashboard, live monitoring, alerts, vehicles, devices, drivers, dispatch, workforce, reports, users |\n| Driver | My Work: trips, shifts, leave, checklist, safety, profile |\n\n## Main modules (menu → purpose)\n| Menu | Purpose |\n|---|---|\n| Fleet Overview | Dashboard KPIs: devices online/offline, health, safety events, today's operations, reminders |\n| Live Monitoring | Live map of vehicle positions and live camera |\n| Historical Video | Recording calendar, recordings, clip exports (playback not yet available) |\n| Trips & Tracking | Trip history, route and GPS track playback |\n| Reports | Mileage, driving, parking, media reports |\n| Vehicles | Vehicle registry (number, make, model, fitted device) |\n| Sensors | Bus passenge",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "application_overview.md",
+    "chunk_number": 2,
+    "content": "|\n| Reports | Mileage, driving, parking, media reports |\n| Vehicles | Vehicle registry (number, make, model, fitted device) |\n| Sensors | Bus passenger counts (IR vs BMS), capacity, alcohol check |\n| Vehicles & Assets | Tracking devices and groups |\n| Drivers | Driver records, licences, assignments, safety score |\n| Dispatch | Planned trips for drivers, conflicts, swaps |\n| Workforce | Availability, shifts, leave, checklists |\n| Alerts & Events | Incidents handling, AI events, routine alarms |\n| Safety Analytics | Safety trends and scores |\n| Geofences | Zones/route lines, geofence events |\n| Device Commands | Command history (sending disabled) |\n| Users & Sub-Accounts | Login accounts and hierarchy |\n| Settings | Profile, password, preferences |\n| Platform (Admin) | Platform Overview, Tenants, Global Roles, Permission Catalogue |\n| My Work (Driver) | Driver self-service |\nHeader tools on every screen: global search (Ctrl K), notifications bell, Iris assistant, profile menu, tenant swi",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "application_overview.md",
+    "chunk_number": 3,
+    "content": "rk (Driver) | Driver self-service |\nHeader tools on every screen: global search (Ctrl K), notifications bell, Iris assistant, profile menu, tenant switcher (Safe-Fare Admin).\n\n## Key concepts\nSee `terminology.md`. Most important: a **vehicle** is the registered bus/van; a **device** is the GPS/camera terminal fitted in it; **alarms** come from devices (AI events from AI cameras, routine alarms from the terminal); an **alert/incident** is the handling record for an alarm.\n\n## Fleet time\nDates in the UI are shown in fleet time **IST (Asia/Kolkata)**.",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "frequently_asked_questions.md",
+    "chunk_number": 0,
+    "content": "---\ntitle: Frequently asked questions\ncategory: faq\n---\n\n# Frequently asked questions\n\n**What is SafeFare?** An AI-powered fleet management and driver-safety app: live tracking, AI camera events, alarms, vehicles, devices, drivers, dispatch, workforce, reports and safety analytics, for multiple organisations. → `application_overview.md`\n\n**What is the purpose of the dashboard?** Fleet Overview shows at a glance how many devices are online/offline, device health, safety events, today's trips/dispatches, pending leave/swaps, reminders and quick links. → `modules/dashboard_overview.md`\n\n**What does each dashboard metric represent?** See the metric table in `modules/dashboard_overview.md` §4.\n\n**What is a fleet owner?** The product role for a company that operates vehicles in SafeFare; it manages its own vehicles, drivers and operations. The backend role code for it is not confirmed yet. → `roles_permissions.md`\n\n**What is a driver?** A person driving fleet vehicles, stored as a driver rec",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "frequently_asked_questions.md",
+    "chunk_number": 1,
+    "content": "backend role code for it is not confirmed yet. → `roles_permissions.md`\n\n**What is a driver?** A person driving fleet vehicles, stored as a driver record; with a linked login, they use My Work. → `modules/drivers.md`\n\n**What is a device?** The GPS/camera terminal installed in a vehicle (identified by its Device ID / terminal number). → `modules/devices_vehicles_assets.md`\n\n**What is a vehicle?** The registered vehicle (vehicle number, type, make, model, status). → `modules/vehicle_registry.md`\n\n**What is the difference between a vehicle and a device?** The vehicle is the bus/van itself; the device is the tracker fitted in it that sends positions, alarms and video. They're managed in two menus: **Vehicles** and **Vehicles & Assets**.\n\n**What is an alarm?** An event reported by a device: AI events (ADAS/DSM/BSD camera detections) or routine alarms (terminal alarms). **What is an alert?** The handling record (incident) for an alarm. → `modules/alerts_incidents.md`\n\n**What is an AI event?*",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "frequently_asked_questions.md",
+    "chunk_number": 2,
+    "content": "alarms (terminal alarms). **What is an alert?** The handling record (incident) for an alarm. → `modules/alerts_incidents.md`\n\n**What is an AI event?** An alarm from AI cameras about driver behaviour/state or road hazards, usually with image/video evidence. → `modules/ai_alarms.md`\n\n**What is a geofence?** A virtual zone or route line; bound vehicles generate events when they enter/leave it or break its speed rule. → `modules/geofences.md`\n\n**What does online/offline status mean?** Online = currently reporting to the GPS vendor; offline = not reporting. Counts come from the server. → `modules/live_monitoring.md`\n\n**How can I add a vehicle?** Monitor → Vehicles → Register vehicle. → `workflows.md`\n\n**How can I assign a driver?** Fleet → Drivers → open driver → Assign vehicle → Review → confirm. → `modules/driver_assignments.md`\n\n**How can I check device status?** Vehicles & Assets → device → View; or Live Monitoring. → `modules/devices_vehicles_assets.md`\n\n**How can I view historical vi",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "frequently_asked_questions.md",
+    "chunk_number": 3,
+    "content": "I check device status?** Vehicles & Assets → device → View; or Live Monitoring. → `modules/devices_vehicles_assets.md`\n\n**How can I view historical videos?** Monitor → Historical Video → device → calendar day → recordings → export clip (in-app playback not yet available). → `modules/historical_video.md`\n\n**How can I generate reports?** Monitor → Reports → type → time range → device. No download button yet. → `modules/reports.md`\n\n**How do I change my password?** Settings → Change password (drivers: My Work → My Profile). → `modules/settings.md`\n\n**How do I use the driver application?** Sign in as Tenant user with your driver login → My Work: start shift, checklist, accept/start/complete trips, end shift, leave, safety, profile. → `modules/driver_my_work.md`\n\n**Why can't a driver access the admin dashboard?** Drivers only have `driver.app` + `own.data.read`; the dashboard needs `device.read`. → `roles_permissions.md`\n\n**Can I see other organisations' data?** No; every record is tenant-s",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "frequently_asked_questions.md",
+    "chunk_number": 4,
+    "content": "+ `own.data.read`; the dashboard needs `device.read`. → `roles_permissions.md`\n\n**Can I see other organisations' data?** No; every record is tenant-scoped. Only the Safe-Fare Admin can view across tenants.\n\n**Can I download reports or schedule them?** Not in the current app.\n\n**Can I create a geofence?** Not in the current app (create/edit blocked).\n\n**Can I send a command to a device?** Not in the current app (sending disabled).",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "limitations.md",
+    "chunk_number": 0,
+    "content": "---\ntitle: Known limitations\ncategory: limitations\n---\n\n# Known limitations\n\n## What the app can't do yet\nIris must say these aren't available, not invent steps. Full list: `modules/features_not_in_app.md`.\n\n| Feature | Situation |\n|---|---|\n| Historical video playback | Not available (the video provider's player hasn't been supplied). Clips can be exported and downloaded. |\n| Report download / export, report schedules | No button or screen. |\n| Moving or deleting devices, creating device groups | Buttons disabled until the backend confirms costs and side effects. |\n| Linking or unlinking a device to a registered vehicle | Not in the forms. |\n| Bus passenger capacity on vehicles | Not in the vehicle form (Sensors uses 44 by default). |\n| Creating or editing geofences | Blocked until rule codes are documented. |\n| Sending commands to devices | Disabled. |\n| Assigning an alert to a person | Not available yet. |\n| Deleting users | Not offered (disable instead). Roles are edited only by th",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "limitations.md",
+    "chunk_number": 1,
+    "content": "es | Disabled. |\n| Assigning an alert to a person | Not available yet. |\n| Deleting users | Not offered (disable instead). Roles are edited only by the Safe-Fare Admin in Global Roles. |\n| Maintenance reminders, alarm rules, audit log, renewals, voice upload, menu admin | No screen. |\n| Forgot password | No self-service; an administrator resets passwords. |\n| Native driver mobile app | Not part of the project; drivers use My Work in the browser. |\n| Online/offline filter on Live Monitoring | Not present; the Offline tile on Fleet Overview opens Live Monitoring unfiltered. |\n| Automatic notification updates | The bell refreshes only on page load or when the panel closes. |\n\n## Things that may confuse users\n- **Vehicles** (registered vehicles) and **Vehicles & Assets** (tracking devices) are different menus; the device register button is labelled **Add vehicle**.\n- Vehicles: the delete message says to remove the device by editing it, but the device form has no such option.\n- The \"Fleet O",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "limitations.md",
+    "chunk_number": 2,
+    "content": "belled **Add vehicle**.\n- Vehicles: the delete message says to remove the device by editing it, but the device form has no such option.\n- The \"Fleet Owner\" role name isn't confirmed by the backend yet; what a user can do depends on the permissions of their role.\n- Severity values and some device status codes are shown exactly as the server sends them; their scale is not documented.\n- Live data has been verified only with a small test organisation; create/edit/delete actions have not been verified against the live server.",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\ai_alarms.md",
+    "chunk_number": 0,
+    "content": "---\nmodule: AI Alarms (AI events)\nfeature_keys:\n- ai-events\n- ai-alarms\n- adas\n- dsm\n- bsd\n- driver-fatigue\n- distraction\n- ai-event-evidence\nroutes:\n- /drive-vision/alerts?kind=ai\nroles:\n- users with alarm.read\npermissions:\n- alarm.read\navailability: VERIFIED LIVE\ntechnical_reference: api/modules/ai_alarms_api.md\n---\n\n# AI Alarms (AI events)\n\n## 1. Purpose\nEvents detected by the device's AI cameras — ADAS (forward collision, lane departure…), DSM (driver fatigue, distraction, phone, smoking…), BSD (blind spot) — with image/video evidence. The exact list of AI alarm types is supplied by the SafeFare server and can differ per installation.\n\n## 2. Navigation\nSafety → Alerts & Events → **Alarm kind = AI events**.\n\n## 3. Screen\nFilters: Time range (Today · Last 7 days · Last 30 days), **All devices**, **All alarm types**, Clear filters. Columns: Event (with \"Video attached\"/\"Image attached\" markers), Device, Time, Duration, Speed, Severity (raw), Status. Drawer: Evidence from the vendor (I",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\ai_alarms.md",
+    "chunk_number": 1,
+    "content": "ns: Event (with \"Video attached\"/\"Image attached\" markers), Device, Time, Duration, Speed, Severity (raw), Status. Drawer: Evidence from the vendor (Image, Video), Terminal, Started, Ended, Coordinates, Handling status, Vendor time, Reference, **Track history for this device**.\n\n## 9. Workflow — How can I view AI alarms?\nSafety → **Alerts & Events** → choose **AI events** → set the Time range (e.g. Today) → optionally filter device/type → select a row to see image/video evidence.\n\n## 18. Common questions\n- **What is an AI event?** An alarm raised by the camera's AI (ADAS/DSM/BSD) about driving behaviour or driver state, usually with a photo or clip.\n- **Show the latest AI events**: AI events tab, Time range Today, newest first — or ask Iris (live data).\n\n## 19. Limitations\nSeverity scale undocumented (raw value). Some evidence links may not open if the vendor returns a placeholder address. Handling is done on the Incidents tab.",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\alerts_incidents.md",
+    "chunk_number": 0,
+    "content": "---\nmodule: Alerts & Events — Incidents (alert handling)\nfeature_keys:\n- alerts\n- incidents\n- acknowledge\n- resolve\n- dismiss\n- reopen\n- comment\n- evidence\n- alert-handling\n- open-alerts\nroutes:\n- /drive-vision/alerts\n- /drive-vision/alerts?kind=incidents\nroles:\n- users with alarm.read; handling needs alarm.handle\npermissions:\n- alarm.read\n- alarm.handle\navailability: Read VERIFIED; actions NOT VERIFIED; assign NOT AVAILABLE\ntechnical_reference: api/modules/alerts_incidents_api.md\n---\n\n# Alerts & Events — Incidents\n\n## 1. Purpose\nAn **alert (incident)** is an alarm that needs human handling. Operators acknowledge it, add comments, then resolve (with an outcome) or dismiss it; closed alerts can be reopened. The Alerts & Events screen has three tabs: **Incidents**, **AI events** (`ai_alarms.md`) and **Routine alarms** (`routine_alarms.md`).\n\n## 2. Navigation\nSidebar **Safety → Alerts & Events**. Tab chosen with **Alarm kind**.\n\n## 3. Incidents tab\n- Filters: **Time range** (Today · Last",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\alerts_incidents.md",
+    "chunk_number": 1,
+    "content": "## 2. Navigation\nSidebar **Safety → Alerts & Events**. Tab chosen with **Alarm kind**.\n\n## 3. Incidents tab\n- Filters: **Time range** (Today · Last 7 days (default) · Last 30 days), **Alarm type**, device, **Search alerts** (Keyword), **Open only**, **Clear filters**; **Refresh**/\"Load again up to the current time\".\n- Columns: Alert, Device, Time, Severity (raw value; \"the scale is undocumented\"), Status, Assignee.\n- Drawer: Kind, Driver (server), Location, Handled, **Evidence** (Open links), **History** of actions, action buttons.\n\n## 5. Actions (need `alarm.handle`; each asks for confirmation)\n| Button | What it does |\n|---|---|\n| Acknowledge | \"Records that you have seen the alert.\" |\n| Comment / Add comment | \"Adds a note to the alert's history.\" (note required) |\n| Resolve | \"Closes the alert with an outcome.\" — **Outcome** required |\n| Dismiss | \"Closes the alert without a resolution outcome.\" |\n| Reopen | \"Returns a closed alert to open handling.\" |\nNotes ≤ 1000 characters. Re",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\alerts_incidents.md",
+    "chunk_number": 2,
+    "content": "d |\n| Dismiss | \"Closes the alert without a resolution outcome.\" |\n| Reopen | \"Returns a closed alert to open handling.\" |\nNotes ≤ 1000 characters. Resolve outcomes: CONFIRMED_ALARM, FALSE_POSITIVE, TEST, DISPATCH_EMERGENCY, DISPATCH_TERMINAL, VOICE_COMMAND.\n\n## 9. Workflows\n**Handle an alert**: Alerts & Events → **Incidents** → (Open only) → open the alert → review Evidence and Location → **Acknowledge** → add comments as you investigate → **Resolve** with an outcome (or **Dismiss**).\n**How do I view alarms?** Alerts & Events → choose **Incidents**, **AI events** or **Routine alarms** → set Time range and filters.\n\n## 16. Business rules\nTransitions are decided by the server; all actions are offered and the server may reject one (409). The driver shown is the one reported by the server, never derived from current assignment.\n\n## 17. Errors\n\"The server rejected the action\"; evidence links only for http(s) (placeholder hosts → \"Link not usable\").\n\n## 18. Common questions\n- **What is an a",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\alerts_incidents.md",
+    "chunk_number": 3,
+    "content": "s\n\"The server rejected the action\"; evidence links only for http(s) (placeholder hosts → \"Link not usable\").\n\n## 18. Common questions\n- **What is an alarm vs an alert?** An *alarm* is an event reported by the device (AI event or routine alarm). An *alert/incident* is the handling record the operator works on.\n- **Can I assign an alert to someone?** Not yet. Assigning alerts to a person isn't available in the app until a backend issue is fixed.\n- **Why is an alarm missing?** Check the time range and filters, whether it's an AI event or routine alarm (different tabs), and the vendor feed (503 = unavailable).\n- **What alert statuses exist?** Alert handling status values: NEW, ACKNOWLEDGED, IN_PROGRESS, RESOLVED, DISMISSED.\n\n## 19. Limitations\nAssigning an alert and the high-priority handling steps are not available in the app. In rare cases the status shown and the action history may disagree (known backend issue).",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\app_shell_navigation.md",
+    "chunk_number": 0,
+    "content": "---\nmodule: App shell and navigation\nfeature_keys:\n- sidebar\n- topbar\n- breadcrumbs\n- mobile-nav\n- section-switcher\n- page-not-found\nroutes:\n- /drive-vision/*\nroles:\n- all signed-in users\npermissions:\n- screen-level codes; see roles_permissions.md\navailability: VERIFIED LIVE (Admin, Driver)\ntechnical_reference: api/modules/app_shell_navigation_api.md\n---\n\n# App shell and navigation\n\n## 1. Purpose\nThe frame around every screen: left sidebar menu, top bar (search, tenant switcher, notifications bell, Iris launcher, profile menu), breadcrumbs, mobile drawer, and the \"page not found / no access\" panels.\n\n## 2. Exact sidebar menu (in order)\n| Group | Menu label | Opens with permission |\n|---|---|---|\n| My work | My Work | `own.data.read` + `driver.app` (driver logins only) |\n| Platform | Platform Overview | Safe-Fare Admin + `tenant.all` |\n| Platform | Tenants | Safe-Fare Admin + `tenant.all` |\n| Platform | Global Roles | Safe-Fare Admin + `role.read` |\n| Platform | Permission Catalogue | S",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\app_shell_navigation.md",
+    "chunk_number": 1,
+    "content": "latform | Tenants | Safe-Fare Admin + `tenant.all` |\n| Platform | Global Roles | Safe-Fare Admin + `role.read` |\n| Platform | Permission Catalogue | Safe-Fare Admin + `permission.manage` |\n| Overview | Fleet Overview | `device.read` |\n| Monitor | Live Monitoring | `device.read` |\n| Monitor | Historical Video | `video.playback` |\n| Monitor | Trips & Tracking | `track.read` |\n| Monitor | Reports | `report.read` |\n| Monitor | Vehicles | `vehicle.read` |\n| Monitor | Sensors | `sensor.read` |\n| Fleet | Vehicles & Assets | `device.read` |\n| Fleet | Drivers | `driver.read` |\n| Fleet | Dispatch | `dispatch.read` |\n| Fleet | Workforce | `workforce.read` |\n| Safety | Alerts & Events | `alarm.read` |\n| Safety | Safety Analytics | `alarm.read` |\n| Manage | Geofences | `geofence.read` |\n| Manage | Device Commands | `command.send` |\n| Administration | Users & Sub-Accounts | `user.read` |\n| Administration | Settings | any signed-in non-driver user |\n\nMenu items a user can't open are hidden. For drive",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\app_shell_navigation.md",
+    "chunk_number": 2,
+    "content": "Users & Sub-Accounts | `user.read` |\n| Administration | Settings | any signed-in non-driver user |\n\nMenu items a user can't open are hidden. For driver logins the menu titles and order come from the server and lead to the My Work pages.\n\n> Note the two similarly named menus: **Vehicles** is the vehicle registry (number plate, make, model); **Vehicles & Assets** is the list of tracking **devices** and groups.\n\n## 3. Screens\n- Sidebar (collapsible: **Expand navigation** / **Collapse**), mobile drawer on small screens.\n- Top bar: page title + subtitle, global search (**Ctrl K**), tenant switcher (Safe-Fare Admin only), notification bell, Iris launcher (users with `device.read`), profile menu.\n- Fleet Overview's title is a greeting: \"Good morning/afternoon/evening, <name>\" (fleet time IST).\n- Access panels: \"You don't have access to this page\", \"No access for this account yet\", \"Page not found\".\n\n## 4–8.\nNavigation only; no forms or tables.\n\n## 9. Workflows\n- **Find a page**: use the sideb",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\app_shell_navigation.md",
+    "chunk_number": 3,
+    "content": "\", \"No access for this account yet\", \"Page not found\".\n\n## 4–8.\nNavigation only; no forms or tables.\n\n## 9. Workflows\n- **Find a page**: use the sidebar, or press **Ctrl K** and type the page name (see `global_search.md`).\n- **On a phone**: open the menu icon to show the navigation drawer.\n\n## 10–11. Roles and permissions\nSee table above and `roles_permissions.md`. Rule: the frontend is deny-by-default and the server still authorises every request.\n\n## 16. Business rules\n- Server `screens` can only narrow access (read-only screens hide write buttons; `allowed:false` removes actions). They never open a screen the permissions don't.\n\n## 17. Errors\n- An unknown page address shows \"Page not found\" inside the app.\n- If the driver menu can't be loaded, the sidebar shows a single \"My Work\" entry (no error message is shown) — PARTIALLY IMPLEMENTED.\n\n## 18. Common questions\n- **Why can't I see a menu?** Your permissions don't include that screen's code (table above). Ask an administrator to add",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\app_shell_navigation.md",
+    "chunk_number": 4,
+    "content": "D.\n\n## 18. Common questions\n- **Why can't I see a menu?** Your permissions don't include that screen's code (table above). Ask an administrator to add it to your role.\n- **What's the difference between Vehicles and Vehicles & Assets?** Vehicles = registered vehicles (number, make, model, which device is fitted). Vehicles & Assets = tracking devices, their groups and live state.\n- **Where is Maintenance / Alarm rules / Audit log?** There is no screen for them in this app (APIs exist only; see `features_not_in_app.md`).\n\n## 19. Limitations\n- Notifications and leave links for drivers were fixed to point to driver pages; footer link \"Open Alerts & Events\" in the bell is for fleet users.",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\authentication_login.md",
+    "chunk_number": 0,
+    "content": "---\nmodule: Authentication and Sign-in\nfeature_keys:\n- login\n- logout\n- session\n- token-refresh\n- access-denied\nroutes:\n- /login\n- /login?next=…\nroles:\n- Safe-Fare Admin\n- Tenant ADMIN\n- Fleet Owner\n- Driver\n- any tenant user\npermissions:\n- none (public) for login/refresh\n- any signed-in user for logout/me\navailability: VERIFIED LIVE\ntechnical_reference: api/modules/authentication_login_api.md\n---\n\n# Authentication and Sign-in\n\n## 1. Purpose\nSigns a user in to SafeFare AI, keeps the session alive with token refresh, loads the user's identity and permissions, and decides which screens they can open.\n\n## 2. Navigation and route\n- Sign-in page: opened automatically when you're not signed in; after signing in you return to the page you wanted.\n- Sign-out: avatar/profile menu in the top bar → **Sign out**. The access-denied panel also offers **Sign out**.\n\n## 3. Screens\n- **Sign in** form with an **Account type** switch: **Tenant user** or **Safe-Fare Admin**.\n- \"Your session expired. Pleas",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\authentication_login.md",
+    "chunk_number": 1,
+    "content": "*Sign out**.\n\n## 3. Screens\n- **Sign in** form with an **Account type** switch: **Tenant user** or **Safe-Fare Admin**.\n- \"Your session expired. Please sign in again.\" banner when a session ended.\n- Access-denied panel (route guard): \"You don't have access to this page\", \"No access for this account yet\", or \"Page not found\".\n- \"Couldn't load your session\" panel with **Try again** when your session can't be loaded.\n\n## 4. Features\n- Two sign-in modes on one form (tenant vs platform admin).\n- Your session is kept in the current browser tab (it survives a reload but ends when the tab is closed).\n- The session is renewed automatically before it expires.\n- Your permissions decide which menus and pages you can open.\n- Landing page after sign-in: Platform Overview for the Safe-Fare Admin, otherwise Fleet Overview, otherwise the first screen the user may open; drivers land in My Work.\n\n## 5. Buttons and actions\n| Button | Action |\n|---|---|\n| Tenant user / Safe-Fare Admin | Switches which fiel",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\authentication_login.md",
+    "chunk_number": 2,
+    "content": "user may open; drivers land in My Work.\n\n## 5. Buttons and actions\n| Button | Action |\n|---|---|\n| Tenant user / Safe-Fare Admin | Switches which fields are required. |\n| Sign in | Signs you in. |\n| Sign out | Ends your session. |\n| Try again | Reloads your session. |\n\n## 6. Form fields and validation\n| Field | Required | Max length | Notes |\n|---|---|---|---|\n| Tenant code | Tenant user: yes. Safe-Fare Admin: not shown, never sent | 50 | May be pre-filled. |\n| Email or username | yes | 320 | Trimmed. |\n| Password | yes | 72 | Never trimmed or logged. |\nError text pattern: \"<Label> is required.\" / \"<Label> must be at most N characters.\"\n\n## 7–8. Tables, search, paging\nNot applicable.\n\n## 9. Workflows\n**Sign in as a tenant user (Fleet Owner, tenant admin, driver, staff)**\n1. Open the app; you are sent to **Sign in**.\n2. Keep **Account type = Tenant user**.\n3. Enter **Tenant code** (your organisation's code), **Email or username** and **Password**.\n4. Select **Sign in**. You land on Flee",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\authentication_login.md",
+    "chunk_number": 3,
+    "content": "= Tenant user**.\n3. Enter **Tenant code** (your organisation's code), **Email or username** and **Password**.\n4. Select **Sign in**. You land on Fleet Overview (fleet users) or My Work (drivers).\n\n**Sign in as the Safe-Fare Admin**\n1. Choose **Account type = Safe-Fare Admin** (\"Safe-Fare platform administrators sign in without a tenant code\").\n2. Enter login and password → **Sign in**. You land on **Platform Overview** in \"All tenants\" mode. Select a tenant from the tenant switcher before creating or changing tenant records.\n\n**Sign out**: profile menu (top right) → **Sign out**.\n\n## 10. Roles\nEveryone signs in here. What they see afterwards depends on permissions (see `roles_permissions.md`).\n\n## 11. Permission codes\nAnyone can open the sign-in page; everything else needs a signed-in user.\n\n## 16. Business rules\n- The tenant code is used only for tenant users.\n- `platform === true` identifies the Safe-Fare Admin; a role code never grants access by itself.\n- An identity with no permis",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\authentication_login.md",
+    "chunk_number": 4,
+    "content": "d only for tenant users.\n- `platform === true` identifies the Safe-Fare Admin; a role code never grants access by itself.\n- An identity with no permissions opens no screen (\"No access for this account yet\").\n- `?next=` only accepts safe in-app paths.\n\n## 17. Error handling\n- 401 `INVALID_CREDENTIALS` → wrong tenant code, login or password (observed live). 400 `VALIDATION_FAILED` → field errors shown per field.\n- Expired session → redirect to sign-in with \"Your session expired\" message.\n- Session can't be loaded → \"Couldn't load your session\" + **Try again**.\n\n## 18. Common questions\n- **Why does login fail?** Check the account type: tenant users need the correct tenant code; the Safe-Fare Admin must choose \"Safe-Fare Admin\" and leave the tenant code out. Wrong credentials answer 401 `INVALID_CREDENTIALS`. Iris cannot see your password or reset it.\n- **What is a tenant code?** The code of your organisation (tenant) on SafeFare; your administrator gives it to you.\n- **Why was I signed ou",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\authentication_login.md",
+    "chunk_number": 5,
+    "content": "reset it.\n- **What is a tenant code?** The code of your organisation (tenant) on SafeFare; your administrator gives it to you.\n- **Why was I signed out?** The refresh token expired or was revoked, or the tab was closed (sessions live only in that browser tab).\n- **Why can't a driver open the admin dashboard?** Drivers hold only `driver.app` and `own.data.read`; Fleet Overview needs `device.read`, so drivers only get My Work.\n- **How do I change my password?** See `settings.md` (fleet users) or `driver_my_work.md` → My Profile (drivers).\n\n## 19. Limitations\n- NOT VERIFIED: server-side revocation of the refresh token on logout (frontend can't observe it).\n- No \"forgot password\" flow exists in the app.\n- Sessions are per browser tab; opening a new tab requires signing in again unless the tab shares storage.",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\dashboard_overview.md",
+    "chunk_number": 0,
+    "content": "---\nmodule: Dashboard / Fleet Overview\nfeature_keys:\n- dashboard\n- overview\n- kpis\n- online-offline\n- device-health\n- trends\n- reminders\n- fleet-groups\nroutes:\n- /drive-vision/overview\nroles:\n- Safe-Fare Admin\n- Tenant ADMIN\n- Fleet Owner\n- any user with device.read\npermissions:\n- device.read (screen)\n- alarm.read (safety widget)\n- group.read (groups widget)\navailability: VERIFIED LIVE (read)\ntechnical_reference: api/modules/dashboard_overview_api.md\n---\n\n# Dashboard — Fleet Overview\n\n## 1. Purpose\nThe home screen for fleet users: fleet size, how many devices are online/offline, device health, safety events, today's trips and dispatches, pending workforce items, reminders and quick links — for the selected date range.\n\n## 2. Navigation\nSidebar **Overview → Fleet Overview**. The page title is a greeting (\"Good morning, <name>\"); subtitle \"Fleet activity, safety and upcoming work at a glance\".\n\n## 3. Screen sections\n1. **Date range** selector: Today · Last 7 days (default) · Last 30 days",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\dashboard_overview.md",
+    "chunk_number": 1,
+    "content": "Fleet activity, safety and upcoming work at a glance\".\n\n## 3. Screen sections\n1. **Date range** selector: Today · Last 7 days (default) · Last 30 days; **Refresh** button (\"Refresh dashboard data\").\n2. **Key metrics** row: Total devices, Online, Offline, Expiring (service ≤ 30 days), Moving now, Distance today.\n3. **Fleet status** card: *Vehicle status breakdown* (server `fleet-status` slices) and *Device health* (Online, Offline, Never online, Service expired, Stale > 24 h, Low battery, …).\n4. **Device connectivity and service** / **GPS freshness** (\"Devices reporting within the last hour\", Stale GPS > 1 h, No GPS fix).\n5. **Fleet activity / Analytics**: alarm and AI-event trend chart (\"AI events (ADAS · DSM · BSD)\" vs \"Routine alarms\").\n6. **Today's operations**: Trips in progress, Trips today, Dispatches today, Licences expiring, Pending leave, Pending swaps, On leave today.\n7. **Daily trend** (**Show as table**: Day, Distance, Alarms, Severe).\n8. **Upcoming reminders** (service exp",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\dashboard_overview.md",
+    "chunk_number": 2,
+    "content": "ng leave, Pending swaps, On leave today.\n7. **Daily trend** (**Show as table**: Day, Distance, Alarms, Severe).\n8. **Upcoming reminders** (service expiry, insurance due, maintenance due from device records).\n9. **Fleet groups** (device count and events per group; needs `group.read`).\n10. **Recent activity** and **Quick links** (Live Monitoring, Vehicles, Historical Video, Trips, Alerts).\n\n## 4. Metric definitions (what each number means)\n| Metric | Definition |\n|---|---|\n| Total devices | Number of tracking devices the user can see. |\n| Online / Offline | **Server counts** of devices currently reporting / not reporting. The app never decides online/offline itself. |\n| Expiring | Devices whose service expiry is within 30 days. |\n| Moving now | Devices moving (speed above 0) with a report no older than 5 minutes. |\n| Stale GPS > 1 h | No report time, or last report older than 1 hour. |\n| Low battery | Battery below 20 % (key metrics), or the server's own threshold on the health card. |\n|",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\dashboard_overview.md",
+    "chunk_number": 3,
+    "content": "port time, or last report older than 1 hour. |\n| Low battery | Battery below 20 % (key metrics), or the server's own threshold on the health card. |\n| Stale > 24 h | Server count: no report for over 24 hours. |\n| Never online, Service expired, Video capable, Insurance/Maintenance due 30 d | Server counts. |\n| Vehicles total/online/offline/driving/idling/parked | Server counts. |\n| Trips in progress, trips today, distance today, dispatches today (by status) | Server counts. |\n| Open / severe alerts, AI vs routine, by severity | Server counts for the range. |\n| Pending leave, pending swaps, on leave today, active drivers, licences expiring 30 d, unread notifications | Server counts. |\nMissing values are shown as \"—\", never as 0.\n\n## 5. Buttons\nDate range selector; **Refresh**; **Retry** on any failed widget; metric tiles link to related screens (e.g. Offline opens Live Monitoring — note the list there is not filtered to offline devices); quick-link tiles; **Show as table** on the trend.",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\dashboard_overview.md",
+    "chunk_number": 4,
+    "content": "eens (e.g. Offline opens Live Monitoring — note the list there is not filtered to offline devices); quick-link tiles; **Show as table** on the trend.\n\n## 6–8. Forms, tables, paging\nNo forms. Daily-trend table (Day, Distance, Alarms, Severe). Ranking widget metric: Mileage / Driving time.\n\n## 9. Workflows\n**Check how many devices are online/offline**: open Fleet Overview → read Online / Offline tiles (server counts) → select Offline to open Live Monitoring.\n**See today's alarms**: set Date range = Today → Fleet activity chart and Alerts & AI events; select Alerts quick link for the list.\n\n## 10–11. Roles and permissions\nScreen: `device.read`. Safety widget: `alarm.read`. Groups widget: `group.read`. A widget without its permission shows \"No permission for this widget\". Drivers don't see this screen.\n\n## 16. Business rules\n- Fleet time zone is IST (Asia/Kolkata) for \"today\" and greetings.\n- Undocumented device codes and the severity scale are shown as received, never interpreted.\n- For t",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\dashboard_overview.md",
+    "chunk_number": 5,
+    "content": "is IST (Asia/Kolkata) for \"today\" and greetings.\n- Undocumented device codes and the severity scale are shown as received, never interpreted.\n- For the Safe-Fare Admin in \"All tenants\" mode, figures cover every tenant.\n\n## 17. Error handling\nEach widget fails independently with \"Couldn't load …\" + **Retry**; 503 from alarms shows \"AI events unavailable\" / \"Routine alarms unavailable\" rather than zero.\n\n## 18. Common questions\n- **What does online/offline mean?** Online = the device is currently reporting to the GPS vendor; offline = it isn't. Both numbers are counts calculated by the SafeFare server.\n- **What is \"Stale > 24 h\"?** Devices whose last report is more than 24 hours old (server count).\n- **Why is a number shown as \"—\"?** The server didn't return it or the request failed; the app never substitutes 0.\n- **Why does the dashboard not load?** You need `device.read`; otherwise check the per-widget error (network, 401 session expired, 503 vendor unavailable).\n- **Where do I see pe",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\dashboard_overview.md",
+    "chunk_number": 6,
+    "content": "not load?** You need `device.read`; otherwise check the per-widget error (network, 401 session expired, 503 vendor unavailable).\n- **Where do I see pending leave and pending swaps?** Fleet Overview → *Today's operations* shows Pending leave, Pending swaps, On leave today and Licences expiring (server counts). Details: Workforce → Leave and Dispatch → Swap requests.\n\n## 19. Limitations\n- The page loads a lot of data at once, so it can be slow for large fleets.\n- Data on the dev tenant was a small demo set (0–1 rows) during verification.",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\device_commands.md",
+    "chunk_number": 0,
+    "content": "---\nmodule: Device Commands\nfeature_keys:\n- commands\n- device-commands\n- command-history\n- command-types\n- send-command\nroutes:\n- /drive-vision/devices/commands\nroles:\n- users with command.send\npermissions:\n- command.send (even for viewing history)\navailability: Read-only; detail blocked; send disabled\ntechnical_reference: api/modules/device_commands_api.md\n---\n\n# Device Commands\n\n## 1. Purpose\nHistory of commands sent to devices (e.g. INSTANT_PHOTO, TEXT_MESSAGE, WAKE_UP, OVERSPEED settings) and the catalogue of command types. **Sending is turned off** in this app (\"Command history and types from the server — sending is off\").\n\n## 2. Navigation\nSidebar **Manage → Device Commands**. Header note \"Read-only.\"\n\n## 3. Screen\n**View**: command history / **Command types**. History columns: Command, Status (PENDING, SENT, PARTIAL, SUCCESS, FAILED), Devices, Requested, Completed; filters Type, device; detail: Requested by, Parameters, Targets (per-device status QUEUED/SENT/SUCCESS/FAILED/TIMEO",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\device_commands.md",
+    "chunk_number": 1,
+    "content": "D), Devices, Requested, Completed; filters Type, device; detail: Requested by, Parameters, Targets (per-device status QUEUED/SENT/SUCCESS/FAILED/TIMEOUT). Types list shows \"Critical\" and \"One device at a time\" flags.\n\n## 11. Permissions\n`command.send` is required even to view history.\n\n## 18. Common questions\n- **Can I send a command to a device from SafeFare?** Not from this app; it's disabled until the backend documents the execution contract and charges.\n\n## 19. Limitations\nSending commands and device diagnostics are not available; opening the detail of some commands fails (known backend issue).",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\device_groups.md",
+    "chunk_number": 0,
+    "content": "---\nmodule: Device Groups\nfeature_keys:\n- groups\n- device-groups\n- fleet-groups\n- asset-tree\nroutes:\n- /drive-vision/vehicles (Asset tree view, group filter)\n- /drive-vision/overview (Fleet groups widget)\nroles:\n- users with group.read / device.read\npermissions:\n- group.read\n- group.create\n- group.update\n- group.delete\navailability: Read-only\ntechnical_reference: api/modules/device_groups_api.md\n---\n\n# Device Groups\n\n## 1. Purpose\nGroups organise devices (e.g. by depot, route or customer). They come from the vendor account structure (a group has a name and optional contact email and phone).\n\n## 2–3. Where groups appear\n- Vehicles & Assets: **All groups** filter, **Asset tree** view (groups → devices), Group column.\n- Live Monitoring: **Group** filter.\n- Fleet Overview: **Fleet groups** widget (device count and events per group; needs `group.read`).\n- Register device form: **Group** (required).\n\n## 5. Buttons\n**New group** on Vehicles & Assets is **disabled** (\"…creating groups are disa",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\device_groups.md",
+    "chunk_number": 1,
+    "content": "up.read`).\n- Register device form: **Group** (required).\n\n## 5. Buttons\n**New group** on Vehicles & Assets is **disabled** (\"…creating groups are disabled until write operations are approved\").\n\n## 9. Workflow\n**See which devices are in a group**: Vehicles & Assets → View **Asset tree**, or filter **All groups** → choose the group.\n\n## 11. Permissions\n`group.read` (list). `group.create/update/delete` exist but no screen uses them.\n\n## 18. Common questions\n- **How do I create a group?** Not possible in the app today (disabled pending confirmation of vendor billing side effects).\n- **Can I move a device to another group?** No — that's a transfer, which is disabled.\n\n## 19. Limitations\nWhether groups limit what a Fleet Owner can see is NOT VERIFIED.",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\devices_vehicles_assets.md",
+    "chunk_number": 0,
+    "content": "---\nmodule: Devices (\"Vehicles & Assets\")\nfeature_keys:\n- devices\n- vehicles-and-assets\n- tracking-device\n- terminal\n- register-device\n- edit-device\n- device-detail\n- asset-tree\n- device-status\nroutes:\n- /drive-vision/vehicles\n- /drive-vision/vehicles/<deviceId>\n- /drive-vision/vehicles/new (redirects to /drive-vision/vehicles?add=1)\nroles:\n- users with device.read\npermissions:\n- device.read\n- device.create\n- device.update\n- device.delete (unused)\n- driver.read (assignment panel)\n- alarm.read (events)\navailability: Read VERIFIED; create/edit NOT VERIFIED; transfer/delete disabled\ntechnical_reference: api/modules/devices_vehicles_assets_api.md\n---\n\n# Devices — \"Vehicles & Assets\"\n\n## 1. Purpose\nManage the **tracking devices** (GPS/MDVR/camera terminals) registered with SafeFare and the GPS vendor (GPSTrackTech): list, group, view live state, register new devices and edit descriptive fields. Despite the menu name \"Vehicles & Assets\", every row is a **device**; the separate **Vehicles** m",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\devices_vehicles_assets.md",
+    "chunk_number": 1,
+    "content": "e, register new devices and edit descriptive fields. Despite the menu name \"Vehicles & Assets\", every row is a **device**; the separate **Vehicles** menu is the vehicle registry.\n\n## 2. Navigation\nSidebar **Fleet → Vehicles & Assets**. Open a row with **View** for the device detail page.\n\n## 3. Screens\n- **List** with **View**: *Vehicle list* (table) or *Asset tree* (\"Groups and devices\").\n- **Device detail**: header buttons Transfer (disabled), Delete (disabled), **Edit**; panels *Latest reported state* (map position, raw codes), *Device & SIM* (Device ID, Protocol, Object type, Cameras, Frame / VIN, Plate colour, Last vendor sync), *Dates & reminders* (Activated, Service expiry, Insurance due, Next maintenance), *Driver — Stored on the device record* (Name, Phone, Card, Licence, Remark), *Recent events* (AI events and routine alarms, last N days), *Assignment & work* (Status, Assigned driver, Open alerts, Current dispatch, Assignment history), *Recent trips*.\n- **Register device** pa",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\devices_vehicles_assets.md",
+    "chunk_number": 2,
+    "content": "st N days), *Assignment & work* (Status, Assigned driver, Open alerts, Current dispatch, Assignment history), *Recent trips*.\n- **Register device** panel (button label **Add vehicle**) and **Edit** panel.\n\n## 5. Buttons\n| Button | State | What it does |\n|---|---|---|\n| Add vehicle | enabled with `device.create` (+ selected tenant) | Opens *Register device* and registers the device |\n| Edit (detail) | enabled with `device.update` (+ tenant) | Saves the editable fields (locked fields stay unchanged) |\n| New group | **disabled** — \"Moving and deleting devices and creating groups are disabled until write operations are approved.\" |\n| Transfer, Delete (detail) | **disabled**, same reason |\n| Clear filters | resets filters |\n\n## 6. Form fields\n**Register device**:\n| Field | Required | Rule |\n|---|---|---|\n| Name | yes | \"Enter a device name.\" ≤ 100 |\n| Device ID (terminal no.) | yes | 11–20 letters/digits, no spaces (`^[0-9A-Za-z]{11,20}$`) |\n| Group | yes | choose from groups |\n| Device mod",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\devices_vehicles_assets.md",
+    "chunk_number": 3,
+    "content": "100 |\n| Device ID (terminal no.) | yes | 11–20 letters/digits, no spaces (`^[0-9A-Za-z]{11,20}$`) |\n| Group | yes | choose from groups |\n| Device model | yes | from the server's list of models |\n| Protocol | yes | 1–3 (model's own list) |\n| Object type | yes | from the server's list |\n| Cameras | yes | 0–16 |\n| Plate colour, SIM number, Frame/VIN, Remark, Insurance due, Maintenance due, Driver (name, card, phone, licence, remark) | no | max lengths (plateColor 30, simNumber 30, frameNo 60, remark 500, driverName 150, driverCard 60, …) |\nChargeable change: if the server answers `CHARGEABLE_CHANGE` / `CONFIRMATION_REQUIRED`, the panel shows the server's message and the user must tick \"I accept this and want to register the device\" → resend with `confirmChargeableChange: true`.\n\n**Edit device**: only descriptive fields (name, plate colour, SIM, frame no, remark, insurance/maintenance due, driver name/card/phone/licence/remark). Locked and resent unchanged: model (\"may deduct vendor coins",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\devices_vehicles_assets.md",
+    "chunk_number": 4,
+    "content": "SIM, frame no, remark, insurance/maintenance due, driver name/card/phone/licence/remark). Locked and resent unchanged: model (\"may deduct vendor coins\"), protocol, camera count, terminal number, group (a move = transfer), object type, driver gender.\n\n## 7. Table columns and filters\nColumns: Vehicle (device name), Model, Type, Group, Driver (\"Not recorded\"), Last report, Cams, Service expiry. Filters: **Search vehicles** (\"Name or device ID\"), **All groups**, expiry (Any expiry · Expiring ≤ 30 d · Expired).\n\n## 9. Workflows\n**How can I check device status?** Vehicles & Assets → search the device → **View** → *Latest reported state* (device time, received time, position, raw status codes) and *Dates & reminders* (service expiry). For connectivity use Live Monitoring (report age) or Fleet Overview (online/offline server counts).\n**Register a new tracking device**: Vehicles & Assets → **Add vehicle** → fill required fields → save → if asked, accept the charge message.\n\n## 10–11. Roles / pe",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\devices_vehicles_assets.md",
+    "chunk_number": 5,
+    "content": "new tracking device**: Vehicles & Assets → **Add vehicle** → fill required fields → save → if asked, accept the charge message.\n\n## 10–11. Roles / permissions\n`device.read` (screen); `device.create`; `device.update`; detail assignment panel needs `driver.read`; events need `alarm.read`.\n\n## 16. Business rules\n- Registering also registers the device at the GPS vendor; vendor timeouts (502/504, `VENDOR_OUTCOME_UNKNOWN`) mean \"may or may not have been registered — check the list before retrying\".\n- The driver stored **on the device record** is vendor data; it is not the same as a driver assignment (Drivers screen).\n- Undocumented codes (statusCode, positionMode, networkType) are displayed raw, never interpreted.\n\n## 17. Errors\n409 `DUPLICATE` → \"This terminal number is already registered\"; 400 `TENANT_REQUIRED` → \"Select a tenant first\"; field errors per field.\n\n## 18. Common questions\n- **What is a device?** The tracking/camera unit (terminal) identified by its Device ID (terminal no.),",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\devices_vehicles_assets.md",
+    "chunk_number": 6,
+    "content": "eld errors per field.\n\n## 18. Common questions\n- **What is a device?** The tracking/camera unit (terminal) identified by its Device ID (terminal no.), reporting GPS, alarms and video.\n- **What is a device group?** A folder of devices (fleet group) used for filtering and permissions at the vendor; see `device_groups.md`.\n- **Why can't I move or delete a device?** Transfer and delete are disabled until the backend documents charges/side effects.\n- **Why is a vehicle not appearing?** Check filters/search; the device may belong to another tenant (Safe-Fare Admin: check the selected tenant); a search with no match may show \"unavailable\" instead of an empty list (known backend issue).\n- **What format is the device ID (terminal number)?** 11–20 letters or digits with no spaces (`^[0-9A-Za-z]{11,20}$`).\n- **Why is a vehicle/device not appearing in the Vehicles & Assets list?** Check the search text and the group/expiry filters; the device may belong to another tenant (Safe-Fare Admin: check th",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\devices_vehicles_assets.md",
+    "chunk_number": 7,
+    "content": "n the Vehicles & Assets list?** Check the search text and the group/expiry filters; the device may belong to another tenant (Safe-Fare Admin: check the selected tenant); a search with no match may show \"unavailable\" instead of an empty list (known backend issue).\n\n## 19. Limitations\n- Moving (transfer) and deleting devices and creating groups are not available.\n- Linking a device to a registered vehicle (or unlinking it) is NOT IMPLEMENTED in the forms.",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\dispatch.md",
+    "chunk_number": 0,
+    "content": "---\nmodule: Dispatch\nfeature_keys:\n- dispatch\n- dispatched-trips\n- new-dispatch\n- conflict-check\n- cancel-dispatch\n- swap-request\n- approve-swap\n- verification\nroutes:\n- /drive-vision/dispatch\n- /drive-vision/dispatch?tab=swaps\nroles:\n- users with dispatch.read\npermissions:\n- dispatch.read\n- dispatch.create\n- dispatch.update\navailability: Read VERIFIED (empty); writes NOT VERIFIED\ntechnical_reference: api/modules/dispatch_api.md\n---\n\n# Dispatch\n\n## 1. Purpose\nPlan work for drivers: a **dispatch** assigns a driver and vehicle to a scheduled job (title, times, origin → destination, instructions). The server checks conflicts (driver on leave, overlapping dispatch, …), drivers accept/decline/start/complete it in My Work, and swap requests let a trip move to another driver.\n\n## 2. Navigation\nSidebar **Fleet → Dispatch**. Subtitle \"Dispatched trips, conflict checks and driver swaps\".\n\n## 3. Screens (**View**)\n- **Dispatches** — Window: Next 14 days · Past 14 days · All. Columns: Dispatch (ti",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\dispatch.md",
+    "chunk_number": 1,
+    "content": "rips, conflict checks and driver swaps\".\n\n## 3. Screens (**View**)\n- **Dispatches** — Window: Next 14 days · Past 14 days · All. Columns: Dispatch (title), Scheduled, Driver, Vehicle, Status, Swap pending.\n- **Conflicts** — server-detected scheduling conflicts.\n- **Swap requests** — From → to, Reason, Decision (Pending), **Approve** / **Reject** with Note (optional).\n- Dispatch detail: Status, Driver, Vehicle, Route, Reporting time, Instructions, Route notes, Responded · started · completed, Declined, Cancelled, verification checks (Passed / Failed); buttons **Edit**, **Cancel dispatch**, **Request swap**.\n\n## 6. New / Edit dispatch form\n| Field | Required | Rule |\n|---|---|---|\n| Title | yes | ≤ 150 |\n| Driver | yes | picker (first 100 active drivers) |\n| Vehicle | yes | picker |\n| Scheduled start / Scheduled end | yes | end after start; IST |\n| Reporting time | no | valid time |\n| Origin / Destination | no | ≤ 300 |\n| Instructions / Route notes | no | ≤ 1000 |\nStatus values: ASSIGNED",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\dispatch.md",
+    "chunk_number": 2,
+    "content": "IST |\n| Reporting time | no | valid time |\n| Origin / Destination | no | ≤ 300 |\n| Instructions / Route notes | no | ≤ 1000 |\nStatus values: ASSIGNED, ACCEPTED, DECLINED, IN_PROGRESS, COMPLETED, CANCELLED.\n\n## 9. Workflows\n**Create a dispatch**\n1. Dispatch → **New dispatch**.\n2. Fill Title, Driver, Vehicle, Scheduled start/end (IST) and optional fields.\n3. **Check conflicts** (this only checks; it creates nothing). Result: \"No conflicts found\" or \"The server reported conflicts\".\n4. Save becomes enabled only after the current draft was checked → confirm \"Create this dispatch?\" (\"The dispatch is saved on the server and the driver may be notified\").\n**Approve a swap request**: Dispatch → View **Swap requests** → **Approve** or **Reject** (optional note).\n**Cancel**: open dispatch → **Cancel dispatch** (optional reason).\n\n## 10–11. Roles / permissions\n`dispatch.read` (screen); `dispatch.create`; `dispatch.update` (edit, cancel, request swap, approve/reject swaps).\n\n## 16. Business rules\nA",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\dispatch.md",
+    "chunk_number": 3,
+    "content": "ermissions\n`dispatch.read` (screen); `dispatch.create`; `dispatch.update` (edit, cancel, request swap, approve/reject swaps).\n\n## 16. Business rules\nAllowed status transitions are decided by the server (undocumented); statuses shown as returned. Dispatches can be cancelled but not deleted.\n\n## 17. Errors\n\"The server rejected the request/decision\" toasts; 409 for invalid transitions.\n\n## 18. Common questions\n- **What is dispatch?** Assigning a planned trip to a driver and vehicle.\n- **Why was my dispatch rejected?** The server found a conflict (driver on leave/busy, vehicle busy) or the transition isn't allowed.\n\n## 19. Limitations\nWrites not verified live; whether creating a dispatch sends SMS/push to the driver is NOT VERIFIED.",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\driver_assignments.md",
+    "chunk_number": 0,
+    "content": "---\nmodule: Driver Assignments (driver ↔ vehicle)\nfeature_keys:\n- assign-driver\n- driver-assignment\n- end-assignment\n- replace-assignment\n- current-vehicle\nroutes:\n- /drive-vision/drivers (Assign vehicle dialog)\n- /drive-vision/vehicles/<deviceId> (Assignment & work panel)\nroles:\n- users with driver.update to change; driver.read to view\npermissions:\n- driver.update\n- driver.read\n- device.read\navailability: Read VERIFIED; writes NOT VERIFIED\ntechnical_reference: api/modules/driver_assignments_api.md\n---\n\n# Driver Assignments\n\n## 1. Purpose\nRecord which driver drives which vehicle (device) and when. Assignments are a history; one driver/vehicle should have one active assignment.\n\n## 3. Where\n- Drivers → driver drawer → **Assign vehicle**, **Vehicle assignments** list with **End**.\n- Device detail (Vehicles & Assets) → *Assignment & work*: Assigned driver, Assignment history (needs `driver.read`).\n- Driver app: My Work → Today → Vehicle.\n\n## 6. Assign vehicle form\nVehicle (**required**; p",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\driver_assignments.md",
+    "chunk_number": 1,
+    "content": "ssigned driver, Assignment history (needs `driver.read`).\n- Driver app: My Work → Today → Vehicle.\n\n## 6. Assign vehicle form\nVehicle (**required**; picker needs `device.read`), Starts (IST) (\"Blank: the server uses the current time\"), Ends (IST) (\"Optional. Blank: open-ended\"; must be after start / in the future), **Replace the current assignment** checkbox. **Review** step shows *Active assignments affected* and requires \"Confirm ending the active assignment\" when replacing. End assignment: End at (IST) (\"Leave blank to end it now\").\n\n## 9. Workflow — How can I assign a driver to a vehicle?\n1. Fleet → **Drivers** → open the driver.\n2. **Assign vehicle**.\n3. Choose the **Vehicle**, optional start/end times.\n4. If the driver or vehicle already has an active assignment, tick **Replace the current assignment** (otherwise \"The server is expected to refuse this…\").\n5. **Review** → confirm.\nTo end: open the driver → Vehicle assignments → **End** → optional End at → confirm.\n\n## 16. Business",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\driver_assignments.md",
+    "chunk_number": 2,
+    "content": "cted to refuse this…\").\n5. **Review** → confirm.\nTo end: open the driver → Vehicle assignments → **End** → optional End at → confirm.\n\n## 16. Business rules\nOverlapping assignments are rejected by the server unless **Replace the current assignment** is ticked. Alarms show the driver **as reported by the server**; the app never derives an alarm's driver from the current assignment.\n\n## 18. Common questions\n- **What is a driver assignment?** The link between a driver and the vehicle (device) they drive for a period.\n- **Which vehicle is assigned to me?** (driver) My Work → Today → Vehicle.\n\n## 19. Limitations\nAssign/end actions have not yet been verified against the live server.",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\driver_my_work.md",
+    "chunk_number": 0,
+    "content": "---\nmodule: Driver application — My Work (driver self-service)\nfeature_keys:\n- driver-app\n- my-work\n- my-trips\n- accept-trip\n- start-trip\n- complete-trip\n- decline-trip\n- my-shift\n- start-shift\n- end-shift\n- working-hours\n- my-leave\n- checklist\n- my-safety\n- my-profile\n- driver-mobile\nroutes:\n- /drive-vision/my-work\n- /drive-vision/my-work/shifts\n- /drive-vision/my-work/leave\n- /drive-vision/my-work/checklist\n- /drive-vision/my-work/safety\n- /drive-vision/my-work/profile\nroles:\n- Driver (role DRIVER, not platform) linked to a driver profile\npermissions:\n- driver.app\n- own.data.read\navailability: Read VERIFIED (Driver); writes NOT VERIFIED\ntechnical_reference: api/modules/driver_my_work_api.md\n---\n\n# Driver application — My Work\n\n## 1. Purpose\nSelf-service for drivers: today's vehicle and trips, accept/start/complete trips, shifts and working hours, leave, pre-trip checklist, own safety score and profile. NOT VERIFIED: a separate native \"driver mobile app\" — none is in the provided proj",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\driver_my_work.md",
+    "chunk_number": 1,
+    "content": "ing hours, leave, pre-trip checklist, own safety score and profile. NOT VERIFIED: a separate native \"driver mobile app\" — none is in the provided project; My Work is the driver app inside the web UI (mobile-friendly).\n\n## 2. Navigation (sidebar built from the server's driver menus)\n| Page | Description |\n|---|---|\n| My Work (Today) | Today, current/next trip, upcoming trips |\n| My Shifts | \"Your current shift and working hours\" |\n| My Leave | \"Your leave requests and their status\" |\n| Shift Checklist | \"Pre-trip vehicle checklist and your recent submissions\" |\n| My Safety | \"Your safety score and recent events\" |\n| My Profile | \"Your contact details and licence\" |\nNotifications: header bell.\n\n## 3–5. Screens and actions\n- **Today**: Vehicle (current assignment), Shift, Trips today, current/next trip; **Upcoming trips** (next 14 days). Trip actions with confirmation:\n  | Button | Meaning |\n  |---|---|\n  | Accept | \"Tells dispatch you will take this trip.\" |\n  | Start trip | \"Marks the t",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\driver_my_work.md",
+    "chunk_number": 2,
+    "content": "p actions with confirmation:\n  | Button | Meaning |\n  |---|---|\n  | Accept | \"Tells dispatch you will take this trip.\" |\n  | Start trip | \"Marks the trip as started now.\" |\n  | Complete trip | \"Marks the trip as completed now.\" |\n  | Decline | \"Tells dispatch you can't take this trip.\" (reason optional, ≤500) |\n  | Request swap | \"Asks dispatch to give this trip to another driver.\" |\n  Buttons are disabled when they no longer apply (trip completed, cancelled, declined, already started or already responded).\n- **My Shifts**: Current shift (**Start shift** / **End shift**, optional Odometer (km)), Working hours, Recent shifts (last 7 days).\n- **My Leave**: **Request leave** (type CASUAL/SICK/ANNUAL/UNPAID/OTHER, first/last day, reason), Requests by status, **Cancel request**.\n- **Shift Checklist**: template items → **Start checklist** → mark each item **Pass**/**Fail** (\"What's wrong? (optional)\"), Note → submit; Recent submissions (last 7 days).\n- **My Safety**: Safety score (last 30 da",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\driver_my_work.md",
+    "chunk_number": 3,
+    "content": "k each item **Pass**/**Fail** (\"What's wrong? (optional)\"), Note → submit; Recent submissions (last 7 days).\n- **My Safety**: Safety score (last 30 days), Events by type, Recent safety events.\n- **My Profile**: Contact (Phone, Email, Address, Emergency contact/phone) → **Edit contact details**; Licence (Number, Class, Issued, Expires, Status); Employment (Hired on, IC card); **Change password**.\n\n## 9. Workflows\n**How do I use the driver application?** Sign in as **Tenant user** with your tenant code and driver login → you land in **My Work**. Each day: start your shift (My Shifts → Start shift), submit the pre-trip checklist, accept and start your dispatched trip, complete it, end your shift.\n**What is my current shift?** My Shifts → Current shift.\n**Show my assigned vehicle**: My Work → Today → Vehicle.\n**What is my checklist status?** Shift Checklist → Recent submissions.\n**What is my leave request status?** My Leave → Requests by status.\n**Show my safety score**: My Safety.\n\n## 10–",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\driver_my_work.md",
+    "chunk_number": 4,
+    "content": "Shift Checklist → Recent submissions.\n**What is my leave request status?** My Leave → Requests by status.\n**Show my safety score**: My Safety.\n\n## 10–11. Roles / permissions\nOnly driver logins (role DRIVER, `platform=false`) holding `driver.app` + `own.data.read`. Administrators holding the same codes are **not** given My Work. The account must be **linked to a driver profile** (else 403 \"Your account is not linked to a driver profile\").\n\n## 16. Business rules\n- A driver only ever sees their own data; the server identifies the driver from the login.\n- Drivers cannot open fleet screens (Fleet Overview, Live Monitoring, Drivers, etc.); the server refuses driver logins on fleet data (verified 2026-10-31).\n\n## 18. Common questions\n- **Why can't a driver access the admin dashboard?** Drivers only hold `driver.app` and `own.data.read`; the dashboard needs `device.read`, and the server rejects driver tokens on fleet APIs.\n- **Why do I get \"not linked to a driver profile\"?** Your login isn't l",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\driver_my_work.md",
+    "chunk_number": 5,
+    "content": "board needs `device.read`, and the server rejects driver tokens on fleet APIs.\n- **Why do I get \"not linked to a driver profile\"?** Your login isn't linked to a driver record; ask your fleet manager to set *Linked user id* on your driver record.\n\n## 19. Limitations\nDriver writes untested live; driver preferences not available; the current Iris assistant needs `device.read`, so drivers don't get it yet.",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\drivers.md",
+    "chunk_number": 0,
+    "content": "---\nmodule: Drivers\nfeature_keys:\n- drivers\n- driver-records\n- licence\n- licence-expiry\n- driver-safety-score\n- create-driver\n- edit-driver\n- delete-driver\n- linked-user\nroutes:\n- /drive-vision/drivers\n- /drive-vision/drivers?driver=<id>\nroles:\n- users with driver.read\npermissions:\n- driver.read\n- driver.create\n- driver.update\n- driver.delete\n- alarm.read (safety panel)\n- device.read (vehicle picker)\navailability: Read VERIFIED; writes NOT VERIFIED\ntechnical_reference: api/modules/drivers_api.md\n---\n\n# Drivers\n\n## 1. Purpose\nDriver records (contact, licence, employment), licence expiry tracking, vehicle assignments and each driver's server-computed safety score.\n\n## 2. Navigation\nSidebar **Fleet → Drivers**.\n\n## 3. Screens\n- **View**: *Drivers* list or *Licence expiries* (Window: Within 30 / 60 / 90 days).\n- Driver drawer: Status, Licence, Current vehicle, Phone, Email, IC card, Emergency contact, Hired, Linked user, Remark, Updated; **Safety** (Score, Alarms · severe, Distance — last",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\drivers.md",
+    "chunk_number": 1,
+    "content": ", Current vehicle, Phone, Email, IC card, Emergency contact, Hired, Linked user, Remark, Updated; **Safety** (Score, Alarms · severe, Distance — last 30 days); **Vehicle assignments** history.\n- Create/Edit form; Assign vehicle dialog (see `driver_assignments.md`); Delete confirmation.\n\n## 5. Buttons\n| Button | Permission | What it does |\n|---|---|---|\n| New driver | driver.create (+tenant) | Creates the driver |\n| Edit | driver.update | Saves changes |\n| Delete | driver.delete | Deletes the driver |\n| Assign vehicle / End | driver.update | Creates or ends a vehicle assignment |\n| Refresh | driver.read | reload |\n\n## 6. Form fields\nFull name (**required**, ≤150), Licence number (≤60), Licence class (≤30), Licence issued, Licence expires (date ≥ issued), IC card number (≤60), Phone (≤30), Email (valid, ≤320), Address (≤500), Date of birth, Emergency contact (≤150), Emergency phone (≤30), Hired on, Remark (≤500), Gender (Not set / values), Status (Active / Inactive), **Linked user id** (",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\drivers.md",
+    "chunk_number": 2,
+    "content": "Emergency contact (≤150), Emergency phone (≤30), Hired on, Remark (≤500), Gender (Not set / values), Status (Active / Inactive), **Linked user id** (numeric; \"Optional login account for driver self-service\"). Dates YYYY-MM-DD. \"Licence status and days to expiry are calculated by the server from the expiry date.\"\n\n## 7. Columns and filters\nDriver, Licence (status VALID / EXPIRING / EXPIRED / MISSING), Assignment (vehicle or \"Unassigned\"), Phone, Email, Tenant (all-tenants mode), Status. Filters: **Search drivers** (keyword, debounced), Status (Any status / Active / Inactive). Server paging.\n\n## 9. Workflows\n**Add a driver**: Drivers → **New driver** → Full name (+ details) → save.\n**Give a driver app access**: create a user with the DRIVER role in Users & Sub-Accounts, then edit the driver and set **Linked user id** to that user's id.\n**Check a driver's safety score**: Drivers → open the driver → Safety panel (last 30 days). Or Safety Analytics → Safety scores → Drivers.\n**Licences exp",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\drivers.md",
+    "chunk_number": 3,
+    "content": "heck a driver's safety score**: Drivers → open the driver → Safety panel (last 30 days). Or Safety Analytics → Safety scores → Drivers.\n**Licences expiring soon**: View **Licence expiries** → Window 30/60/90 days.\n\n## 10–11. Roles / permissions\n`driver.read` screen; writes as above. Drivers themselves use My Work, not this screen.\n\n## 16. Business rules\nThe linked user is only shown for information. Safety data comes only from the server.\n\n## 17. Errors\nServer field errors shown per field; an unknown driver shows \"not found\".\n\n## 18. Common questions\n- **What is a driver?** A person who drives fleet vehicles, stored as a driver record; optionally linked to a login so they can use My Work.\n- **How many drivers are assigned?** Drivers list → Assignment column, or ask Iris (live data).\n- **Which drivers have expiring licences?** View Licence expiries.\n- **What licence statuses exist?** Licence status values: VALID, EXPIRING, EXPIRED, MISSING (computed by the server from the expiry date).",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\drivers.md",
+    "chunk_number": 4,
+    "content": "expiries.\n- **What licence statuses exist?** Licence status values: VALID, EXPIRING, EXPIRED, MISSING (computed by the server from the expiry date).\n\n## 19. Limitations\nWrites not verified live. Delete cascade behaviour NOT VERIFIED.",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\features_not_in_app.md",
+    "chunk_number": 0,
+    "content": "---\nmodule: Features not available in the app\nfeature_keys:\n- not-available\n- missing-features\n- alarm-rules\n- report-schedules\n- report-export\n- audit-log\n- renewals\n- maintenance-reminders\n- device-transfer\n- send-command\n- geofence-create\n- user-delete\n- tenant-edit\nroles:\n- all\npermissions: []\navailability: NOT IMPLEMENTED IN FRONTEND\ntechnical_reference: api/modules/features_not_in_app_api.md\n---\n\n# Features not available in the app\n\nIris must **not** give screen steps for these. The SafeFare backend supports most of them, but there is no screen (or the button is disabled) in the current app. Say clearly that the feature isn't available yet, and suggest contacting the SafeFare administrator if it is needed.\n\n| Feature | Situation in the app |\n|---|---|\n| Alarm rules (choose how each alarm type is handled: hide, display only, process, high priority) | No screen |\n| Report schedules (send reports automatically as CSV/XLSX/PDF) | No screen |\n| Report download / export, idle report |",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\features_not_in_app.md",
+    "chunk_number": 1,
+    "content": "high priority) | No screen |\n| Report schedules (send reports automatically as CSV/XLSX/PDF) | No screen |\n| Report download / export, idle report | No button / no tab |\n| Audit log | No screen |\n| Vendor (GPSTrackTech) user accounts | Deliberately not offered (vendor side effects) |\n| Device service renewals | Deliberately not offered (uses vendor credit) |\n| Uploading voice files | No screen (geofence voice prompts are view-only) |\n| Menu administration, menu permissions per role | No screen |\n| Mobile push notifications | Not in the web app |\n| Changing alarm type settings | No screen |\n| Moving (transferring) or deleting devices, creating groups | Buttons disabled |\n| Creating, editing or deleting trips | No screen (trips are detected automatically) |\n| Deleting users | Not offered (disable instead) |\n| Editing, suspending or deleting tenants | No screen |\n| In-app video playback | Not available (export clips instead) |\n| Safety heatmap, false-positive analysis, fleet health page",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\features_not_in_app.md",
+    "chunk_number": 2,
+    "content": "g tenants | No screen |\n| In-app video playback | Not available (export clips instead) |\n| Safety heatmap, false-positive analysis, fleet health page | Not shown |\n| Device diagnostics | Not shown |\n| Maintenance reminders (create, complete, cancel) | No screen |\n| Creating or editing geofences | Blocked |\n| Sending commands to devices | Disabled |\n| Assigning an alert to a person | Not available |\n| Forgot-password self-service | Not available (an admin can reset passwords) |\n| Native driver mobile app | Not in the project (drivers use My Work in the browser) |",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\geofences.md",
+    "chunk_number": 0,
+    "content": "---\nmodule: Geofences\nfeature_keys:\n- geofences\n- zones\n- route-lines\n- geofence-events\n- entry-exit\n- speed-limit\n- voice-prompts\nroutes:\n- /drive-vision/geofences\nroles:\n- users with geofence.read\npermissions:\n- geofence.read\n- geofence.delete\n- geofence.create (unused)\n- geofence.update (unused)\navailability: Read VERIFIED; create/edit NOT IMPLEMENTED\ntechnical_reference: api/modules/geofences_api.md\n---\n\n# Geofences\n\n## 1. Purpose\nA **geofence** is a virtual boundary on the map — an **area (zone)** or a **line (route corridor)** — bound to groups or devices, with rules (entry/exit, speed limit) that generate geofence events/alarms and optional voice broadcasts.\n\n## 2. Navigation\nSidebar **Manage → Geofences**. Subtitle \"Zones, route lines and their alert rules\".\n\n## 3. Screen\n- **Shape** filter: All · Zones (AREA) · Lines (LINE); list + map (AREA rings, LINE polylines; invalid geometry listed with the reason).\n- Detail: Bound to (groups/devices), Rule codes, Max speed / Speed limit",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\geofences.md",
+    "chunk_number": 1,
+    "content": "+ map (AREA rings, LINE polylines; invalid geometry listed with the reason).\n- Detail: Bound to (groups/devices), Rule codes, Max speed / Speed limit, Area type code, Voice broadcasts, Points, Synced; **Delete**.\n- **Geofence events** (scoped to the selected geofence): Date range (Today · Last 7 days · Last 30 days), event-type chips from the summary (\"All types\"); columns Time, Event, Geofence, Device, Speed, Duration.\n- **Geofence voice prompts** (\"Read-only list from the server\").\n\n## 5. Buttons\n**Delete** → \"Delete geofence\" (\"The geofence and its rules are removed on the server and from the devices it's bound to. This can't be undone here.\") — needs `geofence.delete` (+tenant).\n\n## 9. Workflows\n**Show the latest geofence events**: Geofences → select a geofence (or none for all) → Geofence events → Today/7 days.\n**Create a geofence**: NOT AVAILABLE in the app — create/edit are blocked until the backend documents the rule, area and colour codes.\n\n## 16. Business rules\nRule codes, a",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\geofences.md",
+    "chunk_number": 2,
+    "content": ": NOT AVAILABLE in the app — create/edit are blocked until the backend documents the rule, area and colour codes.\n\n## 16. Business rules\nRule codes, area type and colour index meanings are undocumented → shown raw. The screen shows whether data is \"Stored data\" or \"Live vendor data\".\n\n## 18. Common questions\n- **What is a geofence?** A virtual zone or route line; when a bound vehicle enters/leaves it or breaks its speed rule, a geofence event is recorded.\n- **Can I draw a circle?** No; SafeFare supports only AREA (polygon) and LINE shapes, and creation isn't enabled yet.\n\n## 19. Limitations\nCreate/edit missing. The stored/live label for route lines may be inaccurate (known backend issue).",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\global_search.md",
+    "chunk_number": 0,
+    "content": "---\nmodule: Global Search\nfeature_keys:\n- search\n- global-search\n- ctrl-k\n- find-vehicle\n- find-driver\nroutes:\n- header search (every screen)\nroles:\n- all users for page search; record search needs device.read\npermissions:\n- device.read (record search)\navailability: VERIFIED LIVE\ntechnical_reference: api/modules/global_search_api.md\n---\n\n# Global Search\n\n## 1. Purpose\nOne search box for app pages and fleet records (vehicles, drivers, alerts, geofences, users) returned by the server.\n\n## 2. Navigation\nTop bar \"Search vehicles, drivers, or alerts…\" or **Ctrl K**. Dialog \"Search SafeFare AI\" (\"Search pages and the records the server returns. Use arrow keys and Enter.\").\n\n## 8. Behaviour\nStarts after you type 2 characters and shows up to 8 records. Results grouped by type; linked only when you can open the target screen. Drivers get page results only.\n\n## 18. Common questions\n- **How do I quickly find a vehicle?** Press Ctrl K, type the vehicle name or device number, press Enter.\n\n## 19. L",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\global_search.md",
+    "chunk_number": 1,
+    "content": "lts only.\n\n## 18. Common questions\n- **How do I quickly find a vehicle?** Press Ctrl K, type the vehicle name or device number, press Enter.\n\n## 19. Limitations\nHit types/group keys undocumented; unknown types are listed but not linked; geofence and user hits are unlinked by design.",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\historical_video.md",
+    "chunk_number": 0,
+    "content": "---\nmodule: Historical Video\nfeature_keys:\n- historical-video\n- recordings\n- recording-calendar\n- clip-export\n- playback\n- cameras\n- channels\nroutes:\n- /drive-vision/video\nroles:\n- users with video.playback\npermissions:\n- video.playback (screen and export request)\n- video.live (live/embed — unused)\navailability: PARTIALLY IMPLEMENTED (no playback)\ntechnical_reference: api/modules/historical_video_api.md\n---\n\n# Historical Video\n\n## 1. Purpose\nFind recorded camera footage for a device by day and channel, and request clip exports (downloadable files) from the vendor.\n\n## 2. Navigation\nSidebar **Monitor → Historical Video**.\n\n## 3. Screen\n- **Device** picker (\"Choose a device\"; shows camera count) and **Channel** (All channels or 1..n from the device's camera lines/count).\n- **Recording calendar** (Previous month / Next month) — days that have recordings.\n- **Recordings** list for the selected day (IST).\n- **Playback not available yet** panel.\n- **Clip exports** (\"Jobs requested for this d",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\historical_video.md",
+    "chunk_number": 1,
+    "content": "e recordings.\n- **Recordings** list for the selected day (IST).\n- **Playback not available yet** panel.\n- **Clip exports** (\"Jobs requested for this device\") with Prev/Next paging, **Download** links, \"Link not usable\", \"No file yet\".\n\n## 5. Buttons\n| Button | Action |\n|---|---|\n| Export clip (on a recording) → **Request export** | Asks the server to prepare a downloadable clip of that recording, after confirmation \"Request a clip export?\". |\n| Download | Opens the export file URL (only real http(s) links). |\n| Try again | Reload devices. |\n\n## 9. Workflows\n**How do I view historical video?**\n1. Monitor → **Historical Video**.\n2. Choose a **Device**, optionally a **Channel**.\n3. In the **Recording calendar** pick a highlighted day (use Previous/Next month).\n4. The **Recordings** list shows that day's recordings.\n5. In-browser playback is **not available yet**; to get the footage, use **Export clip → Request export**, then wait for the job in **Clip exports** and use **Download** when a",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\historical_video.md",
+    "chunk_number": 2,
+    "content": "**not available yet**; to get the footage, use **Export clip → Request export**, then wait for the job in **Clip exports** and use **Download** when a file link appears.\n\n## 10–11. Roles / permissions\n`video.playback`. In the reference permission sets, tenant ADMIN and Safe-Fare Admin have it; a Fleet Owner only if the role includes it.\n\n## 16. Business rules\n- Exports may consume vendor credit or device data — NOT VERIFIED.\n- Placeholder hosts (e.g. `example.invalid`) are shown as \"Link not usable\".\n\n## 17. Errors\n\"The server didn't accept the export\" toast; \"Couldn't load devices\"; empty states \"No recordings\", \"No exports\".\n\n## 18. Common questions\n- **Why is historical video unavailable / won't play?** In-app playback needs the vendor's video SDK/player, which hasn't been provided; recordings can be listed and exported only. Also check the device is video-capable and has recordings on that day (calendar).\n- **Why does my export have no download link?** The job may still be processi",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\historical_video.md",
+    "chunk_number": 3,
+    "content": "k the device is video-capable and has recordings on that day (calendar).\n- **Why does my export have no download link?** The job may still be processing; the list refreshes only when you reload it (no auto-refresh).\n\n## 19. Limitations\nPLAYBACK NOT AVAILABLE. Export status values and cost are undocumented. The export list doesn't refresh automatically.",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\iris_assistant.md",
+    "chunk_number": 0,
+    "content": "---\nmodule: Iris AI / Assistant\nfeature_keys:\n- iris\n- assistant\n- ai-assistant\n- ask-iris\n- prompts\n- chatbot\nroutes:\n- header launcher 'Ask Iris' (every fleet screen)\nroles:\n- users with device.read (not drivers)\npermissions:\n- device.read\navailability: Prompts VERIFIED; ask NOT VERIFIED\ntechnical_reference: api/modules/iris_assistant_api.md\n---\n\n# Iris AI / Assistant\n\n## 1. What exists today\nThe frontend has a chat panel **Iris AI** (\"Answers from the SafeFare server\"). It calls the **Java** assistant (`assistant-controller`), which is rule-based with fixed intents: LICENCE_EXPIRY, RISKY_DRIVERS, DRIVER_AVAILABILITY, ACTIVE_TRIPS, OPEN_ALERTS, DEVICE_HEALTH, FLEET_STATUS, OVERVIEW, HELP. Answers may be flagged `simulated` (\"The server marked this answer as simulated\").\n\n## 2. Navigation\nTop bar launcher \"Open Iris, the SafeFare AI assistant\" / **Ask Iris**. Can be hidden per browser in Settings → This browser → Show AI assistant.\n\n## 3. Panel\nSuggested prompts (from the server), mes",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\iris_assistant.md",
+    "chunk_number": 1,
+    "content": "stant\" / **Ask Iris**. Can be hidden per browser in Settings → This browser → Show AI assistant.\n\n## 3. Panel\nSuggested prompts (from the server), message box \"Ask about vehicles, alerts, trips…\" (≤ 500 characters), **Send**, **Clear conversation**, **Close assistant**; answers show a link to the related screen when the user may open it (Open licence expiries, Open Safety Analytics, Open availability, Open Trips, Open incidents, Open Vehicles, Open Live Monitoring, Open Fleet Overview) and clickable suggestions.\n\n## 16. Rules\nFailures are shown as errors, never replaced by a local answer. The old in-browser rule engine was deleted.\n\n## 18. Common questions\n- **What can Iris do?** Answer fleet questions using SafeFare data you're allowed to see, explain how to use SafeFare screens, and link to the right page.\n- **Why can't drivers use Iris?** The current Java assistant requires `device.read`.\n\n## 19. Limitations / integration notes for the new Iris AI\n- The current panel has no conversa",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\iris_assistant.md",
+    "chunk_number": 2,
+    "content": "?** The current Java assistant requires `device.read`.\n\n## 19. Limitations / integration notes for the new Iris AI\n- The current panel has no conversation history and no tables.\n- Drivers can't use it yet.",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\leave_management.md",
+    "chunk_number": 0,
+    "content": "---\nmodule: Leave Management\nfeature_keys:\n- leave\n- leave-requests\n- approve-leave\n- reject-leave\n- request-leave\n- pending-leave\n- leave-types\nroutes:\n- /drive-vision/workforce?tab=leave\n- /drive-vision/my-work/leave\nroles:\n- fleet users with workforce.*; drivers via My Work\npermissions:\n- workforce.read\n- workforce.create\n- workforce.update\n- own.data.read (driver)\navailability: Read VERIFIED; writes NOT VERIFIED\ntechnical_reference: api/modules/leave_management_api.md\n---\n\n# Leave Management\n\n## 1. Purpose\nDrivers request leave; fleet managers see, create (on behalf of a driver), approve or reject leave requests. Approved leave affects availability and dispatch conflict checks.\n\n## 2. Navigation\n- Fleet: **Workforce → Leave** tab.\n- Driver: **My Work → My Leave**.\n\n## 3. Screens\nFleet: Leave requests table (driver, Type, Dates, status), **Request leave for a driver**, Approve/Reject dialog with \"Note (optional)\" and the dispatches affected by the leave. Driver: Requests by status,",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\leave_management.md",
+    "chunk_number": 1,
+    "content": "), **Request leave for a driver**, Approve/Reject dialog with \"Note (optional)\" and the dispatches affected by the leave. Driver: Requests by status, **Request leave**, **Cancel request**.\n\n## 6. Form\nDriver (fleet form only, required: \"Choose a driver\"), **Leave type** (CASUAL, SICK, ANNUAL, UNPAID, OTHER), **First day**, **Last day** (not before first day), **Reason** (≤ 500).\n\n## 9. Workflows\n**How can I approve a leave request?**\n1. Fleet → **Workforce** → **Leave** tab.\n2. Find the pending request.\n3. **Approve** or **Reject** → optional note → confirm. The dialog lists dispatches affected by the leave; what happens to them is decided by the server.\n**Request leave for a driver**: Leave tab → **Request leave for a driver** → driver, type, dates, reason → submit.\n**Driver: request leave**: My Work → My Leave → **Request leave** → type, first/last day, reason → submit. Cancel a pending one with **Cancel request**.\n\n## 11. Permissions\nList `workforce.read`; create `workforce.create`;",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\leave_management.md",
+    "chunk_number": 2,
+    "content": ", first/last day, reason → submit. Cancel a pending one with **Cancel request**.\n\n## 11. Permissions\nList `workforce.read`; create `workforce.create`; approve/reject `workforce.update`; driver self-service `own.data.read` (+ `driver.app`).\n\n## 18. Common questions\n- **Which drivers have pending leave requests?** Workforce → Leave (status PENDING); Fleet Overview shows the \"Pending leave\" count.\n- **What is my leave request status?** (driver) My Work → My Leave.\n- **What leave statuses are there?** Leave request status values: PENDING, APPROVED, REJECTED, CANCELLED.\n\n## 19. Limitations\nWrites not verified live.",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\live_monitoring.md",
+    "chunk_number": 0,
+    "content": "---\nmodule: Live Monitoring\nfeature_keys:\n- live-map\n- realtime\n- positions\n- report-age\n- live-video\n- follow-vehicle\nroutes:\n- /drive-vision/monitoring\n- /drive-vision/monitoring?vehicle=<deviceId>\nroles:\n- any user with device.read\npermissions:\n- device.read\navailability: VERIFIED LIVE\ntechnical_reference: api/modules/live_monitoring_api.md\n---\n\n# Live Monitoring\n\n## 1. Purpose\nMap and list of every device's latest reported position, speed, battery and active alarm, refreshed automatically; open a device's live camera.\n\n## 2. Navigation\nSidebar **Monitor → Live Monitoring**. Deep links: `?vehicle=<deviceId>` selects a device.\n\n## 3. Screen\n- Header line: \"<n> online · <n> offline (server counts) · updated <time>\"; **Refresh** (\"Refresh positions now\").\n- **Vehicle list** with **Search vehicles** (\"Name or device ID\"), **Report age filter** (All · ≤ 5 min · ≤ 1 h · Stale · No position), **Group** (All groups), **Alarms** toggle (\"Show only devices reporting an active alarm\").\n- **Liv",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\live_monitoring.md",
+    "chunk_number": 1,
+    "content": "er** (All · ≤ 5 min · ≤ 1 h · Stale · No position), **Group** (All groups), **Alarms** toggle (\"Show only devices reporting an active alarm\").\n- **Live map** (MapLibre + MapTiler, or a coordinate-grid fallback when no map key is configured). \"Nothing to plot\" when no device has usable coordinates.\n- **Device panel**: Speed, Heading, Odometer, Battery, Altitude, Position, Device time, Received, Video capable, raw sensor values; buttons **Track history** (opens Trips & Tracking) and **Details** (device detail page).\n- **Live video** popup: opens when a device is picked from the list or map.\n\n## 4. Report-age legend\n| Label | Meaning |\n|---|---|\n| ≤ 5 min | Reported within 5 minutes (current) |\n| ≤ 1 h | Reported within the last hour |\n| Stale | Last report over 1 hour ago |\n| No time | Device sent no report time |\nOnline/offline totals are the server's counts; undocumented device status codes are not used for colours or filters.\n\n## 9. Workflows\n**Find a vehicle on the map**: Live Monito",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\live_monitoring.md",
+    "chunk_number": 2,
+    "content": "the server's counts; undocumented device status codes are not used for colours or filters.\n\n## 9. Workflows\n**Find a vehicle on the map**: Live Monitoring → type its name or device ID in Search vehicles → pick it → map centres and the panel opens.\n**Watch live camera**: pick the device → the Live video popup opens (vendor player, channels 1..camera count). If it says \"Live video unavailable\", the device has no terminal number or live video isn't configured for this installation.\n**See where it has been**: device panel → **Track history**.\n\n## 10–11. Roles / permissions\n`device.read`. Drivers have no access.\n\n## 16. Business rules\n- Positions plotted only with valid WGS84 coordinates; (0,0) is treated as \"no fix\".\n- `sensors` values are shown raw (units undocumented).\n\n## 17. Errors\nRealtime failure keeps the last data and shows the error; 503 = vendor unavailable.\n\n## 18. Common questions\n- **Why is a device showing offline?** The server reports it isn't sending data to the GPS vendor.",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\live_monitoring.md",
+    "chunk_number": 3,
+    "content": "503 = vendor unavailable.\n\n## 18. Common questions\n- **Why is a device showing offline?** The server reports it isn't sending data to the GPS vendor. Common causes (unverified for any specific device): vehicle ignition off / device powered down, no mobile network, SIM expired, device service expired, hardware fault. Check Last report time, Battery and the device's service expiry on its detail page.\n- **Why is my vehicle not on the map?** It has no valid coordinates (no GPS fix or 0,0), or it's filtered out (group, report age, alarms-only, search).\n- **How often does the map update?** Every 30 seconds by default, or press Refresh.\n\n## 19. Limitations\n- There is **no online/offline filter** on this screen. The Fleet Overview \"Offline\" tile opens this page, but the list is not filtered to offline devices. To find offline devices use the \"Stale\" report-age filter as an approximation, or ask Iris (live data).\n- No instant (push) updates; the page refreshes on a timer.",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\maintenance.md",
+    "chunk_number": 0,
+    "content": "---\nmodule: Maintenance (reminders)\nfeature_keys:\n- maintenance\n- maintenance-reminders\n- service-due\n- insurance-due\n- upcoming-maintenance\nroutes:\n- no dedicated screen — reminders appear on /drive-vision/overview (Upcoming reminders) and device detail (Dates & reminders)\nroles:\n- users with device.read (dashboard); maintenance.* for the API\npermissions:\n- maintenance.read\n- maintenance.create\n- maintenance.update\navailability: NOT IMPLEMENTED IN FRONTEND (reminders from device dates only)\ntechnical_reference: api/modules/maintenance_api.md\n---\n\n# Maintenance\n\n## 1. What exists\n- **In the app:** Fleet Overview → **Upcoming reminders** lists *Service expiry*, *Insurance due* and *Maintenance due* dates taken from each device record, overdue included; the window follows your expiry-reminder setting in Settings. The device detail page shows the same dates under *Dates & reminders*. Insurance/maintenance due dates can be edited in the device **Edit** form.\n- **Not in the app:** creating,",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\maintenance.md",
+    "chunk_number": 1,
+    "content": "s the same dates under *Dates & reminders*. Insurance/maintenance due dates can be edited in the device **Edit** form.\n- **Not in the app:** creating, updating, completing or cancelling maintenance reminders (including mileage-based reminders) is supported by the backend but has no screen.\n\n## 9. Workflow\n**When is a vehicle's next maintenance?** Fleet Overview → Upcoming reminders, or Vehicles & Assets → device → Dates & reminders → Next maintenance.\n\n## 18. Common questions\n- **Can I create a maintenance reminder?** Not in the app; there is no maintenance screen yet.\n\n## 19. Limitations\nNo maintenance screen; mileage-based reminders not shown.",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\notifications.md",
+    "chunk_number": 0,
+    "content": "---\nmodule: Notifications\nfeature_keys:\n- notifications\n- notification-bell\n- unread-count\n- mark-read\n- mark-all-read\nroutes:\n- header bell (every screen)\nroles:\n- all signed-in users\npermissions:\n- none (any signed-in user)\navailability: Read VERIFIED (empty)\ntechnical_reference: api/modules/notifications_api.md\n---\n\n# Notifications\n\n## 1. Purpose\nIn-app notifications for the signed-in user (alarms, AI events, geofence events, dispatches, leave, swaps, shifts, expiries, maintenance, commands, sensors, system).\n\n## 2. Navigation\nBell icon in the top bar (badge = unread count). Drivers use the same bell.\n\n## 3. Panel\nList of notifications (newest first), each opening its related page when the user may open it; per-item mark read/unread; **Mark all as read**; footer \"Open Alerts & Events\" (fleet users); empty state \"No notifications — You're all caught up.\"\n\n## 4. Notification types\nAlarm, AI event, Geofence, Dispatch, Leave, Swap, Shift, Expiry, Maintenance, Command, Sensor and System",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\notifications.md",
+    "chunk_number": 1,
+    "content": "re all caught up.\"\n\n## 4. Notification types\nAlarm, AI event, Geofence, Dispatch, Leave, Swap, Shift, Expiry, Maintenance, Command, Sensor and System notifications. Each opens its related page when you are allowed to open it.\n\n## 9. Workflows\n**Show recent notifications**: select the bell. **Mark all read**: bell → Mark all as read.\n\n## 16. Business rules\n- The count is read on page load and when the panel closes — **no polling or push** (the badge can be stale).\n- Links: leave → Workforce › Leave (fleet) or My Leave (driver); swaps → Dispatch › Swap requests (fleet) or My Work (driver); otherwise the related record page if the user can open it.\n\n## 18. Common questions\n- **Why am I not receiving notifications?** The bell only refreshes on load or when the panel closes — reload the page. There are no push or email notifications in the web app. The server decides which events notify which users (NOT DOCUMENTED).\n\n## 19. Limitations\nNo automatic refresh or push notifications.",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\platform_overview.md",
+    "chunk_number": 0,
+    "content": "---\nmodule: Platform Overview (Safe-Fare Admin dashboard)\nfeature_keys:\n- platform-dashboard\n- all-tenants\n- platform-kpis\nroutes:\n- /drive-vision/platform\nroles:\n- Safe-Fare Admin only\npermissions:\n- tenant.all + platform=true; widgets device.read\n- alarm.read\n- group.read\navailability: IMPLEMENTED, NOT VERIFIED here\ntechnical_reference: api/modules/platform_overview_api.md\n---\n\n# Platform Overview\n\n## 1. Purpose\nHome screen for the **Safe-Fare Admin** (platform administrator): tenants, devices, alerts and activity across the whole platform.\n\n## 2. Navigation\nSidebar **Platform → Platform Overview**. It is the Safe-Fare Admin's landing page after sign-in.\n\n## 3–4. Sections\n- **Tenants** count and per-tenant table (Tenant, Status, Users, Drivers — \"Per-tenant counts reported by the server (always platform-wide)\").\n- **Device groups** count.\n- **Fleet operations** (status breakdown).\n- **Alerts & AI events**: Open alerts, *By severity (server scale)*, *Recent open events*.\n- **Platform",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\platform_overview.md",
+    "chunk_number": 1,
+    "content": "t.\n- **Fleet operations** (status breakdown).\n- **Alerts & AI events**: Open alerts, *By severity (server scale)*, *Recent open events*.\n- **Platform quick links**: Fleet Overview (\"All-tenant fleet view\"), Alerts & Events, Accounts & roles.\n- **Refresh** (\"Refresh platform data\").\n\n## 5–8.\nNo forms. Each widget shows \"No permission for this widget\" or \"Nothing returned\" when applicable.\n\n## 9. Workflow — work inside one tenant\n1. From Platform Overview open **Tenants** (or the tenant switcher in the top bar).\n2. Select a tenant → all data and actions apply to that tenant.\n3. Use **Return to all tenants** to go back to platform-wide view.\n\n## 10–11. Roles / permissions\nOnly `platform === true` **and** `tenant.all`. A tenant ADMIN never sees it even with the same codes.\n\n## 16. Business rules\nFigures are platform-wide unless a tenant is selected. Severity is shown on the server's raw scale.\n\n## 18. Common questions\n- **How many organisations are registered?** Platform Overview → Tenants",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\platform_overview.md",
+    "chunk_number": 2,
+    "content": "lected. Severity is shown on the server's raw scale.\n\n## 18. Common questions\n- **How many organisations are registered?** Platform Overview → Tenants count (Safe-Fare Admin only).\n- **Why can't a tenant admin see Platform Overview?** It requires the platform flag; tenant administrators are not platform users.\n\n## 19. Limitations\nNOT VERIFIED live; per-tenant user/driver counts depend on what the server returns.",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\reports.md",
+    "chunk_number": 0,
+    "content": "---\nmodule: Reports\nfeature_keys:\n- reports\n- mileage-report\n- driving-report\n- parking-report\n- media-report\n- export\nroutes:\n- /drive-vision/reports\nroles:\n- users with report.read\npermissions:\n- report.read; report.schedule (schedules — no screen)\navailability: VERIFIED LIVE; no download\ntechnical_reference: api/modules/reports_api.md\n---\n\n# Reports\n\n## 1. Purpose\nTabular reports per device and period: **Mileage**, **Driving**, **Parking** and **Media** (captured images/videos).\n\n## 2. Navigation\nSidebar **Monitor → Reports**.\n\n## 3. Screen\n- **Report** selector: Mileage · Driving · Parking · Media.\n- **Time range**: Today · Last 7 days (default) · Last 30 days, and device filter (**All devices** or one device).\n- **Load again up to the current time** (refresh).\n\n## 7. Columns\n| Report | Columns |\n|---|---|\n| Mileage | Device, Period, Distance (sortable), Odometer start, Odometer end; total km summed from rows |\n| Driving / Parking | Device, Start, End, Duration |\n| Media | Device,",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\reports.md",
+    "chunk_number": 1,
+    "content": "Distance (sortable), Odometer start, Odometer end; total km summed from rows |\n| Driving / Parking | Device, Start, End, Duration |\n| Media | Device, Captured, Channel, Type · trigger (raw codes), File (**Open**) |\n\n## 8. Paging\nDriving, Parking and Media: server paging, 20 per page. Mileage: not paged.\n\n## 9. Workflows\n**How can I generate a report?** Reports → pick the **Report** type → choose the time range → (optional) pick a device → results load automatically. Use **Load again up to the current time** to refresh.\n**How can I download reports?** There is **no download/export button** in the current app. The backend can export and schedule reports (CSV/XLSX/PDF), but no screen offers it yet — NOT IMPLEMENTED IN FRONTEND.\n\n## 10–11. Roles / permissions\n`report.read`.\n\n## 16. Business rules\nMedia links rendered only for real http(s) URLs. Media type and trigger are shown as raw codes (meanings undocumented).\n\n## 17. Errors\n503 shown as \"unavailable\", not empty. \"Couldn't load the dev",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\reports.md",
+    "chunk_number": 2,
+    "content": "s. Media type and trigger are shown as raw codes (meanings undocumented).\n\n## 17. Errors\n503 shown as \"unavailable\", not empty. \"Couldn't load the device list for the filter.\"\n\n## 18. Common questions\n- **How do I see total distance driven?** Reports → Mileage → range → the total km is summed from the rows.\n- **Can I schedule reports by email?** Not from the app (the backend supports it, but there is no screen).\n\n## 19. Limitations\nNo export/download, no idle report tab, no schedules screen.",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\roles_permissions_admin.md",
+    "chunk_number": 0,
+    "content": "---\nmodule: Roles and Permissions administration (Global Roles, Permission Catalogue)\nfeature_keys:\n- roles\n- global-roles\n- permissions\n- permission-catalogue\n- role-permission-matrix\n- assign-permissions\nroutes:\n- /drive-vision/platform/roles\n- /drive-vision/platform/permissions\nroles:\n- Safe-Fare Admin only\npermissions:\n- role.read\n- role.manage\n- role.permission.read\n- role.permission.create\n- role.permission.delete\n- role.permission.update\n- permission.manage\navailability: IMPLEMENTED, NOT VERIFIED here\ntechnical_reference: api/modules/roles_permissions_admin_api.md\n---\n\n# Roles and Permissions administration\n\n## 1. Purpose\nDefine global roles and which permission codes each role holds. Only the Safe-Fare Admin configures roles in the frontend; changes affect everyone with that role at their next sign-in or token refresh.\n\n## 2. Navigation\n**Platform → Global Roles** and **Platform → Permission Catalogue**.\n\n## 3. Screens\n- **Global Roles**: tabs Global roles / Tenant roles (view",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\roles_permissions_admin.md",
+    "chunk_number": 1,
+    "content": "gation\n**Platform → Global Roles** and **Platform → Permission Catalogue**.\n\n## 3. Screens\n- **Global Roles**: tabs Global roles / Tenant roles (view only); search (\"Search code, description or id\"), Role scope, Role flags; columns Code, Description, Scope, Flags (Protected, Full access, Not assignable), Active users; **New global role**, **Edit description**, **Delete role**, **Permissions** editor (Assigned / Not assigned / Changed → **Review changes**).\n- **Permission Catalogue**: views Catalogue / Role permissions; filter by scope and code prefix; **New permission**, **Edit**, **Delete permission**; **Role permissions** matrix: Select role → tick permissions by module → **Save permissions** (\"Replaces the role's whole permission list on the server\").\n\n## 6. Rules\nRole code: uppercase letters, digits and `_`, starting with a letter (2–30). Permission code: lowercase dotted, e.g. `device.read` (max 60). Full-access roles have no editable list. Protected or in-use roles/codes are refu",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\roles_permissions_admin.md",
+    "chunk_number": 2,
+    "content": "30). Permission code: lowercase dotted, e.g. `device.read` (max 60). Full-access roles have no editable list. Protected or in-use roles/codes are refused by the server.\n\n## 9. Workflows\n**Give a role a permission**: Global Roles → open role → Permissions → tick codes → Review changes → save. Or Permission Catalogue → Role permissions → Select role → tick → Save permissions.\n\n## 18. Common questions\n- **Why can't I access a menu?** Your role lacks the screen's permission code (see `roles_permissions.md`); the Safe-Fare Admin can add it here.\n- **Can a tenant admin edit roles?** Not in this app (platform-only by product rule).\n\n## 19. Limitations\nMenu-level permissions per role aren't editable in the app. Changes have not been verified live.",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\routine_alarms.md",
+    "chunk_number": 0,
+    "content": "---\nmodule: Routine Alarms\nfeature_keys:\n- routine-alarms\n- alarms\n- overspeed\n- sos\n- power-cut\n- geofence-alarm\n- device-alarm\nroutes:\n- /drive-vision/alerts?kind=routine\nroles:\n- users with alarm.read\npermissions:\n- alarm.read\navailability: VERIFIED LIVE\ntechnical_reference: api/modules/routine_alarms_api.md\n---\n\n# Routine Alarms\n\n## 1. Purpose\nNon-AI alarms reported by the GPS terminal (for example overspeed, SOS/emergency, power/disconnection, geofence entry/exit — the exact types are supplied by the server; NOT VERIFIED per tenant).\n\n## 2. Navigation\nSafety → Alerts & Events → **Alarm kind = Routine alarms**.\n\n## 3. Screen\nSame filters, columns and drawer as AI events (see `ai_alarms.md`).\n\n## 9. Workflow — Show today's alarms\nAlerts & Events → **Routine alarms** (and **AI events**) → Time range **Today**. The tab chips show the total for each kind. Fleet Overview's Fleet activity chart shows both kinds together.\n\n## 17. Errors\n503 → \"Routine alarms unavailable\" (never shown as z",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\routine_alarms.md",
+    "chunk_number": 1,
+    "content": "al for each kind. Fleet Overview's Fleet activity chart shows both kinds together.\n\n## 17. Errors\n503 → \"Routine alarms unavailable\" (never shown as zero).\n\n## 18. Common questions\n- **How many alarms this month?** Alerts & Events, Time range Last 30 days (closest option; there is no calendar-month option) — the tab count is the server total. Or ask Iris (live data).\n\n## 19. Limitations\nAlarm rules that control how alarm types are handled have no screen.",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\safety_analytics.md",
+    "chunk_number": 0,
+    "content": "---\nmodule: Safety Analytics\nfeature_keys:\n- safety-analytics\n- safety-trends\n- events-by-type\n- events-by-severity\n- events-by-hour\n- top-drivers\n- top-vehicles\n- risk\nroutes:\n- /drive-vision/safety\nroles:\n- users with alarm.read\npermissions:\n- alarm.read\navailability: VERIFIED LIVE (read)\ntechnical_reference: api/modules/safety_analytics_api.md\n---\n\n# Safety Analytics\n\n## 1. Purpose\nSafety event trends for the fleet — totals, events per day, by type, by severity, by hour of day, the drivers and vehicles with most events — and the server-computed safety score tables (see `safety_scores.md`).\n\n## 2. Navigation\nSidebar **Safety → Safety Analytics**. Subtitle \"Event trends and safety scores for drivers and vehicles\".\n\n## 3. Sections\n- **Date range**: Today · Last 7 days · Last 30 days (default).\n- **Totals**: Events, Avg. resolution, severe share.\n- **Events per day** (\"All events and the severe share\").\n- **By event type**, **By severity** (\"Severity labels as supplied by the server\"),",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\safety_analytics.md",
+    "chunk_number": 1,
+    "content": "share.\n- **Events per day** (\"All events and the severe share\").\n- **By event type**, **By severity** (\"Severity labels as supplied by the server\"), **By hour of day**.\n- **Most events · drivers**, **Most events · vehicles**.\n- **Safety scores** table (Scores for Drivers / Vehicles).\n\n## 9. Workflows\n**Which vehicles have the highest risk?** Safety Analytics → Date range → *Most events · vehicles*, or Safety scores → **Vehicles** → lowest score / most severe events. \"Risk\" is not a separate field; use score, severe count and penalty points from the server.\n**Show safety analytics**: open the screen and choose the range.\n\n## 16. Business rules\nOnly server numbers are shown; the old client-side scoring formula was removed.\n\n## 18. Common questions\n- **What is safety analytics?** Charts of safety events (AI events + routine alarms) over time and by type/severity, to find risky behaviour.\n- **What is a severe event?** One the server classifies as severe; the severity scale itself is not d",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\safety_analytics.md",
+    "chunk_number": 2,
+    "content": "e and by type/severity, to find risky behaviour.\n- **What is a severe event?** One the server classifies as severe; the severity scale itself is not documented.\n\n## 19. Limitations\nHeatmap and false-positive analytics are supported by the backend but not shown in the app.",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\safety_scores.md",
+    "chunk_number": 0,
+    "content": "---\nmodule: Safety Scores\nfeature_keys:\n- safety-score\n- driver-score\n- vehicle-score\n- grade\n- penalty-points\n- my-safety-score\nroutes:\n- /drive-vision/safety (Safety scores)\n- /drive-vision/drivers (driver drawer)\n- /drive-vision/my-work/safety\nroles:\n- fleet users with alarm.read; drivers for their own score\npermissions:\n- alarm.read\n- own.data.read (driver)\navailability: VERIFIED LIVE (read)\ntechnical_reference: api/modules/safety_scores_api.md\n---\n\n# Safety Scores\n\n## 1. Purpose\nA server-computed **score** and **grade** per driver or vehicle for a period, based on alarm counts, severe events and penalty points relative to trips and distance.\n\n## 3. Where\n- Safety Analytics → **Safety scores** (\"Server-computed score and grade per driver or vehicle\"), **Scores for** Drivers / Vehicles. Columns: Driver/Vehicle, Score (with grade), Alarms, Severe, Penalty pts, Trips, Distance. Server-paged.\n- Drivers → driver drawer → Safety (Score, Alarms · severe, Distance; last 30 days).\n- Driver",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\safety_scores.md",
+    "chunk_number": 1,
+    "content": "ms, Severe, Penalty pts, Trips, Distance. Server-paged.\n- Drivers → driver drawer → Safety (Score, Alarms · severe, Distance; last 30 days).\n- Driver app → My Work → **My Safety** (Safety score, last 30 days; Events by type; Recent safety events).\n\n## 9. Workflows\n**Check a driver's safety score**: Drivers → open the driver → Safety panel; or Safety Analytics → Safety scores → Drivers.\n**Show the safety scores of my vehicles**: Safety Analytics → Safety scores → **Vehicles**.\n**Driver: show my safety score**: My Work → **My Safety**.\n\n## 15. What the score fields mean\n- **Score** and **grade**: the overall result for the period (higher is safer — NOT VERIFIED; scale not documented).\n- **Alarms** / **Severe**: number of safety events and how many were severe.\n- **Penalty points**: points the server adds for safety events; they lower the score.\n- **Trips** and **Distance**: how much was driven in the period, for context.\n\n## 16. Business rules\nThe scoring formula is defined by the backen",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\safety_scores.md",
+    "chunk_number": 2,
+    "content": "ore.\n- **Trips** and **Distance**: how much was driven in the period, for context.\n\n## 16. Business rules\nThe scoring formula is defined by the backend and is NOT DOCUMENTED; Iris must not explain it beyond these fields.\n\n## 18. Common questions\n- **How is the safety score calculated?** By the SafeFare server from alarms, severe events and penalty points over the period; the exact formula is not documented.\n- **Why does a driver have no score?** No data for the period (\"The server returned no score for this period\").",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\sensors_passenger_counting.md",
+    "chunk_number": 0,
+    "content": "---\nmodule: Sensors (passenger counting, BMS reconciliation, alcohol detection)\nfeature_keys:\n- sensors\n- passenger-count\n- bms\n- ir-sensor\n- capacity\n- over-capacity\n- alcohol-detection\n- sensor-readings\n- recalculate-stops\nroutes:\n- /drive-vision/sensors\nroles:\n- users with sensor.read\npermissions:\n- sensor.read\n- sensor.ingest\n- device.read (bus picker)\navailability: IMPLEMENTED, NOT VERIFIED\ntechnical_reference: api/modules/sensors_passenger_counting_api.md\n---\n\n# Sensors — passenger counting, BMS reconciliation and alcohol check\n\n## 1. Purpose\nFor buses: stop-by-stop passenger counts from the **IR door sensor** compared with the **BMS** (ground-truth boarding records), bus capacity and over-capacity, raw sensor readings, and the latest **alcohol sensor** result.\n\n## 2. Navigation\nSidebar **Monitor → Sensors**. Subtitle \"Stop-wise passenger counts, sensor vs BMS reconciliation and bus capacity\".\n\n## 3. Screen\n- **Bus** picker (needs `device.read`; \"Choose a bus\"), **Time window (IS",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\sensors_passenger_counting.md",
+    "chunk_number": 1,
+    "content": "senger counts, sensor vs BMS reconciliation and bus capacity\".\n\n## 3. Screen\n- **Bus** picker (needs `device.read`; \"Choose a bus\"), **Time window (IST)**: Last 24 h · Today · Yesterday · 7 days · Custom (From/To).\n- **Passenger summary**: Bus capacity, On board · BMS, On board · sensor, Latest difference, Match rate, Over-capacity stops.\n- **View** tabs: *Sensor vs BMS* (Stop, BMS in/out, Actual, Sensor in/out, Difference, Status, Notes), *Stops* (Seq, Sensor reported, Boarded, Alighted, On board (BMS)), *BMS records* (BMS id …), *Sensor readings* (Type, Data, Active; filter Sensor type).\n- **Alcohol check · latest reading** (Time, Sensor, Value, Result).\n- Buttons **Refresh**, **Recalculate**, **Add reading**.\n\n## 5. Buttons\n| Button | Permission | Action |\n|---|---|---|\n| Recalculate | sensor.ingest (+tenant) | \"Rebuilds stop visits from GPS and raises any new over-capacity or mismatch alerts for the selected window. Running it again changes nothing.\" (max 7 days) |\n| Add reading |",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\sensors_passenger_counting.md",
+    "chunk_number": 2,
+    "content": "om GPS and raises any new over-capacity or mismatch alerts for the selected window. Running it again changes nothing.\" (max 7 days) |\n| Add reading | sensor.ingest (+tenant) | Stores one sensor reading |\n\n## 6. Add sensor reading form\nSensor type, Sensor ID (e.g. IR-01; 1–100 letters, digits, dot, underscore, colon or hyphen), Time (IST; ≤ 5 min in future), data (IR: in/out/count 0–300; Alcohol: Result \"Alcohol detected (1)\" / \"Not detected (0)\"), Active reading. Duplicate identical reading → \"Reading already stored\"; same time different value → 409.\n\n## 16. Business rules (contract)\n- actualCount (BMS) = previous + boarded − alighted; sensorCount likewise from IR; difference = sensor − actual. `null` means UNKNOWN, never 0. Counts are \"on board at that moment\" — never add them across stops.\n- Bus capacity = the vehicle's passenger capacity, otherwise 44 (the screen shows which one is used).\n- Comparison status: MATCH (green), MISMATCH (amber), OVER_CAPACITY / OVER_CAPACITY_MISMATCH (r",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\sensors_passenger_counting.md",
+    "chunk_number": 3,
+    "content": "ty, otherwise 44 (the screen shows which one is used).\n- Comparison status: MATCH (green), MISMATCH (amber), OVER_CAPACITY / OVER_CAPACITY_MISMATCH (red), NO_BMS / NO_SENSOR_COUNT (grey).\n- Window default 24 h, max 31 days; lists capped at 1000 rows (\"Only the first 1000 rows are shown — narrow the time window\").\n- Alcohol: \"1\" = DETECTED, \"0\" = NOT_DETECTED, anything else INVALID_READING, none = NO_READING. NO_READING / INVALID_READING never mean \"not detected\".\n- Sensor alerts arrive as notifications of type `SENSOR` (PASSENGER_OVER_CAPACITY, PASSENGER_COUNT_MISMATCH, SENSOR_CHANGE).\n\n## 18. Common questions\n- **What is BMS?** The bus boarding records used as ground truth for passenger counts.\n- **Why is the sensor count different from BMS?** The IR door sensor missed or double-counted passengers; see the Difference and Notes columns (e.g. SENSOR_READINGS_MISSING, BMS_SEQUENCE_GAP).\n- **How do I check if a driver's alcohol test failed?** Sensors → choose the bus → *Alcohol check · la",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\sensors_passenger_counting.md",
+    "chunk_number": 4,
+    "content": ".g. SENSOR_READINGS_MISSING, BMS_SEQUENCE_GAP).\n- **How do I check if a driver's alcohol test failed?** Sensors → choose the bus → *Alcohol check · latest reading*.\n\n## 19. Limitations\nThe vehicle form can't set passenger capacity, so capacity is 44 unless set by an administrator through the backend. NOT VERIFIED live.",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\settings.md",
+    "chunk_number": 0,
+    "content": "---\nmodule: Settings (profile, password, preferences)\nfeature_keys:\n- settings\n- profile\n- change-password\n- preferences\n- workspace-preferences\n- video-layout\n- expiry-reminders\n- night-mode\nroutes:\n- /drive-vision/settings\nroles:\n- all signed-in fleet users (not driver logins)\npermissions:\n- any signed-in user (non-empty permission set)\navailability: VERIFIED LIVE (profile, prefs)\ntechnical_reference: api/modules/settings_api.md\n---\n\n# Settings\n\n## 1. Purpose\nYour own account: profile details, password, server-saved workspace preferences and browser-only display options.\n\n## 2. Navigation\nSidebar **Administration → Settings**. Not shown to driver logins (drivers use My Work → My Profile).\n\n## 3. Sections\n1. **Profile** — \"Your account details on the SafeFare server\": Display name, Email, Phone, Locale, Time zone, Tenant (read-only). **Save** / **Discard**.\n2. **Change password** — \"Takes effect on the server; other sessions may need to sign in again\".\n3. **Workspace preferences** — \"",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\settings.md",
+    "chunk_number": 1,
+    "content": "ave** / **Discard**.\n2. **Change password** — \"Takes effect on the server; other sessions may need to sign in again\".\n3. **Workspace preferences** — \"Saved to your account on the SafeFare server\": Video layout (GRID_1, GRID_4, GRID_9, GRID_16), auto-stop, Expiry reminders (NONE, BADGE, POPUP_AND_BADGE) and reminder days, alarm pop-up limits, Cluster map markers, Night mode.\n4. **This browser** — \"stored on this device only\": Reduce motion, Show AI assistant (Iris launcher), Overview cards.\n\n## 6. Validation\nProfile: Display name required (≤150), Email valid (≤320), Phone 5–30 (digits, spaces, + ( ) -), Locale like en or en_IN, Time zone ≤50. Password: Current password required; New password required (≤72) and different from current; Confirm must match. No strength rule is documented.\n\n## 9. Workflows\n**How do I change my password?** Settings → **Change password** → current password, new password, confirm → save. (Drivers: My Work → **My Profile** → Change password.)\n**Update my phone n",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\settings.md",
+    "chunk_number": 2,
+    "content": "ngs → **Change password** → current password, new password, confirm → save. (Drivers: My Work → **My Profile** → Change password.)\n**Update my phone number**: Settings → Profile → Phone → Save.\n\n## 16. Business rules\nProfile saves only the fields you changed. Some stored preferences (theme, home modules, device info fields, track alarm types) can't be edited here and are kept as they are.\n\n## 18. Common questions\n- **I forgot my password.** There is no self-service reset; ask an administrator to use Users & Sub-Accounts → Reset password.\n\n## 19. Limitations\nThe language preference is stored but the app is not translated yet. Clearing optional profile fields not supported.",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\tenants_organizations.md",
+    "chunk_number": 0,
+    "content": "---\nmodule: Organizations / Tenants\nfeature_keys:\n- tenants\n- organizations\n- tenant-switcher\n- tenant-selection\n- create-tenant\n- all-tenants-mode\nroutes:\n- /drive-vision/tenants\nroles:\n- Safe-Fare Admin only\npermissions:\n- tenant.all (+ platform=true)\navailability: IMPLEMENTED; create NOT VERIFIED\ntechnical_reference: api/modules/tenants_organizations_api.md\n---\n\n# Organizations / Tenants\n\n## 1. Purpose\nA **tenant** is an organisation (fleet operator) on SafeFare. All business data (devices, vehicles, drivers, alerts…) belongs to exactly one tenant. Tenant users only ever see their own tenant. The Safe-Fare Admin manages tenants and chooses which tenant to work in.\n\n## 2. Navigation\n- Sidebar **Platform → Tenants**.\n- **Tenant switcher** in the top bar (Safe-Fare Admin only): \"Tenant context\", search \"Search name, code or id\", **All tenants** (\"Platform-wide reads · no tenant actions\"), **Manage tenants**.\n\n## 3. Screens\n- Tenant list with search (\"Search by name, code or id\"), **Fil",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\tenants_organizations.md",
+    "chunk_number": 1,
+    "content": "ants** (\"Platform-wide reads · no tenant actions\"), **Manage tenants**.\n\n## 3. Screens\n- Tenant list with search (\"Search by name, code or id\"), **Filter by status** (All / statuses returned), paging (Previous/Next page).\n- **Details** side panel (shows the tenant's details; viewing doesn't change your tenant selection).\n- **Create tenant** panel with **Review** step.\n- Banner \"Working in <tenant>\" / \"Viewing all tenants\" + **Return to all tenants**.\n\n## 4–5. Features and buttons\n| Button | Action |\n|---|---|\n| Select (row) | Work inside that tenant. |\n| Return to all tenants | Clears the selection (platform-wide reads). |\n| Refresh | Reloads the tenant list. |\n| Create tenant → Review → confirm | Creates the tenant. |\n| Details | Shows the row's data only. |\n\n## 6. Create tenant form\n| Field | Required | Rule |\n|---|---|---|\n| Tenant name | yes | \"Enter a tenant name.\" |\n| Tenant code | no | No spaces; empty → server generates the code. |\n| Time zone | yes | Valid IANA zone from the l",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\tenants_organizations.md",
+    "chunk_number": 2,
+    "content": "e | yes | \"Enter a tenant name.\" |\n| Tenant code | no | No spaces; empty → server generates the code. |\n| Time zone | yes | Valid IANA zone from the list, e.g. Asia/Kolkata. |\n| Status | yes | From the allowed list (`CreateTenantRequest.status`: ACTIVE, SUSPENDED). |\n| S3 prefix | no | Optional storage prefix; sent empty if blank. |\nReview text: \"Creating a tenant can't be undone from this app. No users or tenant administrator are created.\"\n\n## 9. Workflows\n**Select a tenant (Safe-Fare Admin)**: top bar tenant switcher → search → pick tenant → banner \"Working in …\". Tenant-scoped create/edit buttons become available.\n**Create a tenant**: Tenants → **Create tenant** → fill name, (code), time zone, status, (S3 prefix) → **Review** → confirm. Then create its users in Users & Sub-Accounts after selecting the tenant.\n\n## 10–11. Roles / permissions\nSafe-Fare Admin (`platform=true`) with `tenant.all`. Tenant users never see tenants.\n\n## 16. Business rules\n- The Safe-Fare Admin has no tenant o",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\tenants_organizations.md",
+    "chunk_number": 3,
+    "content": "ions\nSafe-Fare Admin (`platform=true`) with `tenant.all`. Tenant users never see tenants.\n\n## 16. Business rules\n- The Safe-Fare Admin has no tenant of its own. Reads without a tenant cover **every** tenant; creating or changing records requires a selected tenant. The app hides tenant writes in \"All tenants\" mode and shows \"Select a tenant to create or change records on this page\" + **Select tenant**.\n- Tenant users' tenant comes from their token and can't be changed; another tenant's id → 403 `TENANT_ACCESS_DENIED`; another tenant's record → 404.\n\n## 17. Errors\n\"Couldn't load tenants\" + Retry; create errors shown per field; 400 `TENANT_REQUIRED` explained as \"Select a tenant first\".\n\n## 18. Common questions\n- **What is a tenant / organisation?** Your company's isolated space in SafeFare.\n- **Why are the create buttons missing?** You're the Safe-Fare Admin in \"All tenants\" mode — select a tenant first.\n- **Can a fleet owner see another organisation's data?** No. Every record is scoped",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\tenants_organizations.md",
+    "chunk_number": 4,
+    "content": "he Safe-Fare Admin in \"All tenants\" mode — select a tenant first.\n- **Can a fleet owner see another organisation's data?** No. Every record is scoped to the caller's tenant; other tenants' records answer 404.\n- **Can I edit or delete a tenant?** Not in the app; there is no screen for it yet.\n\n## 19. Limitations\nEditing, suspending or deleting a tenant is not available in the app.",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\trips_tracking.md",
+    "chunk_number": 0,
+    "content": "---\nmodule: Trips & Tracking\nfeature_keys:\n- trips\n- trip-history\n- route-playback\n- track-playback\n- trip-summary\n- event-markers\nroutes:\n- /drive-vision/trips\nroles:\n- users with track.read\npermissions:\n- track.read\navailability: VERIFIED LIVE (read-only)\ntechnical_reference: api/modules/trips_tracking_api.md\n---\n\n# Trips & Tracking\n\n## 1. Purpose\nTrip history detected by the server (start/end, distance, duration, driver, alarms) with route maps, plus raw GPS **track playback** for any device and time range.\n\n## 2. Navigation\nSidebar **Monitor → Trips & Tracking**. Opened from Live Monitoring's **Track history** and vehicle detail **All trips**.\n\n## 3. Views (**View** switch)\n1. **Trips** (default): filters **Vehicle** (All vehicles / device) and **Date range** (Today · Last 7 days (default) · Last 30 days); **Trip summary**; table; selecting a trip shows its route, start/end pins, stops and events.\n2. **Track playback**: device picker, **Time range** 24 h · 3 days · 7 days · Custom",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\trips_tracking.md",
+    "chunk_number": 1,
+    "content": "ecting a trip shows its route, start/end pins, stops and events.\n2. **Track playback**: device picker, **Time range** 24 h · 3 days · 7 days · Custom (**From (IST)**, **To (IST)**), **Position filter** (Located points · All points · Unlocated only), stats (Points (server count), Distance, Max reported speed, Recorded span), playback controls (**Back to first point**), event-marker pins.\n\n## 7. Trip table columns\nStarted (or \"In progress\"), Vehicle, Driver, Distance, Duration, Alarms. Detail: Distance · duration, Driving · idle, Speed avg · max, Stops · alarms, Stops list.\n\n## 9. Workflows\n**How can I check today's trips?** Trips & Tracking → View **Trips** → Date range **Today** → (optional) choose a vehicle → read the table and the Trip summary; select a trip for its route.\n**Replay where a vehicle went**: View **Track playback** → choose the device → time range → play.\n\n## 10–11. Roles / permissions\n`track.read`.\n\n## 16. Business rules\nTrips are detected by the backend (read-only her",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\trips_tracking.md",
+    "chunk_number": 2,
+    "content": "e the device → time range → play.\n\n## 10–11. Roles / permissions\n`track.read`.\n\n## 16. Business rules\nTrips are detected by the backend (read-only here). Points without usable GPS are skipped and counted. A live trip has no end pin.\n\n## 17. Errors\nEmpty track → \"No points in this range\"; unusable positions → \"Nothing to draw\"; route failure → \"Couldn't load the route\". An empty track may show as \"unavailable\" (known backend issue).\n\n## 18. Common questions\n- **What is a trip?** A journey the server detected from GPS data, from start to stop, with distance, duration and driver.\n- **What's the difference between a trip and a dispatch?** A dispatch is planned work given to a driver (Dispatch screen); a trip is what the vehicle actually drove.\n- **Can I create or edit trips?** Not in the app; trips are detected automatically.\n\n## 19. Limitations\nTrip write APIs unused. Track limited to 7 days per request.",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\users_sub_accounts.md",
+    "chunk_number": 0,
+    "content": "---\nmodule: Users & Sub-Accounts\nfeature_keys:\n- users\n- sub-accounts\n- create-user\n- edit-user\n- disable-user\n- unlock-user\n- reset-password\n- user-hierarchy\n- roles-view\nroutes:\n- /drive-vision/users\nroles:\n- users with user.read\npermissions:\n- user.read\n- user.create\n- user.update\n- user.delete (unused)\n- role.read / role.permission.read (roles tab)\navailability: Read VERIFIED; writes NOT VERIFIED; delete missing\ntechnical_reference: api/modules/users_sub_accounts_api.md\n---\n\n# Users & Sub-Accounts\n\n## 1. Purpose\nManage login accounts of the organisation: users, their role, status, and the parent/sub-account hierarchy.\n\n## 2. Navigation\nSidebar **Administration → Users & Sub-Accounts**. Subtitle \"Account tree, roles and permissions\".\n\n## 3. Views (**View**)\n- **Users**: columns User, Role, Status, Last sign-in (\"Never\"), Created, plus \"Locked\" badge. Filters: **Search users** (\"Name, email or phone\"), Status (Any status · Active · Invited · Disabled), Role (Any role). Paged 20.\n- **",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\users_sub_accounts.md",
+    "chunk_number": 1,
+    "content": "\"Locked\" badge. Filters: **Search users** (\"Name, email or phone\"), Status (Any status · Active · Invited · Disabled), Role (Any role). Paged 20.\n- **Hierarchy**: \"Account hierarchy — Parent and sub-accounts as returned by the server\".\n- **Roles & permissions** (read-only): roles with Protected / Not assignable badges and their permission codes; **Permission catalogue**.\n- User drawer: Status, Role, Phone, Parent account, Locale · time zone, Failed sign-ins, Locked until, Last sign-in, Created, Updated; buttons **Edit**, **Disable/Enable**, **Unlock**, **Reset password**.\n\n## 6. Forms\nNew user / Edit: Display name (**required**, ≤150), Email (valid, ≤320), Phone (5–30: digits, spaces, + ( ) -), Initial password (**required on create**, ≤72), Locale (e.g. en or en_IN), Time zone (≤50), **Role** (required, assignable roles). Reset password: New password (≤72), Confirm password (must match).\n\n## 9. Workflows\n**Create a user**: Users & Sub-Accounts → **New user** → name, email/phone, initi",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\users_sub_accounts.md",
+    "chunk_number": 2,
+    "content": "New password (≤72), Confirm password (must match).\n\n## 9. Workflows\n**Create a user**: Users & Sub-Accounts → **New user** → name, email/phone, initial password, role → save. (Safe-Fare Admin: select the tenant first.)\n**Create a driver login**: create the user with the **DRIVER** role, then link it in Drivers → Edit → Linked user id.\n**Unlock an account** after too many failed sign-ins: open user → **Unlock**.\n**Reset someone's password**: open user → **Reset password** → new + confirm.\n**Disable a user**: open user → Disable (status ACTIVE ⇄ DISABLED).\n\n## 16. Business rules\nYour own account's status/password can't be changed here (use Settings). Edit resends the current parent account so the hierarchy doesn't change. Roles are read-only here; only the Safe-Fare Admin edits roles (Global Roles).\n\n## 18. Common questions\n- **What is a sub-account?** A user created under another user (parent) in the account hierarchy.\n- **Why is a user locked?** Too many failed sign-ins; see \"Failed s",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\users_sub_accounts.md",
+    "chunk_number": 3,
+    "content": "ub-account?** A user created under another user (parent) in the account hierarchy.\n- **Why is a user locked?** Too many failed sign-ins; see \"Failed sign-ins\" / \"Locked until\"; use **Unlock**.\n- **What user statuses exist?** User status filter values: Active, Invited, Disabled (status changes in the app: ACTIVE ⇄ DISABLED).\n- **Can I delete a user?** No. Delete user is not exposed in the app; disable the user instead.\n\n## 19. Limitations\nDelete user not exposed. Roles not editable here.",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\vehicle_registry.md",
+    "chunk_number": 0,
+    "content": "---\nmodule: Vehicles (Vehicle Registry)\nfeature_keys:\n- vehicles\n- vehicle-registry\n- add-vehicle\n- register-vehicle\n- edit-vehicle\n- delete-vehicle\n- vehicle-number\n- device-fitted\nroutes:\n- /drive-vision/vehicle-registry\nroles:\n- users with vehicle.read\npermissions:\n- vehicle.read\n- vehicle.create\n- vehicle.update\n- vehicle.delete\navailability: IMPLEMENTED, NOT VERIFIED\ntechnical_reference: api/modules/vehicle_registry_api.md\n---\n\n# Vehicles (Vehicle Registry)\n\n## 1. Purpose\nThe register of the organisation's **vehicles** (bus, van, car…): vehicle number, type, make, model, year, chassis/engine numbers, colour, status, and which tracking **device** is fitted. A vehicle is the physical vehicle; a device is the tracker/camera unit installed in it (see `devices_vehicles_assets.md`).\n\n## 2. Navigation\nSidebar **Monitor → Vehicles**. Subtitle: \"Registered vehicles and the tracking device fitted in each\".\n\n## 3. Screens\n- List with views **All vehicles** / **Without a device**.\n- Detail pa",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\vehicle_registry.md",
+    "chunk_number": 1,
+    "content": "e: \"Registered vehicles and the tracking device fitted in each\".\n\n## 3. Screens\n- List with views **All vehicles** / **Without a device**.\n- Detail panel (View): Vehicle number, Type, Make, Model, Year, Colour, Chassis number, Engine number, Status, Remarks, Tracking device, Registered, Updated.\n- **Register vehicle** / **Edit** form panel; **Delete vehicle** confirmation.\n\n## 5. Buttons\n| Button | Permission | What it does |\n|---|---|---|\n| Register vehicle | vehicle.create (+ selected tenant for Safe-Fare Admin) | Registers the vehicle |\n| Edit | vehicle.update | Saves changes (all fields are replaced) |\n| Delete → Delete vehicle | vehicle.delete | Deletes the vehicle |\n| Refresh | vehicle.read | reload |\n\n## 6. Form fields\n| Field | Label | Required | Rule |\n|---|---|---|---|\n| vehicleNumber | Vehicle number | **yes** | 1–20 chars, stored UPPER-CASE, unique in the organisation (also among deleted vehicles) |\n| vehicleType | Type | no | ≤ 50, free text; suggestions BUS, MINI_BUS, VAN",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\vehicle_registry.md",
+    "chunk_number": 2,
+    "content": "red UPPER-CASE, unique in the organisation (also among deleted vehicles) |\n| vehicleType | Type | no | ≤ 50, free text; suggestions BUS, MINI_BUS, VAN, CAR, TRUCK, AMBULANCE |\n| make / model | Make / Model | no | ≤ 100 each |\n| yearOfManufacture | Year of manufacture | no | 4 digits, 1900 … next year |\n| chassisNumber / engineNumber | Chassis number / Engine number | no | ≤ 60, upper-case |\n| color | Colour | no | ≤ 30 |\n| status | Status | — | Active / Inactive (default Active) |\n| remarks | Remarks | no | ≤ 500 |\n\n## 7. Columns and filters\nColumns: Vehicle, Type, Colour, Chassis no., Device (\"No device\" when none), Tenant (all-tenants mode), Status. Filters: **Search vehicles** (\"Number, make, model, chassis…\"), Status (Any status/Active/Inactive), Type (Any type), Device (Any device / Device fitted / No device).\n\n## 8. Search, sort, paging\nServer search (`keyword` matches number, make, model, chassis or engine), sorted by vehicle number, paged (20, max 100).\n\n## 9. Workflows\n**How c",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\vehicle_registry.md",
+    "chunk_number": 3,
+    "content": "ging\nServer search (`keyword` matches number, make, model, chassis or engine), sorted by vehicle number, paged (20, max 100).\n\n## 9. Workflows\n**How can I add (register) a vehicle?**\n1. Monitor → **Vehicles**.\n2. (Safe-Fare Admin: select a tenant first.)\n3. **Register vehicle** → enter **Vehicle number** (required) and optional details → save.\n4. Then fit a tracking device to it (device side; see limitations).\n**Deactivate a vehicle**: Edit → Status = Inactive (\"the device stays fitted, but no other device can be fitted until the vehicle is active again\").\n**Delete a vehicle**: View → Delete → **Delete vehicle**. Refused while a device is fitted.\n\n## 10–11. Roles / permissions\n`vehicle.read/create/update/delete`. Not offered to drivers.\n\n## 16. Business rules (contract)\n- Numbers are case/space-insensitive: \"ts09ab1234\" = \"TS09AB1234\".\n- PUT replaces all fields; omitted optional fields are cleared; omitted status becomes ACTIVE.\n- Delete keeps the number reserved; refused with 409 `RES",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\vehicle_registry.md",
+    "chunk_number": 4,
+    "content": "PUT replaces all fields; omitted optional fields are cleared; omitted status becomes ACTIVE.\n- Delete keeps the number reserved; refused with 409 `RESOURCE_IN_USE` while a device is fitted.\n- Admin writes need a tenant (400 `TENANT_REQUIRED`).\n\n## 17. Errors\n400 VALIDATION_FAILED / INVALID_VALUE (future year) · 409 DUPLICATE (\"A vehicle with this number is already registered\") · 409 RESOURCE_IN_USE · 404 NOT_FOUND (unknown, deleted or other organisation's).\n\n## 18. Common questions\n- **What is the difference between a vehicle and a device?** Vehicle = the registered bus/van (number plate, make, model). Device = the GPS/camera terminal fitted in it that reports positions, alarms and video. Live data, alarms and video come from devices.\n- **How many vehicles are registered?** The Vehicles list total (or ask Iris for the live count).\n- **Why can't I delete a vehicle?** A device is still fitted — unlink or delete the device first.\n- **What vehicle types can I choose?** Vehicle type is free",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\vehicle_registry.md",
+    "chunk_number": 5,
+    "content": "can't I delete a vehicle?** A device is still fitted — unlink or delete the device first.\n- **What vehicle types can I choose?** Vehicle type is free text (max 50); the form suggests BUS, MINI_BUS, VAN, CAR, TRUCK, AMBULANCE.\n- **Which vehicles have no device fitted?** Vehicles → view **Without a device** (or Device filter \"No device\").\n\n## 19. Limitations / inconsistencies\n- The delete hint says \"first remove the device from it (edit the device)\", but the **device edit form has no vehicle/unlink field** — linking/unlinking a device is NOT IMPLEMENTED in the app.\n- Passenger capacity (bus capacity used by Sensors; default 44) is supported by the backend but **not in the vehicle form**.",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\workforce_shifts.md",
+    "chunk_number": 0,
+    "content": "---\nmodule: Workforce — availability, shifts and checklists\nfeature_keys:\n- workforce\n- shifts\n- availability\n- on-shift\n- working-hours\n- checklists\n- pre-trip-checklist\n- checklist-template\nroutes:\n- /drive-vision/workforce\n- /drive-vision/workforce?tab=leave\nroles:\n- users with workforce.read\npermissions:\n- workforce.read\n- workforce.create\n- workforce.update\navailability: VERIFIED LIVE (read)\ntechnical_reference: api/modules/workforce_shifts_api.md\n---\n\n# Workforce — availability, shifts and checklists\n\n## 1. Purpose\nShows which drivers are available, on shift, on a trip or on leave for a day; recent shifts; leave requests (see `leave_management.md`); submitted pre-trip checklists and the checklist template.\n\n## 2. Navigation\nSidebar **Fleet → Workforce**. Subtitle \"Driver availability, shifts, leave and pre-trip checklists\".\n\n## 3. Tabs (**View**)\n1. **Availability** — Day (IST); KPIs Leave pending, On shift, Scheduled h, Upcoming; per-driver status (AVAILABLE, ASSIGNED, ON_SHIFT,",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\workforce_shifts.md",
+    "chunk_number": 1,
+    "content": "abs (**View**)\n1. **Availability** — Day (IST); KPIs Leave pending, On shift, Scheduled h, Upcoming; per-driver status (AVAILABLE, ASSIGNED, ON_SHIFT, ON_TRIP, ON_LEAVE — shown raw), Phone.\n2. **Shifts** — \"Shifts · last 7 days\", filter Driver (All drivers); columns Started, Open/Ended, Duration, Distance.\n3. **Leave** — see `leave_management.md`.\n4. **Checklists** — \"Submitted checklists · last 7 days\" (Submitted, Result: All passed / Failed items) and **Checklist template** (\"Items drivers are asked to check\").\n\n## 9. Workflows\n**Who is on shift now?** Workforce → Availability (today) → On shift; or Shifts tab → open shifts.\n**What is my current shift?** (driver) My Work → **My Shifts**.\n\n## 11. Permissions\n`workforce.read`.\n\n## 18. Common questions\n- **What is a shift?** A driver's working period, started and ended by the driver in My Work (start can record odometer).\n- **What is the pre-trip checklist?** The vehicle checks a driver submits (Pass/Fail per item) before driving; templ",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules\\workforce_shifts.md",
+    "chunk_number": 2,
+    "content": "Work (start can record odometer).\n- **What is the pre-trip checklist?** The vehicle checks a driver submits (Pass/Fail per item) before driving; template from the server.\n- **What availability statuses exist?** Driver availability status values: AVAILABLE, ASSIGNED, ON_SHIFT, ON_TRIP, ON_LEAVE (shown as returned by the server).\n\n## 19. Limitations\nFleet users can't edit the checklist template in the app.",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules.md",
+    "chunk_number": 0,
+    "content": "---\ntitle: Module index\ncategory: modules\n---\n\n# Module index\n\nStatus legend: **VERIFIED LIVE** (seen working against the live server) · **IMPLEMENTED, NOT VERIFIED** · **PARTIALLY IMPLEMENTED** · **NOT IMPLEMENTED IN FRONTEND** (no screen).\n\n| # | Module | Document | Screen permission | Status |\n|---|---|---|---|---|\n| 1 | Authentication / sign-in | modules/authentication_login.md | public | VERIFIED LIVE |\n| 2 | App shell & navigation | modules/app_shell_navigation.md | — | VERIFIED LIVE (Admin, Driver) |\n| 3 | Dashboard — Fleet Overview | modules/dashboard_overview.md | device.read | VERIFIED LIVE (read) |\n| 4 | Platform Overview | modules/platform_overview.md | tenant.all + platform | IMPLEMENTED, NOT VERIFIED here |\n| 5 | Organizations / Tenants | modules/tenants_organizations.md | tenant.all + platform | IMPLEMENTED; create NOT VERIFIED |\n| 6 | Live Monitoring | modules/live_monitoring.md | device.read | VERIFIED LIVE |\n| 7 | Historical Video | modules/historical_video.md | video",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules.md",
+    "chunk_number": 1,
+    "content": "FIED |\n| 6 | Live Monitoring | modules/live_monitoring.md | device.read | VERIFIED LIVE |\n| 7 | Historical Video | modules/historical_video.md | video.playback | PARTIALLY IMPLEMENTED (no playback) |\n| 8 | Trips & Tracking | modules/trips_tracking.md | track.read | VERIFIED LIVE (read-only) |\n| 9 | Reports | modules/reports.md | report.read | VERIFIED LIVE; no download |\n| 10 | Vehicles (registry) | modules/vehicle_registry.md | vehicle.read | IMPLEMENTED, NOT VERIFIED |\n| 11 | Devices (Vehicles & Assets) | modules/devices_vehicles_assets.md | device.read | Read VERIFIED; create/edit NOT VERIFIED; transfer/delete disabled |\n| 12 | Device Groups | modules/device_groups.md | group.read | Read-only |\n| 13 | Sensors | modules/sensors_passenger_counting.md | sensor.read | IMPLEMENTED, NOT VERIFIED |\n| 14 | Drivers | modules/drivers.md | driver.read | Read VERIFIED; writes NOT VERIFIED |\n| 15 | Driver Assignments | modules/driver_assignments.md | driver.update | Read VERIFIED; writes NOT VER",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules.md",
+    "chunk_number": 2,
+    "content": ".read | Read VERIFIED; writes NOT VERIFIED |\n| 15 | Driver Assignments | modules/driver_assignments.md | driver.update | Read VERIFIED; writes NOT VERIFIED |\n| 16 | Dispatch | modules/dispatch.md | dispatch.read | Read VERIFIED (empty); writes NOT VERIFIED |\n| 17 | Workforce — availability, shifts, checklists | modules/workforce_shifts.md | workforce.read | VERIFIED LIVE (read) |\n| 18 | Leave Management | modules/leave_management.md | workforce.read | Read VERIFIED; writes NOT VERIFIED |\n| 19 | Alerts & Events — Incidents | modules/alerts_incidents.md | alarm.read | Read VERIFIED; actions NOT VERIFIED; assign NOT AVAILABLE |\n| 20 | AI Alarms | modules/ai_alarms.md | alarm.read | VERIFIED LIVE |\n| 21 | Routine Alarms | modules/routine_alarms.md | alarm.read | VERIFIED LIVE |\n| 22 | Safety Analytics | modules/safety_analytics.md | alarm.read | VERIFIED LIVE (read) |\n| 23 | Safety Scores | modules/safety_scores.md | alarm.read | VERIFIED LIVE (read) |\n| 24 | Geofences | modules/geofences.",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules.md",
+    "chunk_number": 3,
+    "content": "d | VERIFIED LIVE (read) |\n| 23 | Safety Scores | modules/safety_scores.md | alarm.read | VERIFIED LIVE (read) |\n| 24 | Geofences | modules/geofences.md | geofence.read | Read VERIFIED; create/edit NOT IMPLEMENTED |\n| 25 | Notifications | modules/notifications.md | signed in | Read VERIFIED (empty) |\n| 26 | Global Search | modules/global_search.md | device.read for records | VERIFIED LIVE |\n| 27 | Device Commands | modules/device_commands.md | command.send | Read-only; detail blocked; send disabled |\n| 28 | Users & Sub-Accounts | modules/users_sub_accounts.md | user.read | Read VERIFIED; writes NOT VERIFIED; delete missing |\n| 29 | Roles & Permissions admin | modules/roles_permissions_admin.md | role.read / permission.manage + platform | IMPLEMENTED, NOT VERIFIED here |\n| 30 | Settings | modules/settings.md | signed in (non-driver) | VERIFIED LIVE (profile, prefs) |\n| 31 | Maintenance | modules/maintenance.md | maintenance.read | NOT IMPLEMENTED IN FRONTEND (reminders from device dates",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "modules.md",
+    "chunk_number": 4,
+    "content": "FIED LIVE (profile, prefs) |\n| 31 | Maintenance | modules/maintenance.md | maintenance.read | NOT IMPLEMENTED IN FRONTEND (reminders from device dates only) |\n| 32 | Driver app — My Work | modules/driver_my_work.md | driver.app + own.data.read | Read VERIFIED (Driver); writes NOT VERIFIED |\n| 33 | Iris AI / Assistant | modules/iris_assistant.md | device.read | Prompts VERIFIED; ask NOT VERIFIED |\n| 34 | Features not available in the app | modules/features_not_in_app.md | — | NOT IMPLEMENTED IN FRONTEND |\n\n**Requested modules that don't exist as separate screens:** Shifts (part of Workforce), Leave (Workforce tab / My Leave), Driver Assignments (Drivers), Device Groups (Vehicles & Assets), Safety Scores (Safety Analytics), Search (header), Notifications (header), Maintenance (no screen), Driver Mobile App (web My Work; no native app in the project).\n\nTechnical details (APIs, payloads, source files) for every module are kept separately in `../api/modules/<module>_api.md`.",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "README.md",
+    "chunk_number": 0,
+    "content": "# SafeFare Iris AI — application knowledge (user-facing)\n\nPlain-language knowledge about how SafeFare works: screens, menus, buttons, fields, workflows, roles, limitations and FAQs. **This folder contains no API endpoints, payloads or source-code references** — those live in `../api/`. Iris uses this folder to answer *what / how / why* questions (STATIC_KNOWLEDGE, HOW_TO, TROUBLESHOOTING, UNSUPPORTED). Live numbers always come from API tools, never from these documents.\n\nBuilt 2026-11-05 from the SafeFare frontend ZIP, the provided Swagger and the frontend team's verification notes. Java source, the business database schema and user guides were not supplied.\n\n## Layout\n```\ndocuments/\n  README.md\n  application_overview.md       what SafeFare is, who uses it, modules, key concepts\n  modules.md                    index of module documents with availability\n  roles_permissions.md          roles, which permission opens which screen/action, data isolation\n  workflows.md                  step",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "README.md",
+    "chunk_number": 1,
+    "content": "th availability\n  roles_permissions.md          roles, which permission opens which screen/action, data isolation\n  workflows.md                  step-by-step tasks with exact menu names\n  troubleshooting.md            verified behaviour vs possible causes, error messages\n  limitations.md                what the app can't do yet, confusing points\n  frequently_asked_questions.md\n  terminology.md\n  knowledge_test_cases.json     test questions for this folder\n  modules/*.md                  one document per module (34)\n```\n\n## Module document format\nYAML front matter: `module`, `feature_keys`, `routes` (app page links, for \"open this page\" buttons), `roles`, `permissions`, `availability`, `technical_reference` (path of the matching API file). Body sections: Purpose · Navigation · Screens · Features · Buttons · Form fields · Columns & filters · Search/paging · Workflows · Roles · Permissions · Business rules · Errors · Common questions · Limitations. Chunk on `## ` headings.\n\n## Rules for",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "README.md",
+    "chunk_number": 2,
+    "content": "· Search/paging · Workflows · Roles · Permissions · Business rules · Errors · Common questions · Limitations. Chunk on `## ` headings.\n\n## Rules for Iris\n1. Never quote numbers from these documents as live data.\n2. Never give steps for anything listed in `limitations.md` / `modules/features_not_in_app.md`.\n3. Drivers only have My Work; platform screens are only for the Safe-Fare Admin.\n4. The Fleet Owner role code is unconfirmed — answer by permission, not role name.",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "roles_permissions.md",
+    "chunk_number": 0,
+    "content": "---\ntitle: Roles and permissions\ncategory: roles_permissions\n---\n\n# Roles and permissions\n\n## 1. How access works\n- **Permissions decide everything.** Each screen, widget and button opens only if the user's permission set contains the exact code(s) below. A role code never grants access by itself; it can only narrow (e.g. the driver app is only for DRIVER logins).\n- **The server checks every request.** Even if a button were shown, the SafeFare server refuses actions the user isn't allowed to do, and records of other organisations are reported as not found.\n- **Platform vs tenant.** `platform === true` marks the **Safe-Fare Admin** (platform administrator, signs in without a tenant code). Everyone else is a **tenant user** whose tenant comes from their token.\n- **Server screen settings** can make a screen read-only or hide an action; they never open extra screens.\n\n## 2. The product roles (and what the backend actually has)\n| Product role | Backend evidence | Notes |\n|---|---|---|\n| **A",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "roles_permissions.md",
+    "chunk_number": 1,
+    "content": "never open extra screens.\n\n## 2. The product roles (and what the backend actually has)\n| Product role | Backend evidence | Notes |\n|---|---|---|\n| **Admin — Safe-Fare Admin (platform)** | `platform: true`, role code `ADMIN` (V10 merged PLATFORM_ADMIN/SUPER_ADMIN into ADMIN), holds all codes incl. `tenant.all` | Sees platform screens, works in \"All tenants\" mode or a selected tenant. |\n| **Admin — tenant ADMIN** | `platform: false`, role `ADMIN` (\"Full tenant administration\"), every code except `tenant.all` | Full tenant administration; no platform screens. |\n| **Fleet Owner** | **NOT CONFIRMED.** The backend has roles `MANAGER` (\"Fleet manager\") and `OPERATOR` (\"Operations user\"), but has not confirmed which one is \"Fleet Owner\" | Access follows whatever permissions the role holds. Synthetic test fixture: device.read, group.read, track.read, alarm.read, report.read, driver.read/create/update, dispatch.read/create/update, workforce.read/create/update. |\n| **Driver** | Role `DRIVER`, per",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "roles_permissions.md",
+    "chunk_number": 2,
+    "content": "ad, alarm.read, report.read, driver.read/create/update, dispatch.read/create/update, workforce.read/create/update. |\n| **Driver** | Role `DRIVER`, permissions `driver.app` + `own.data.read` (observed live 2026-10-29) | My Work only; must be linked to a driver profile. |\n\n## 3. Screen → permission\n| Screen | Permission | Audience |\n|---|---|---|\n| Platform Overview | tenant.all + platform | Safe-Fare Admin |\n| Tenants | tenant.all + platform | Safe-Fare Admin |\n| Global Roles | role.read + platform | Safe-Fare Admin |\n| Permission Catalogue | permission.manage + platform | Safe-Fare Admin |\n| Fleet Overview | device.read | fleet users |\n| Live Monitoring | device.read | fleet users |\n| Historical Video | video.playback | fleet users |\n| Trips & Tracking | track.read | fleet users |\n| Reports | report.read | fleet users |\n| Vehicles (registry) | vehicle.read | fleet users |\n| Sensors | sensor.read | fleet users |\n| Vehicles & Assets (devices) | device.read | fleet users |\n| Drivers | dri",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "roles_permissions.md",
+    "chunk_number": 3,
+    "content": "ry) | vehicle.read | fleet users |\n| Sensors | sensor.read | fleet users |\n| Vehicles & Assets (devices) | device.read | fleet users |\n| Drivers | driver.read | fleet users |\n| Dispatch | dispatch.read | fleet users |\n| Workforce | workforce.read | fleet users |\n| Alerts & Events | alarm.read | fleet users |\n| Safety Analytics | alarm.read | fleet users |\n| Geofences | geofence.read | fleet users |\n| Device Commands | command.send | fleet users |\n| Users & Sub-Accounts | user.read | fleet users |\n| Settings | any signed-in user | not drivers |\n| My Work (6 pages) | own.data.read + driver.app | DRIVER logins only |\n| Iris assistant (header) | — | device.read | fleet users |\n| Record search (header) | — | device.read | fleet users |\n\n## 4. Actions → permission (buttons)\n| Action | Permission | Tenant needed (Safe-Fare Admin)? |\n|---|---|---|\n| Create / edit / delete driver; assign or end assignment | driver.create / driver.update / driver.delete | yes |\n| Create dispatch / edit, cancel,",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "roles_permissions.md",
+    "chunk_number": 4,
+    "content": "|\n| Create / edit / delete driver; assign or end assignment | driver.create / driver.update / driver.delete | yes |\n| Create dispatch / edit, cancel, request swap / approve-reject swap | dispatch.create / dispatch.update | yes |\n| Request leave for a driver / approve-reject leave | workforce.create / workforce.update | yes |\n| Acknowledge, comment, resolve, dismiss, reopen alert | alarm.handle | yes |\n| Delete geofence | geofence.delete | yes |\n| Request video export | video.playback | yes |\n| Create / edit, enable-disable, unlock, reset password of user | user.create / user.update | yes |\n| Register / edit device | device.create / device.update | yes |\n| Register / edit / delete vehicle | vehicle.create / vehicle.update / vehicle.delete | yes |\n| Add sensor reading / recalculate stops | sensor.ingest | yes |\n| Own profile & preferences, own password, notification read state | signed in | no |\n| Driver self-service actions | own.data.read | no |\n| Global roles, role permissions, permis",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "roles_permissions.md",
+    "chunk_number": 5,
+    "content": "own password, notification read state | signed in | no |\n| Driver self-service actions | own.data.read | no |\n| Global roles, role permissions, permission catalogue | role.manage, role.permission.create/delete/update, permission.manage (+platform) | no |\n| Create tenant | tenant.all (+platform) | no |\n\n## 5. Data isolation rules\n- Every record is scoped to the caller's tenant; another tenant's record answers **404**, asking for another organisation is refused (TENANT_ACCESS_DENIED).\n- Safe-Fare Admin reads without a tenant cover every tenant; creating or changing records without one is refused (TENANT_REQUIRED).\n- Driver logins must be linked to a driver profile and only ever get that driver's own data; the server refuses driver logins on fleet data (verified 2026-10-31).\n- Fleet Owner isolation inside a tenant (e.g. by group) is **NOT VERIFIED** (no test accounts were available).\n\n## 6. Common questions\n- **Why can't I access a menu?** Your permissions don't include the code in §3; an",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "roles_permissions.md",
+    "chunk_number": 6,
+    "content": "RIFIED** (no test accounts were available).\n\n## 6. Common questions\n- **Why can't I access a menu?** Your permissions don't include the code in §3; an admin must add it to your role (Safe-Fare Admin: Global Roles / Permission Catalogue).\n- **Why can't a driver access the admin dashboard?** Drivers have only `driver.app` + `own.data.read`; Fleet Overview needs `device.read`.\n- **Why are create buttons missing for the Safe-Fare Admin?** No tenant selected (\"All tenants\" mode).",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "terminology.md",
+    "chunk_number": 0,
+    "content": "---\ntitle: Terminology\ncategory: terminology\n---\n\n# SafeFare terminology\n\n| Term | Meaning in SafeFare | Where |\n|---|---|---|\n| SafeFare AI | The fleet management & driver-safety web application | all |\n| SafeFare server | The backend that stores data, checks permissions and talks to the GPS/video provider | — |\n| Tenant / organisation | An isolated customer organisation; all data belongs to one tenant | Tenants |\n| Tenant code | Code of the organisation entered at sign-in | Sign in |\n| Safe-Fare Admin | Platform administrator (`platform=true`), signs in without a tenant code, manages tenants/roles | Platform |\n| Tenant ADMIN | Full administrator inside one tenant | — |\n| Fleet Owner | Product role for fleet operators; backend role code not confirmed (MANAGER \"Fleet manager\" exists) | — |\n| Driver | Person driving fleet vehicles; driver logins use My Work | Drivers, My Work |\n| Linked user | The login account linked to a driver record | Drivers |\n| Sub-account | A user created under a",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "terminology.md",
+    "chunk_number": 1,
+    "content": "logins use My Work | Drivers, My Work |\n| Linked user | The login account linked to a driver record | Drivers |\n| Sub-account | A user created under a parent user in the account hierarchy | Users |\n| Role / permission | A role bundles permission codes like `device.read`; codes open screens and actions | Global Roles |\n| All tenants mode | Safe-Fare Admin with no tenant selected: reads cover all tenants, writes disabled | tenant switcher |\n| Vehicle | The registered physical vehicle (number, type, make, model, status) | Vehicles |\n| Device / terminal | The GPS/MDVR/camera unit fitted in a vehicle, identified by Device ID (terminal no.) | Vehicles & Assets |\n| Device group | Folder of devices (vendor account group) | Vehicles & Assets |\n| Object type, protocol, device model | Vendor classification of a device (reference lists) | Register device |\n| Online / offline | Whether a device is currently reporting (server counts from realtime) | Overview, Live Monitoring |\n| Never online | Devic",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "terminology.md",
+    "chunk_number": 2,
+    "content": "vice |\n| Online / offline | Whether a device is currently reporting (server counts from realtime) | Overview, Live Monitoring |\n| Never online | Device that has never reported | Device health |\n| Stale | Last report older than the threshold (1 h on Live Monitoring; > 24 h server count) | Overview |\n| Report age | Time since a device's last report (≤ 5 min, ≤ 1 h, stale, no time) | Live Monitoring |\n| Service expiry | Date the device's vendor service ends (`expiresAt`) | Device detail |\n| Alarm | Event reported by a device | Alerts & Events |\n| AI event | Alarm from AI cameras: ADAS, DSM, BSD | Alerts & Events › AI events |\n| ADAS / DSM / BSD | Advanced Driver Assistance (road), Driver Status Monitoring (driver), Blind Spot Detection | AI events |\n| Routine alarm | Non-AI terminal alarm (e.g. overspeed, SOS) | Alerts & Events › Routine alarms |\n| Alert / incident | Handling record of an alarm (NEW, ACKNOWLEDGED, IN_PROGRESS, RESOLVED, DISMISSED) | Incidents |\n| Outcome | Resolution reas",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "terminology.md",
+    "chunk_number": 3,
+    "content": "rms |\n| Alert / incident | Handling record of an alarm (NEW, ACKNOWLEDGED, IN_PROGRESS, RESOLVED, DISMISSED) | Incidents |\n| Outcome | Resolution reason: CONFIRMED_ALARM, FALSE_POSITIVE, TEST, DISPATCH_EMERGENCY, DISPATCH_TERMINAL, VOICE_COMMAND | Incidents |\n| Severity | Server's severity value (scale undocumented) | Alerts |\n| Evidence | Image/video attached to an alarm | Alerts |\n| Safety score / grade | Server-computed score per driver/vehicle | Safety Analytics |\n| Penalty points | Points the server adds for events, used in the score | Safety scores |\n| Trip | Journey detected by the server from GPS (start → end) | Trips & Tracking |\n| Track | Raw GPS points of a device for a time range | Track playback |\n| Dispatch | Planned job given to a driver + vehicle (ASSIGNED, ACCEPTED, DECLINED, IN_PROGRESS, COMPLETED, CANCELLED) | Dispatch |\n| Swap request | Request to move a dispatch to another driver (PENDING, APPROVED, REJECTED, CANCELLED) | Dispatch |\n| Conflict check | Server valida",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "terminology.md",
+    "chunk_number": 4,
+    "content": "|\n| Swap request | Request to move a dispatch to another driver (PENDING, APPROVED, REJECTED, CANCELLED) | Dispatch |\n| Conflict check | Server validation of a dispatch draft (driver/vehicle busy, leave) | Dispatch |\n| Assignment | Driver ↔ vehicle link for a period | Drivers |\n| Shift | Driver's working period started/ended in My Work | Workforce, My Shifts |\n| Availability | Driver status for a day: AVAILABLE, ASSIGNED, ON_SHIFT, ON_TRIP, ON_LEAVE | Workforce |\n| Leave request | Driver leave (CASUAL, SICK, ANNUAL, UNPAID, OTHER; PENDING, APPROVED, REJECTED, CANCELLED) | Workforce, My Leave |\n| Checklist | Pre-trip vehicle checklist (Pass/Fail items) | Workforce, Shift Checklist |\n| Geofence | Virtual AREA (zone) or LINE (route) with rules | Geofences |\n| Geofence event | Entry/exit/rule event of a bound device | Geofences |\n| Recording calendar | Days with recorded video for a device | Historical Video |\n| Clip export | Job that produces a downloadable video file | Historical Video |",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "terminology.md",
+    "chunk_number": 5,
+    "content": "calendar | Days with recorded video for a device | Historical Video |\n| Clip export | Job that produces a downloadable video file | Historical Video |\n| Channel | Camera number on a device | Historical Video, Live video |\n| BMS | Bus boarding records used as ground truth for passenger counts | Sensors |\n| IR sensor | Door sensor counting passengers in/out | Sensors |\n| Over-capacity | More passengers than bus capacity (default 44) | Sensors |\n| Alcohol check | Alcohol sensor result: DETECTED, NOT_DETECTED, INVALID_READING, NO_READING | Sensors |\n| GPSTrackTech | GPS/video vendor behind devices, alarms and video | — |\n| Live vs stored data | When the GPS provider doesn't answer, the server may show its last stored copy (\"Stored data\") or \"No data from vendor\" | vendor-backed screens |\n| Reference (request id) | Code shown with an error message; quote it when reporting a problem | errors |\n| IST | Fleet time zone Asia/Kolkata used in the UI | all |\n| Iris | SafeFare's AI assistant | head",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "terminology.md",
+    "chunk_number": 6,
+    "content": "sage; quote it when reporting a problem | errors |\n| IST | Fleet time zone Asia/Kolkata used in the UI | all |\n| Iris | SafeFare's AI assistant | header |",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "troubleshooting.md",
+    "chunk_number": 0,
+    "content": "---\ntitle: Troubleshooting\ncategory: troubleshooting\nnote: \"Separates verified behaviour, known instructions and possible causes. Iris must never claim a specific device, server or integration is faulty without live data.\"\n---\n\n# Troubleshooting\n\n### Why is a device showing offline?\n- **Verified meaning:** \"Offline\" is decided by the SafeFare server — the device is not currently reporting to the GPS vendor.\n- **Check (live data):** the device's last `deviceTime`/`receivedAt` (Live Monitoring panel), `batteryPct`, service expiry (`expiresAt`, device detail → Dates & reminders), Fleet Overview device-health counts (Never online, Service expired, Stale > 24 h).\n- **Possible causes (unverified for any single device):** ignition/power off, no mobile network or SIM problem, device service expired, never activated, hardware/installation fault.\n- **Next step:** if it stays offline, contact the device installer/vendor; Iris cannot diagnose hardware.\n\n### Why am I not receiving notifications?\n-",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "troubleshooting.md",
+    "chunk_number": 1,
+    "content": "**Next step:** if it stays offline, contact the device installer/vendor; Iris cannot diagnose hardware.\n\n### Why am I not receiving notifications?\n- **Verified:** the bell count is read only when a page loads and when the panel closes; there is no polling or push in the web app. Reload the page.\n- **Possible causes:** the server didn't create a notification for your user for that event (rules not documented); you already read it.\n\n### Why is the dashboard not loading?\n- Needs `device.read`; otherwise you see \"You don't have access to this page\".\n- Each widget can fail on its own: 401 → session expired (sign in again); 403 → missing permission for that widget (\"No permission for this widget\"); 503/502/504 → vendor or database unavailable (\"unavailable\", retry later); timeout after 15 s.\n\n### Why is a vehicle not appearing?\n- Check search text and filters (group, expiry, status, \"Without a device\").\n- **Vehicles** (registry) and **Vehicles & Assets** (devices) are different lists.\n- Saf",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "troubleshooting.md",
+    "chunk_number": 2,
+    "content": "text and filters (group, expiry, status, \"Without a device\").\n- **Vehicles** (registry) and **Vehicles & Assets** (devices) are different lists.\n- Safe-Fare Admin: check the selected tenant (or \"All tenants\").\n- Records of other organisations always answer 404.\n- Known backend issue: a device search with no match may show \"unavailable\" instead of an empty list.\n\n### Why can't I access a menu?\nYour permission set lacks that screen's code (see `roles_permissions.md`). Drivers only get My Work. Settings isn't shown to driver logins. Platform menus need the Safe-Fare Admin. Ask an administrator.\n\n### Why is an alarm missing?\n- Different tabs: AI events vs Routine alarms vs Incidents.\n- Time range (default Last 7 days) and filters (device, alarm type, Open only).\n- GPS provider feed: \"unavailable\" means the provider or server didn't answer; \"No data from vendor\" means the provider returned nothing; \"Stored data\" means an older saved copy is shown.\n- Alarm rules (set up by administrators out",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "troubleshooting.md",
+    "chunk_number": 3,
+    "content": "o data from vendor\" means the provider returned nothing; \"Stored data\" means an older saved copy is shown.\n- Alarm rules (set up by administrators outside the app) may hide some alarm types — NOT VERIFIED per organisation.\n\n### Why is historical video unavailable?\nIn-app playback is not implemented (vendor SDK/player not provided). You can list recordings and request clip exports. Also check the device is video-capable, the channel, and that the calendar shows recordings for that day.\n\n### Why is my login failing?\n- Wrong account type: tenant users need **Tenant user** + tenant code; the platform admin uses **Safe-Fare Admin** without a code.\n- 401 `INVALID_CREDENTIALS`: wrong code/login/password.\n- Account disabled or locked (too many failed sign-ins) → an admin can **Enable**/**Unlock** in Users & Sub-Accounts.\n- Iris can't reset passwords or see credentials.\n\n### Why does a driver get \"Your account is not linked to a driver profile\"?\nThe login isn't linked to a driver record. Admin:",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "troubleshooting.md",
+    "chunk_number": 4,
+    "content": "rds or see credentials.\n\n### Why does a driver get \"Your account is not linked to a driver profile\"?\nThe login isn't linked to a driver record. Admin: Drivers → Edit → **Linked user id**.\n\n### Why is a create/edit button missing or disabled?\n- Missing permission (e.g. `driver.create`).\n- Safe-Fare Admin in \"All tenants\" mode → select a tenant.\n- Feature intentionally disabled: device transfer/delete, new group, send command, geofence create/edit, alert assign.\n\n### What does \"No data from vendor\" / \"Stored data\" mean?\nThe SafeFare server couldn't get fresh data from the GPS provider (GPSTrackTech). \"No data from vendor\" = the provider returned nothing; \"Stored data\" = the last saved copy is shown and may be out of date.\n\n### What do error messages mean?\n- **Check the highlighted fields** — some values are missing or invalid.\n- **Select a tenant first** — the Safe-Fare Admin must pick an organisation before changing records.\n- **Session expired** — sign in again.\n- **You don't have perm",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "troubleshooting.md",
+    "chunk_number": 5,
+    "content": "tenant first** — the Safe-Fare Admin must pick an organisation before changing records.\n- **Session expired** — sign in again.\n- **You don't have permission** — your role lacks the permission; ask an administrator.\n- **Not found** — the record doesn't exist, was deleted, or belongs to another organisation.\n- **Already exists / in use / not allowed now** — e.g. a duplicate vehicle number, a vehicle with a device still fitted, or a status change that isn't allowed.\n- **Unavailable** — the GPS provider or the server is temporarily not answering; try again later.\nEvery error shows a reference code; quote it when reporting the problem.",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "workflows.md",
+    "chunk_number": 0,
+    "content": "---\ntitle: Step-by-step workflows\ncategory: workflows\n---\n\n# Step-by-step workflows\n\nUse exact menu names. \"Tenant first\" = the Safe-Fare Admin must select a tenant in the top-bar tenant switcher before creating or changing records.\n\n### Sign in\n1. Open SafeFare → **Sign in**. 2. Account type **Tenant user** (enter **Tenant code**) or **Safe-Fare Admin** (no tenant code). 3. **Email or username**, **Password** → **Sign in**.\n\n### Register (add) a vehicle — `vehicle.create`, tenant first\nMonitor → **Vehicles** → **Register vehicle** → Vehicle number (required) + Type, Make, Model, Year, Chassis, Engine, Colour, Status, Remarks → save.\n\n### Register a tracking device — `device.create`, tenant first\nFleet → **Vehicles & Assets** → **Add vehicle** → Name, Device ID (terminal no., 11–20 letters/digits), Group, Device model, Protocol, Object type, Cameras → save → accept the charge message if the server asks.\n\n### Check device status — `device.read`\nFleet → **Vehicles & Assets** → search → *",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "workflows.md",
+    "chunk_number": 1,
+    "content": "pe, Cameras → save → accept the charge message if the server asks.\n\n### Check device status — `device.read`\nFleet → **Vehicles & Assets** → search → **View** → *Latest reported state* (device time, position) and *Dates & reminders*. Online/offline totals: **Fleet Overview** tiles. Report age: **Live Monitoring**.\n\n### Add a driver — `driver.create`, tenant first\nFleet → **Drivers** → **New driver** → Full name (+ licence, contact…) → save.\n\n### Assign a driver to a vehicle — `driver.update`\nFleet → **Drivers** → open driver → **Assign vehicle** → Vehicle, Starts/Ends (IST, optional) → tick **Replace the current assignment** if needed → **Review** → confirm.\n\n### Give a driver app access — `user.create` + `driver.update`\nAdministration → **Users & Sub-Accounts** → **New user** with role **DRIVER** → note the user id → Fleet → **Drivers** → Edit driver → **Linked user id** → save.\n\n### Create a dispatch — `dispatch.create`\nFleet → **Dispatch** → **New dispatch** → Title, Driver, Vehicle,",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "workflows.md",
+    "chunk_number": 2,
+    "content": "Edit driver → **Linked user id** → save.\n\n### Create a dispatch — `dispatch.create`\nFleet → **Dispatch** → **New dispatch** → Title, Driver, Vehicle, Scheduled start/end → **Check conflicts** → save → confirm.\n\n### Approve a swap request — `dispatch.update`\nFleet → **Dispatch** → View **Swap requests** → **Approve**/**Reject** (note optional).\n\n### Approve a leave request — `workforce.update`\nFleet → **Workforce** → **Leave** → pending request → **Approve**/**Reject** → confirm.\n\n### Check today's trips — `track.read`\nMonitor → **Trips & Tracking** → View **Trips** → Date range **Today** → (vehicle) → select a trip for its route.\n\n### Replay a vehicle's route — `track.read`\nTrips & Tracking → View **Track playback** → device → time range (24 h / 3 days / 7 days / Custom) → play. Or Live Monitoring → device → **Track history**.\n\n### View AI alarms / routine alarms — `alarm.read`\nSafety → **Alerts & Events** → **AI events** or **Routine alarms** → Time range → filters → row for evidence",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "workflows.md",
+    "chunk_number": 3,
+    "content": "AI alarms / routine alarms — `alarm.read`\nSafety → **Alerts & Events** → **AI events** or **Routine alarms** → Time range → filters → row for evidence.\n\n### Handle an alert — `alarm.handle`\nAlerts & Events → **Incidents** → open alert → **Acknowledge** → **Comment** → **Resolve** (choose Outcome) or **Dismiss**; **Reopen** if needed.\n\n### Check a driver's safety score — `alarm.read`\nFleet → **Drivers** → open driver → Safety panel; or Safety → **Safety Analytics** → Safety scores → Drivers.\n\n### View historical video — `video.playback`\nMonitor → **Historical Video** → Device → (Channel) → calendar day → Recordings → **Export clip → Request export** → **Download** when ready. (In-app playback not available yet.)\n\n### Generate a report — `report.read`\nMonitor → **Reports** → Mileage/Driving/Parking/Media → time range → device. (No download button.)\n\n### See geofence events — `geofence.read`\nManage → **Geofences** → select geofence → Geofence events → range/type.\n\n### Create a user — `use",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "workflows.md",
+    "chunk_number": 4,
+    "content": "button.)\n\n### See geofence events — `geofence.read`\nManage → **Geofences** → select geofence → Geofence events → range/type.\n\n### Create a user — `user.create`, tenant first\nAdministration → **Users & Sub-Accounts** → **New user** → Display name, Email, Phone, Initial password, Locale, Time zone, Role → save.\n\n### Change my password\nFleet users: Administration → **Settings** → **Change password**. Drivers: My Work → **My Profile** → Change password.\n\n### Work inside a tenant (Safe-Fare Admin)\nTop bar tenant switcher → pick tenant → \"Working in …\". **All tenants** to go back.\n\n### Create a tenant (Safe-Fare Admin)\nPlatform → **Tenants** → **Create tenant** → name, code (optional), time zone, status, S3 prefix → **Review** → confirm.\n\n### Give a role a permission (Safe-Fare Admin)\nPlatform → **Global Roles** → role → Permissions → tick → Review changes → save; or Platform → **Permission Catalogue** → Role permissions.\n\n### Driver's day (My Work)\n1. **My Shifts** → **Start shift** (odomet",
+    "knowledge_type": "documents"
+  },
+  {
+    "source": "workflows.md",
+    "chunk_number": 5,
+    "content": "view changes → save; or Platform → **Permission Catalogue** → Role permissions.\n\n### Driver's day (My Work)\n1. **My Shifts** → **Start shift** (odometer optional). 2. **Shift Checklist** → Start checklist → Pass/Fail each item → submit. 3. **My Work** → trip → **Accept** → **Start trip** → **Complete trip**. 4. **My Shifts** → **End shift**. Leave: **My Leave** → **Request leave**.",
+    "knowledge_type": "documents"
+  }
+]

@@ -1,0 +1,22 @@
+# Shared
+fastapi
+uvicorn[standard]
+pyodbc
+python-dotenv
+
+# Iris AI
+sqlalchemy
+pydantic-settings
+google-genai
+openai
+groq
+faiss-cpu
+numpy
+sentence-transformers
+
+# IoT Sensor backend
+boto3
+pytz
+pandas
+python-multipart
+tzdata

@@ -1,0 +1,4130 @@
+[
+ {
+  "id": "KT-001",
+  "module": "Dashboard",
+  "question": "What is the purpose of the dashboard?",
+  "expected_document": "modules/dashboard_overview.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/dashboard_overview.md",
+   "modules/platform_overview.md",
+   "application_overview.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-002",
+  "module": "Dashboard",
+  "question": "What does the Online number on the dashboard mean?",
+  "expected_document": "modules/dashboard_overview.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/dashboard_overview.md",
+   "frequently_asked_questions.md",
+   "modules/live_monitoring.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-003",
+  "module": "Dashboard",
+  "question": "What is Stale > 24 h?",
+  "expected_document": "modules/dashboard_overview.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/dashboard_overview.md",
+   "modules/notifications.md",
+   "modules/live_monitoring.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-004",
+  "module": "Dashboard",
+  "question": "What does Moving now mean?",
+  "expected_document": "modules/dashboard_overview.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/dashboard_overview.md",
+   "modules/driver_my_work.md",
+   "troubleshooting.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-005",
+  "module": "Dashboard",
+  "question": "How do I change the dashboard date range?",
+  "expected_document": "modules/dashboard_overview.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/dashboard_overview.md",
+   "modules/trips_tracking.md",
+   "modules/safety_analytics.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-006",
+  "module": "Dashboard",
+  "question": "Why does the dashboard show a dash instead of a number?",
+  "expected_document": "modules/dashboard_overview.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/dashboard_overview.md",
+   "modules/devices_vehicles_assets.md",
+   "frequently_asked_questions.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-007",
+  "module": "Dashboard",
+  "question": "What permission do I need to see Fleet Overview?",
+  "expected_document": "modules/dashboard_overview.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/dashboard_overview.md",
+   "modules/authentication_login.md",
+   "modules/device_groups.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-008",
+  "module": "Dashboard",
+  "question": "Where do I see pending leave and pending swaps?",
+  "expected_document": "modules/dashboard_overview.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/dashboard_overview.md",
+   "modules/leave_management.md",
+   "modules/dispatch.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-009",
+  "module": "Dashboard",
+  "question": "What is the Expiring tile?",
+  "expected_document": "modules/dashboard_overview.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 4,
+  "retrieval_top3": "FAIL",
+  "top3": [
+   "modules/live_monitoring.md",
+   "modules/drivers.md",
+   "limitations.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-011",
+  "module": "Dashboard",
+  "question": "Why can't I see the Fleet groups widget?",
+  "expected_document": "modules/dashboard_overview.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/dashboard_overview.md",
+   "modules/device_groups.md",
+   "modules/platform_overview.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-012",
+  "module": "Live Monitoring",
+  "question": "How do I find a vehicle on the live map?",
+  "expected_document": "modules/live_monitoring.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/live_monitoring.md",
+   "modules/global_search.md",
+   "modules/historical_video.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-013",
+  "module": "Live Monitoring",
+  "question": "How often does Live Monitoring refresh?",
+  "expected_document": "modules/live_monitoring.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/live_monitoring.md",
+   "modules/dashboard_overview.md",
+   "limitations.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-014",
+  "module": "Live Monitoring",
+  "question": "Why is a device showing offline?",
+  "expected_document": "modules/live_monitoring.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 2,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/dashboard_overview.md",
+   "modules/live_monitoring.md",
+   "troubleshooting.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-015",
+  "module": "Live Monitoring",
+  "question": "Why is my vehicle not on the map?",
+  "expected_document": "modules/live_monitoring.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/live_monitoring.md",
+   "application_overview.md",
+   "modules/devices_vehicles_assets.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-016",
+  "module": "Live Monitoring",
+  "question": "How can I see the live camera of a vehicle?",
+  "expected_document": "modules/live_monitoring.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/live_monitoring.md",
+   "application_overview.md",
+   "modules/vehicle_registry.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-017",
+  "module": "Live Monitoring",
+  "question": "Why does live video say unavailable?",
+  "expected_document": "modules/live_monitoring.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 2,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/historical_video.md",
+   "modules/live_monitoring.md",
+   "limitations.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-018",
+  "module": "Live Monitoring",
+  "question": "What does report age \u2264 5 min mean?",
+  "expected_document": "modules/live_monitoring.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/live_monitoring.md",
+   "modules/dashboard_overview.md",
+   "terminology.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-019",
+  "module": "Live Monitoring",
+  "question": "Can I filter only devices with an active alarm?",
+  "expected_document": "modules/live_monitoring.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/live_monitoring.md",
+   "modules/devices_vehicles_assets.md",
+   "modules/ai_alarms.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-020",
+  "module": "Live Monitoring",
+  "question": "How do I open a vehicle's track history from the map?",
+  "expected_document": "modules/live_monitoring.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/live_monitoring.md",
+   "modules/trips_tracking.md",
+   "application_overview.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-021",
+  "module": "Live Monitoring",
+  "question": "Is there an online/offline filter on Live Monitoring?",
+  "expected_document": "modules/live_monitoring.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/live_monitoring.md",
+   "modules/dashboard_overview.md",
+   "limitations.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-022",
+  "module": "Historical Video",
+  "question": "How can I view historical videos?",
+  "expected_document": "modules/historical_video.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/historical_video.md",
+   "frequently_asked_questions.md",
+   "workflows.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-023",
+  "module": "Historical Video",
+  "question": "Why is historical video unavailable?",
+  "expected_document": "modules/historical_video.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/historical_video.md",
+   "modules/live_monitoring.md",
+   "troubleshooting.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-024",
+  "module": "Historical Video",
+  "question": "How do I download a video clip?",
+  "expected_document": "modules/historical_video.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/historical_video.md",
+   "limitations.md",
+   "modules/reports.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-025",
+  "module": "Historical Video",
+  "question": "What permission is needed for Historical Video?",
+  "expected_document": "modules/historical_video.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/historical_video.md",
+   "roles_permissions.md",
+   "workflows.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-026",
+  "module": "Historical Video",
+  "question": "What does Link not usable mean on an export?",
+  "expected_document": "modules/historical_video.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/historical_video.md",
+   "modules/alerts_incidents.md",
+   "modules/reports.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-027",
+  "module": "Historical Video",
+  "question": "Can I choose a camera channel?",
+  "expected_document": "modules/historical_video.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/historical_video.md",
+   "modules/live_monitoring.md",
+   "modules/vehicle_registry.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-028",
+  "module": "Historical Video",
+  "question": "Does exporting video cost money?",
+  "expected_document": "modules/historical_video.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/historical_video.md",
+   "limitations.md",
+   "modules/reports.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-029",
+  "module": "Historical Video",
+  "question": "Why does my export have no download link?",
+  "expected_document": "modules/historical_video.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/historical_video.md",
+   "modules/reports.md",
+   "limitations.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-030",
+  "module": "Historical Video",
+  "question": "Which days have recordings?",
+  "expected_document": "modules/historical_video.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/historical_video.md",
+   "modules/trips_tracking.md",
+   "troubleshooting.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-032",
+  "module": "Trips",
+  "question": "How can I check today's trips?",
+  "expected_document": "modules/trips_tracking.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/trips_tracking.md",
+   "modules/driver_my_work.md",
+   "modules/dashboard_overview.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-033",
+  "module": "Trips",
+  "question": "What is a trip?",
+  "expected_document": "modules/trips_tracking.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/trips_tracking.md",
+   "modules/driver_my_work.md",
+   "modules/workforce_shifts.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-034",
+  "module": "Trips",
+  "question": "What's the difference between a trip and a dispatch?",
+  "expected_document": "modules/trips_tracking.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/trips_tracking.md",
+   "modules/app_shell_navigation.md",
+   "modules/dispatch.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-035",
+  "module": "Trips",
+  "question": "How do I replay a vehicle's route?",
+  "expected_document": "modules/trips_tracking.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/trips_tracking.md",
+   "workflows.md",
+   "modules/geofences.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-036",
+  "module": "Trips",
+  "question": "What time ranges does track playback support?",
+  "expected_document": "modules/trips_tracking.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/trips_tracking.md",
+   "workflows.md",
+   "modules/ai_alarms.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-037",
+  "module": "Trips",
+  "question": "Can I create a trip?",
+  "expected_document": "modules/trips_tracking.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/trips_tracking.md",
+   "modules/workforce_shifts.md",
+   "modules/dispatch.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-038",
+  "module": "Trips",
+  "question": "What columns are in the trip list?",
+  "expected_document": "modules/trips_tracking.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/trips_tracking.md",
+   "modules/geofences.md",
+   "modules/device_commands.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-039",
+  "module": "Trips",
+  "question": "Why does the track show no points?",
+  "expected_document": "modules/trips_tracking.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/trips_tracking.md",
+   "modules/safety_scores.md",
+   "terminology.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-040",
+  "module": "Trips",
+  "question": "What permission is needed for trips?",
+  "expected_document": "modules/trips_tracking.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 4,
+  "retrieval_top3": "FAIL",
+  "top3": [
+   "workflows.md",
+   "modules/features_not_in_app.md",
+   "roles_permissions.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-042",
+  "module": "Reports",
+  "question": "How can I generate reports?",
+  "expected_document": "modules/reports.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/reports.md",
+   "frequently_asked_questions.md",
+   "modules/geofences.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-043",
+  "module": "Reports",
+  "question": "How can I download reports?",
+  "expected_document": "modules/reports.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/reports.md",
+   "modules/features_not_in_app.md",
+   "frequently_asked_questions.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-044",
+  "module": "Reports",
+  "question": "What report types exist?",
+  "expected_document": "modules/reports.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/reports.md",
+   "modules/device_commands.md",
+   "troubleshooting.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-045",
+  "module": "Reports",
+  "question": "How do I see total distance driven?",
+  "expected_document": "modules/reports.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/reports.md",
+   "modules/safety_scores.md",
+   "modules/dashboard_overview.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-046",
+  "module": "Reports",
+  "question": "Can I schedule reports?",
+  "expected_document": "modules/reports.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/reports.md",
+   "frequently_asked_questions.md",
+   "modules/live_monitoring.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-047",
+  "module": "Reports",
+  "question": "What permission is needed for reports?",
+  "expected_document": "modules/reports.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 3,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/features_not_in_app.md",
+   "workflows.md",
+   "modules/reports.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-048",
+  "module": "Reports",
+  "question": "Are reports paged?",
+  "expected_document": "modules/reports.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/reports.md",
+   "modules/vehicle_registry.md",
+   "modules/safety_scores.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-049",
+  "module": "Reports",
+  "question": "What does Type \u00b7 trigger mean in media report?",
+  "expected_document": "modules/reports.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/reports.md",
+   "modules/live_monitoring.md",
+   "troubleshooting.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-050",
+  "module": "Reports",
+  "question": "Is there an idle report?",
+  "expected_document": "modules/reports.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/reports.md",
+   "modules/features_not_in_app.md",
+   "modules/trips_tracking.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-051",
+  "module": "Reports",
+  "question": "Can I filter a report by device?",
+  "expected_document": "modules/reports.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/reports.md",
+   "modules/live_monitoring.md",
+   "modules/devices_vehicles_assets.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-052",
+  "module": "Vehicles",
+  "question": "How can I add a vehicle?",
+  "expected_document": "modules/vehicle_registry.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/vehicle_registry.md",
+   "modules/devices_vehicles_assets.md",
+   "roles_permissions.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-053",
+  "module": "Vehicles",
+  "question": "What is a vehicle?",
+  "expected_document": "modules/vehicle_registry.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/vehicle_registry.md",
+   "modules/driver_assignments.md",
+   "modules/live_monitoring.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-054",
+  "module": "Vehicles",
+  "question": "What is the difference between a vehicle and a device?",
+  "expected_document": "modules/vehicle_registry.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/vehicle_registry.md",
+   "modules/trips_tracking.md",
+   "modules/app_shell_navigation.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-055",
+  "module": "Vehicles",
+  "question": "Why can't I delete a vehicle?",
+  "expected_document": "modules/vehicle_registry.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/vehicle_registry.md",
+   "roles_permissions.md",
+   "modules/drivers.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-056",
+  "module": "Vehicles",
+  "question": "Can two vehicles have the same number?",
+  "expected_document": "modules/vehicle_registry.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 2,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/devices_vehicles_assets.md",
+   "modules/vehicle_registry.md",
+   "frequently_asked_questions.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-057",
+  "module": "Vehicles",
+  "question": "How do I deactivate a vehicle?",
+  "expected_document": "modules/vehicle_registry.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/vehicle_registry.md",
+   "modules/driver_assignments.md",
+   "modules/live_monitoring.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-058",
+  "module": "Vehicles",
+  "question": "What vehicle types can I choose?",
+  "expected_document": "modules/vehicle_registry.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/vehicle_registry.md",
+   "modules/trips_tracking.md",
+   "modules/leave_management.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-059",
+  "module": "Vehicles",
+  "question": "Which vehicles have no device?",
+  "expected_document": "modules/vehicle_registry.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 3,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "limitations.md",
+   "modules/devices_vehicles_assets.md",
+   "modules/vehicle_registry.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-060",
+  "module": "Vehicles",
+  "question": "What permission registers a vehicle?",
+  "expected_document": "modules/vehicle_registry.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/vehicle_registry.md",
+   "roles_permissions.md",
+   "modules/devices_vehicles_assets.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-061",
+  "module": "Vehicles",
+  "question": "Can I set bus passenger capacity?",
+  "expected_document": "modules/vehicle_registry.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 2,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/sensors_passenger_counting.md",
+   "modules/vehicle_registry.md",
+   "limitations.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-062",
+  "module": "Devices",
+  "question": "How can I check device status?",
+  "expected_document": "modules/devices_vehicles_assets.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/devices_vehicles_assets.md",
+   "modules/dispatch.md",
+   "modules/sensors_passenger_counting.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-063",
+  "module": "Devices",
+  "question": "What is a device?",
+  "expected_document": "modules/devices_vehicles_assets.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/devices_vehicles_assets.md",
+   "modules/device_groups.md",
+   "modules/device_commands.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-064",
+  "module": "Devices",
+  "question": "How do I register a new tracking device?",
+  "expected_document": "modules/devices_vehicles_assets.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/devices_vehicles_assets.md",
+   "workflows.md",
+   "modules/vehicle_registry.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-065",
+  "module": "Devices",
+  "question": "What format is the device ID?",
+  "expected_document": "modules/devices_vehicles_assets.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/devices_vehicles_assets.md",
+   "README.md",
+   "modules/drivers.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-066",
+  "module": "Devices",
+  "question": "Why can't I delete or transfer a device?",
+  "expected_document": "modules/devices_vehicles_assets.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/devices_vehicles_assets.md",
+   "modules/features_not_in_app.md",
+   "modules/device_groups.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-067",
+  "module": "Devices",
+  "question": "What does the charge confirmation mean when registering a device?",
+  "expected_document": "modules/devices_vehicles_assets.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/devices_vehicles_assets.md",
+   "modules/vehicle_registry.md",
+   "modules/device_groups.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-068",
+  "module": "Devices",
+  "question": "Which device fields can I edit?",
+  "expected_document": "modules/devices_vehicles_assets.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/devices_vehicles_assets.md",
+   "modules/vehicle_registry.md",
+   "modules/drivers.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-069",
+  "module": "Devices",
+  "question": "Why is a vehicle not appearing in the list?",
+  "expected_document": "modules/devices_vehicles_assets.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/devices_vehicles_assets.md",
+   "modules/historical_video.md",
+   "modules/maintenance.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-070",
+  "module": "Devices",
+  "question": "How do I filter devices expiring soon?",
+  "expected_document": "modules/devices_vehicles_assets.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/devices_vehicles_assets.md",
+   "modules/drivers.md",
+   "modules/dashboard_overview.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-071",
+  "module": "Devices",
+  "question": "What is the Asset tree?",
+  "expected_document": "modules/devices_vehicles_assets.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 2,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/device_groups.md",
+   "modules/devices_vehicles_assets.md",
+   "modules/app_shell_navigation.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-072",
+  "module": "Sensors",
+  "question": "What is BMS?",
+  "expected_document": "modules/sensors_passenger_counting.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/sensors_passenger_counting.md",
+   "application_overview.md",
+   "terminology.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-073",
+  "module": "Sensors",
+  "question": "Why is the sensor count different from BMS?",
+  "expected_document": "modules/sensors_passenger_counting.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/sensors_passenger_counting.md",
+   "application_overview.md",
+   "terminology.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-074",
+  "module": "Sensors",
+  "question": "How do I check the alcohol test result?",
+  "expected_document": "modules/sensors_passenger_counting.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/sensors_passenger_counting.md",
+   "modules/dispatch.md",
+   "README.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-075",
+  "module": "Sensors",
+  "question": "What is the default bus capacity?",
+  "expected_document": "modules/sensors_passenger_counting.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/sensors_passenger_counting.md",
+   "modules/vehicle_registry.md",
+   "limitations.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-076",
+  "module": "Sensors",
+  "question": "What does OVER_CAPACITY mean?",
+  "expected_document": "modules/sensors_passenger_counting.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/sensors_passenger_counting.md",
+   "modules/live_monitoring.md",
+   "modules/vehicle_registry.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-077",
+  "module": "Sensors",
+  "question": "What does Recalculate do?",
+  "expected_document": "modules/sensors_passenger_counting.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/sensors_passenger_counting.md",
+   "roles_permissions.md",
+   "terminology.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-078",
+  "module": "Sensors",
+  "question": "Can I add a sensor reading manually?",
+  "expected_document": "modules/sensors_passenger_counting.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/sensors_passenger_counting.md",
+   "roles_permissions.md",
+   "modules/vehicle_registry.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-079",
+  "module": "Sensors",
+  "question": "What time windows can I choose?",
+  "expected_document": "modules/sensors_passenger_counting.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/sensors_passenger_counting.md",
+   "modules/trips_tracking.md",
+   "modules/reports.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-080",
+  "module": "Sensors",
+  "question": "Does NO_READING mean no alcohol?",
+  "expected_document": "modules/sensors_passenger_counting.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/sensors_passenger_counting.md",
+   "troubleshooting.md",
+   "modules/live_monitoring.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-081",
+  "module": "Sensors",
+  "question": "What permission is needed for Sensors?",
+  "expected_document": "modules/sensors_passenger_counting.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 2,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "roles_permissions.md",
+   "modules/sensors_passenger_counting.md",
+   "modules/notifications.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-082",
+  "module": "Drivers",
+  "question": "What is a driver?",
+  "expected_document": "modules/drivers.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/drivers.md",
+   "modules/driver_assignments.md",
+   "modules/driver_my_work.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-083",
+  "module": "Drivers",
+  "question": "How do I add a driver?",
+  "expected_document": "modules/drivers.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 2,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "roles_permissions.md",
+   "modules/drivers.md",
+   "modules/devices_vehicles_assets.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-084",
+  "module": "Drivers",
+  "question": "How can I check a driver's safety score?",
+  "expected_document": "modules/drivers.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 2,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/safety_scores.md",
+   "modules/drivers.md",
+   "modules/safety_analytics.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-085",
+  "module": "Drivers",
+  "question": "Which drivers have licences expiring soon?",
+  "expected_document": "modules/drivers.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/drivers.md",
+   "modules/dashboard_overview.md",
+   "roles_permissions.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-086",
+  "module": "Drivers",
+  "question": "How do I give a driver app access?",
+  "expected_document": "modules/drivers.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/drivers.md",
+   "README.md",
+   "roles_permissions.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-087",
+  "module": "Drivers",
+  "question": "What licence statuses exist?",
+  "expected_document": "modules/drivers.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/drivers.md",
+   "modules/workforce_shifts.md",
+   "modules/users_sub_accounts.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-088",
+  "module": "Drivers",
+  "question": "What fields are required for a driver?",
+  "expected_document": "modules/drivers.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 6,
+  "retrieval_top3": "FAIL",
+  "top3": [
+   "modules/authentication_login.md",
+   "modules/devices_vehicles_assets.md",
+   "modules/vehicle_registry.md"
+  ],
+  "answerable_in_top3": "FAIL"
+ },
+ {
+  "id": "KT-089",
+  "module": "Drivers",
+  "question": "What permission deletes a driver?",
+  "expected_document": "modules/drivers.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 2,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/features_not_in_app.md",
+   "modules/drivers.md",
+   "limitations.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-090",
+  "module": "Drivers",
+  "question": "Can I filter drivers by status?",
+  "expected_document": "modules/drivers.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/drivers.md",
+   "modules/ai_alarms.md",
+   "modules/vehicle_registry.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-091",
+  "module": "Drivers",
+  "question": "Who calculates licence status?",
+  "expected_document": "modules/drivers.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/drivers.md",
+   "modules/iris_assistant.md",
+   "modules/devices_vehicles_assets.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-092",
+  "module": "Driver Assignments",
+  "question": "How can I assign a driver to a vehicle?",
+  "expected_document": "modules/driver_assignments.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/driver_assignments.md",
+   "modules/drivers.md",
+   "modules/dispatch.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-093",
+  "module": "Driver Assignments",
+  "question": "How do I end an assignment?",
+  "expected_document": "modules/driver_assignments.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/driver_assignments.md",
+   "modules/drivers.md",
+   "roles_permissions.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-094",
+  "module": "Driver Assignments",
+  "question": "What happens if the vehicle already has a driver?",
+  "expected_document": "modules/driver_assignments.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/driver_assignments.md",
+   "modules/live_monitoring.md",
+   "modules/vehicle_registry.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-095",
+  "module": "Driver Assignments",
+  "question": "What is a driver assignment?",
+  "expected_document": "modules/driver_assignments.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/driver_assignments.md",
+   "modules/drivers.md",
+   "modules/devices_vehicles_assets.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-096",
+  "module": "Driver Assignments",
+  "question": "Can I leave the start time blank?",
+  "expected_document": "modules/driver_assignments.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/driver_assignments.md",
+   "modules/driver_my_work.md",
+   "workflows.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-097",
+  "module": "Driver Assignments",
+  "question": "Where do I see a vehicle's assignment history?",
+  "expected_document": "modules/driver_assignments.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/driver_assignments.md",
+   "modules/drivers.md",
+   "modules/live_monitoring.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-098",
+  "module": "Driver Assignments",
+  "question": "What permission is needed to assign?",
+  "expected_document": "modules/driver_assignments.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 4,
+  "retrieval_top3": "FAIL",
+  "top3": [
+   "roles_permissions.md",
+   "modules/features_not_in_app.md",
+   "workflows.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-099",
+  "module": "Driver Assignments",
+  "question": "Why can't I choose a vehicle in the assign dialog?",
+  "expected_document": "modules/driver_assignments.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/driver_assignments.md",
+   "modules/drivers.md",
+   "modules/trips_tracking.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-100",
+  "module": "Driver Assignments",
+  "question": "Does the alarm driver come from the assignment?",
+  "expected_document": "modules/driver_assignments.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/driver_assignments.md",
+   "application_overview.md",
+   "modules/drivers.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-102",
+  "module": "Dispatch",
+  "question": "What is dispatch?",
+  "expected_document": "modules/dispatch.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/dispatch.md",
+   "modules/trips_tracking.md",
+   "roles_permissions.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-103",
+  "module": "Dispatch",
+  "question": "How do I create a dispatch?",
+  "expected_document": "modules/dispatch.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/dispatch.md",
+   "roles_permissions.md",
+   "modules/trips_tracking.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-104",
+  "module": "Dispatch",
+  "question": "Why is Save disabled on a new dispatch?",
+  "expected_document": "modules/dispatch.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/dispatch.md",
+   "workflows.md",
+   "modules/users_sub_accounts.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-105",
+  "module": "Dispatch",
+  "question": "How do I approve a swap request?",
+  "expected_document": "modules/dispatch.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/dispatch.md",
+   "roles_permissions.md",
+   "modules/leave_management.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-106",
+  "module": "Dispatch",
+  "question": "What dispatch statuses exist?",
+  "expected_document": "modules/dispatch.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/dispatch.md",
+   "modules/workforce_shifts.md",
+   "modules/drivers.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-107",
+  "module": "Dispatch",
+  "question": "How do I cancel a dispatch?",
+  "expected_document": "modules/dispatch.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/dispatch.md",
+   "modules/leave_management.md",
+   "roles_permissions.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-108",
+  "module": "Dispatch",
+  "question": "Can I delete a dispatch?",
+  "expected_document": "modules/dispatch.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 2,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "roles_permissions.md",
+   "modules/dispatch.md",
+   "modules/trips_tracking.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-109",
+  "module": "Dispatch",
+  "question": "What fields are required for a dispatch?",
+  "expected_document": "modules/dispatch.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/dispatch.md",
+   "modules/authentication_login.md",
+   "modules/alerts_incidents.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-110",
+  "module": "Dispatch",
+  "question": "What does the Conflicts view show?",
+  "expected_document": "modules/dispatch.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/dispatch.md",
+   "modules/leave_management.md",
+   "workflows.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-111",
+  "module": "Dispatch",
+  "question": "Which permission creates dispatches?",
+  "expected_document": "modules/dispatch.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/dispatch.md",
+   "modules/drivers.md",
+   "modules/trips_tracking.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-112",
+  "module": "Workforce/Leave",
+  "question": "How can I approve a leave request?",
+  "expected_document": "modules/leave_management.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/leave_management.md",
+   "roles_permissions.md",
+   "modules/dispatch.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-113",
+  "module": "Workforce/Leave",
+  "question": "Which leave types exist?",
+  "expected_document": "modules/leave_management.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/leave_management.md",
+   "modules/workforce_shifts.md",
+   "modules/notifications.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-114",
+  "module": "Workforce/Leave",
+  "question": "How does a driver request leave?",
+  "expected_document": "modules/leave_management.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/leave_management.md",
+   "modules/driver_my_work.md",
+   "modules/notifications.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-115",
+  "module": "Workforce/Leave",
+  "question": "What leave statuses are there?",
+  "expected_document": "modules/leave_management.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/leave_management.md",
+   "modules/workforce_shifts.md",
+   "modules/dispatch.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-116",
+  "module": "Workforce/Leave",
+  "question": "Can I request leave on behalf of a driver?",
+  "expected_document": "modules/leave_management.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/leave_management.md",
+   "modules/driver_my_work.md",
+   "modules/notifications.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-117",
+  "module": "Workforce/Leave",
+  "question": "What permission approves leave?",
+  "expected_document": "modules/leave_management.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/leave_management.md",
+   "modules/workforce_shifts.md",
+   "modules/notifications.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-118",
+  "module": "Workforce/Leave",
+  "question": "Can a driver cancel leave?",
+  "expected_document": "modules/leave_management.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/leave_management.md",
+   "modules/dispatch.md",
+   "roles_permissions.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-119",
+  "module": "Workforce/Leave",
+  "question": "What happens to dispatches when leave is approved?",
+  "expected_document": "modules/leave_management.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/leave_management.md",
+   "terminology.md",
+   "modules/dispatch.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-120",
+  "module": "Workforce/Leave",
+  "question": "Which drivers have pending leave requests?",
+  "expected_document": "modules/leave_management.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/leave_management.md",
+   "modules/dashboard_overview.md",
+   "modules/dispatch.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-121",
+  "module": "Workforce/Leave",
+  "question": "What is the max reason length?",
+  "expected_document": "modules/leave_management.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 4,
+  "retrieval_top3": "FAIL",
+  "top3": [
+   "modules/authentication_login.md",
+   "modules/geofences.md",
+   "modules/devices_vehicles_assets.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-122",
+  "module": "Workforce/Shifts",
+  "question": "What is a shift?",
+  "expected_document": "modules/workforce_shifts.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/workforce_shifts.md",
+   "modules/driver_my_work.md",
+   "application_overview.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-123",
+  "module": "Workforce/Shifts",
+  "question": "Who is on shift now?",
+  "expected_document": "modules/workforce_shifts.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/workforce_shifts.md",
+   "modules/driver_my_work.md",
+   "modules/driver_assignments.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-124",
+  "module": "Workforce/Shifts",
+  "question": "What availability statuses exist?",
+  "expected_document": "modules/workforce_shifts.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/workforce_shifts.md",
+   "modules/drivers.md",
+   "modules/users_sub_accounts.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-125",
+  "module": "Workforce/Shifts",
+  "question": "Where are submitted checklists?",
+  "expected_document": "modules/workforce_shifts.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/workforce_shifts.md",
+   "modules/driver_my_work.md",
+   "application_overview.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-126",
+  "module": "Workforce/Shifts",
+  "question": "What is the pre-trip checklist?",
+  "expected_document": "modules/workforce_shifts.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/workforce_shifts.md",
+   "modules/driver_my_work.md",
+   "application_overview.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-127",
+  "module": "Workforce/Shifts",
+  "question": "How far back does the Shifts tab show?",
+  "expected_document": "modules/workforce_shifts.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/workforce_shifts.md",
+   "modules/driver_my_work.md",
+   "modules/platform_overview.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-128",
+  "module": "Workforce/Shifts",
+  "question": "Can I edit the checklist template?",
+  "expected_document": "modules/workforce_shifts.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/workforce_shifts.md",
+   "modules/driver_my_work.md",
+   "application_overview.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-129",
+  "module": "Workforce/Shifts",
+  "question": "What permission opens Workforce?",
+  "expected_document": "modules/workforce_shifts.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/workforce_shifts.md",
+   "modules/leave_management.md",
+   "modules/notifications.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-130",
+  "module": "Workforce/Shifts",
+  "question": "Can I filter shifts by driver?",
+  "expected_document": "modules/workforce_shifts.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/workforce_shifts.md",
+   "modules/driver_my_work.md",
+   "workflows.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-131",
+  "module": "Workforce/Shifts",
+  "question": "What tabs does Workforce have?",
+  "expected_document": "modules/workforce_shifts.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/workforce_shifts.md",
+   "modules/leave_management.md",
+   "modules/alerts_incidents.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-132",
+  "module": "Alerts",
+  "question": "How do I view alarms?",
+  "expected_document": "modules/alerts_incidents.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 2,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/ai_alarms.md",
+   "modules/alerts_incidents.md",
+   "modules/driver_assignments.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-133",
+  "module": "Alerts",
+  "question": "How do I resolve an alert?",
+  "expected_document": "modules/alerts_incidents.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/alerts_incidents.md",
+   "roles_permissions.md",
+   "modules/routine_alarms.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-134",
+  "module": "Alerts",
+  "question": "What is the difference between an alarm and an alert?",
+  "expected_document": "modules/alerts_incidents.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 5,
+  "retrieval_top3": "FAIL",
+  "top3": [
+   "modules/app_shell_navigation.md",
+   "modules/trips_tracking.md",
+   "modules/vehicle_registry.md"
+  ],
+  "answerable_in_top3": "FAIL"
+ },
+ {
+  "id": "KT-135",
+  "module": "Alerts",
+  "question": "What outcomes can I choose when resolving?",
+  "expected_document": "modules/alerts_incidents.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/alerts_incidents.md",
+   "modules/trips_tracking.md",
+   "modules/device_groups.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-136",
+  "module": "Alerts",
+  "question": "Can I assign an alert to someone?",
+  "expected_document": "modules/alerts_incidents.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/alerts_incidents.md",
+   "modules/users_sub_accounts.md",
+   "modules/driver_assignments.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-137",
+  "module": "Alerts",
+  "question": "What permission is needed to handle alerts?",
+  "expected_document": "modules/alerts_incidents.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/alerts_incidents.md",
+   "roles_permissions.md",
+   "workflows.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-138",
+  "module": "Alerts",
+  "question": "Why is an alarm missing?",
+  "expected_document": "modules/alerts_incidents.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 2,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/features_not_in_app.md",
+   "modules/alerts_incidents.md",
+   "troubleshooting.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-139",
+  "module": "Alerts",
+  "question": "How do I reopen a dismissed alert?",
+  "expected_document": "modules/alerts_incidents.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/alerts_incidents.md",
+   "roles_permissions.md",
+   "terminology.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-140",
+  "module": "Alerts",
+  "question": "What alert statuses exist?",
+  "expected_document": "modules/alerts_incidents.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/alerts_incidents.md",
+   "modules/workforce_shifts.md",
+   "modules/drivers.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-141",
+  "module": "Alerts",
+  "question": "What does Acknowledge do?",
+  "expected_document": "modules/alerts_incidents.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/alerts_incidents.md",
+   "roles_permissions.md",
+   "workflows.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-142",
+  "module": "AI alarms",
+  "question": "How can I view AI alarms?",
+  "expected_document": "modules/ai_alarms.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/ai_alarms.md",
+   "modules/alerts_incidents.md",
+   "frequently_asked_questions.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-143",
+  "module": "AI alarms",
+  "question": "What is an AI event?",
+  "expected_document": "modules/ai_alarms.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/ai_alarms.md",
+   "application_overview.md",
+   "modules/alerts_incidents.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-144",
+  "module": "AI alarms",
+  "question": "How do I see the image or video of an AI event?",
+  "expected_document": "modules/ai_alarms.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/ai_alarms.md",
+   "frequently_asked_questions.md",
+   "application_overview.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-145",
+  "module": "AI alarms",
+  "question": "What does DSM mean?",
+  "expected_document": "modules/ai_alarms.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/ai_alarms.md",
+   "troubleshooting.md",
+   "modules/sensors_passenger_counting.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-146",
+  "module": "AI alarms",
+  "question": "Can I filter AI events by type?",
+  "expected_document": "modules/ai_alarms.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/ai_alarms.md",
+   "modules/safety_analytics.md",
+   "modules/routine_alarms.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-147",
+  "module": "AI alarms",
+  "question": "What is severity?",
+  "expected_document": "modules/ai_alarms.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 3,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/safety_analytics.md",
+   "modules/platform_overview.md",
+   "modules/ai_alarms.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-149",
+  "module": "AI alarms",
+  "question": "Where do I handle an AI event?",
+  "expected_document": "modules/ai_alarms.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 2,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/alerts_incidents.md",
+   "modules/ai_alarms.md",
+   "application_overview.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-150",
+  "module": "AI alarms",
+  "question": "Show the latest AI events",
+  "expected_document": "modules/ai_alarms.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/ai_alarms.md",
+   "modules/geofences.md",
+   "modules/devices_vehicles_assets.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-151",
+  "module": "AI alarms",
+  "question": "How do I see the vehicle's track for an AI event?",
+  "expected_document": "modules/ai_alarms.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 2,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "application_overview.md",
+   "modules/ai_alarms.md",
+   "frequently_asked_questions.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-152",
+  "module": "Routine alarms",
+  "question": "Show today's alarms",
+  "expected_document": "modules/routine_alarms.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/routine_alarms.md",
+   "modules/dashboard_overview.md",
+   "modules/ai_alarms.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-153",
+  "module": "Routine alarms",
+  "question": "What is a routine alarm?",
+  "expected_document": "modules/routine_alarms.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/routine_alarms.md",
+   "modules/alerts_incidents.md",
+   "application_overview.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-154",
+  "module": "Routine alarms",
+  "question": "How many alarms this month?",
+  "expected_document": "modules/routine_alarms.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/routine_alarms.md",
+   "modules/historical_video.md",
+   "modules/safety_scores.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-155",
+  "module": "Routine alarms",
+  "question": "Why does it say routine alarms unavailable?",
+  "expected_document": "modules/routine_alarms.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/routine_alarms.md",
+   "modules/dashboard_overview.md",
+   "modules/alerts_incidents.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-158",
+  "module": "Routine alarms",
+  "question": "Can I configure alarm rules?",
+  "expected_document": "modules/routine_alarms.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/routine_alarms.md",
+   "modules/safety_analytics.md",
+   "modules/alerts_incidents.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-159",
+  "module": "Routine alarms",
+  "question": "Where are routine alarms on the dashboard?",
+  "expected_document": "modules/routine_alarms.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 2,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/dashboard_overview.md",
+   "modules/routine_alarms.md",
+   "modules/alerts_incidents.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-160",
+  "module": "Routine alarms",
+  "question": "What permission shows routine alarms?",
+  "expected_document": "modules/routine_alarms.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/routine_alarms.md",
+   "modules/dashboard_overview.md",
+   "modules/alerts_incidents.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-161",
+  "module": "Routine alarms",
+  "question": "Do routine alarms have the same filters as AI events?",
+  "expected_document": "modules/routine_alarms.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/routine_alarms.md",
+   "modules/alerts_incidents.md",
+   "modules/ai_alarms.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-162",
+  "module": "Safety",
+  "question": "Show safety analytics",
+  "expected_document": "modules/safety_analytics.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/safety_analytics.md",
+   "modules/safety_scores.md",
+   "modules/drivers.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-163",
+  "module": "Safety",
+  "question": "Which vehicles have the highest risk?",
+  "expected_document": "modules/safety_analytics.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/safety_analytics.md",
+   "limitations.md",
+   "modules/devices_vehicles_assets.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-164",
+  "module": "Safety",
+  "question": "What date ranges does Safety Analytics support?",
+  "expected_document": "modules/safety_analytics.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/safety_analytics.md",
+   "modules/safety_scores.md",
+   "modules/drivers.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-165",
+  "module": "Safety",
+  "question": "What breakdowns are available in Safety Analytics?",
+  "expected_document": "modules/safety_analytics.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/safety_analytics.md",
+   "modules/safety_scores.md",
+   "application_overview.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-166",
+  "module": "Safety",
+  "question": "Is there a safety heatmap?",
+  "expected_document": "modules/safety_analytics.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/safety_analytics.md",
+   "modules/features_not_in_app.md",
+   "modules/safety_scores.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-167",
+  "module": "Safety",
+  "question": "What is a severe event?",
+  "expected_document": "modules/safety_analytics.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/safety_analytics.md",
+   "modules/safety_scores.md",
+   "modules/dashboard_overview.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-168",
+  "module": "Safety",
+  "question": "Who has most events among drivers?",
+  "expected_document": "modules/safety_analytics.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/safety_analytics.md",
+   "application_overview.md",
+   "roles_permissions.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-169",
+  "module": "Safety",
+  "question": "What permission opens Safety Analytics?",
+  "expected_document": "modules/safety_analytics.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/safety_analytics.md",
+   "modules/safety_scores.md",
+   "modules/iris_assistant.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-170",
+  "module": "Safety",
+  "question": "Are scores computed in the browser?",
+  "expected_document": "modules/safety_analytics.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 2,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/safety_scores.md",
+   "modules/safety_analytics.md",
+   "modules/iris_assistant.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-171",
+  "module": "Safety",
+  "question": "What is safety analytics?",
+  "expected_document": "modules/safety_analytics.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/safety_analytics.md",
+   "modules/safety_scores.md",
+   "modules/drivers.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-172",
+  "module": "Safety scores",
+  "question": "Show the safety scores of my vehicles",
+  "expected_document": "modules/safety_scores.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/safety_scores.md",
+   "modules/safety_analytics.md",
+   "application_overview.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-173",
+  "module": "Safety scores",
+  "question": "How is the safety score calculated?",
+  "expected_document": "modules/safety_scores.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/safety_scores.md",
+   "modules/drivers.md",
+   "modules/safety_analytics.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-174",
+  "module": "Safety scores",
+  "question": "What columns are in the score table?",
+  "expected_document": "modules/safety_scores.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/safety_scores.md",
+   "modules/trips_tracking.md",
+   "modules/devices_vehicles_assets.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-175",
+  "module": "Safety scores",
+  "question": "How does a driver see their score?",
+  "expected_document": "modules/safety_scores.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 2,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/drivers.md",
+   "modules/safety_scores.md",
+   "modules/safety_analytics.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-176",
+  "module": "Safety scores",
+  "question": "Why does a driver have no score?",
+  "expected_document": "modules/safety_scores.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/safety_scores.md",
+   "modules/safety_analytics.md",
+   "modules/drivers.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-177",
+  "module": "Safety scores",
+  "question": "What is penalty points?",
+  "expected_document": "modules/safety_scores.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/safety_scores.md",
+   "modules/safety_analytics.md",
+   "modules/trips_tracking.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-178",
+  "module": "Safety scores",
+  "question": "What period does the driver drawer score cover?",
+  "expected_document": "modules/safety_scores.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/safety_scores.md",
+   "modules/drivers.md",
+   "terminology.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-179",
+  "module": "Safety scores",
+  "question": "Is there a grade?",
+  "expected_document": "modules/safety_scores.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/safety_scores.md",
+   "terminology.md",
+   "README.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-181",
+  "module": "Safety scores",
+  "question": "Can I compare two drivers' scores?",
+  "expected_document": "modules/safety_scores.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/safety_scores.md",
+   "modules/authentication_login.md",
+   "modules/safety_analytics.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-182",
+  "module": "Geofences",
+  "question": "What is a geofence?",
+  "expected_document": "modules/geofences.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/geofences.md",
+   "modules/routine_alarms.md",
+   "modules/features_not_in_app.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-183",
+  "module": "Geofences",
+  "question": "Show the latest geofence events",
+  "expected_document": "modules/geofences.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/geofences.md",
+   "modules/ai_alarms.md",
+   "modules/notifications.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-184",
+  "module": "Geofences",
+  "question": "How do I create a geofence?",
+  "expected_document": "modules/geofences.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/geofences.md",
+   "roles_permissions.md",
+   "modules/features_not_in_app.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-185",
+  "module": "Geofences",
+  "question": "How do I delete a geofence?",
+  "expected_document": "modules/geofences.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/geofences.md",
+   "roles_permissions.md",
+   "modules/features_not_in_app.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-186",
+  "module": "Geofences",
+  "question": "What shapes are supported?",
+  "expected_document": "modules/geofences.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/geofences.md",
+   "modules/safety_analytics.md",
+   "modules/settings.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-187",
+  "module": "Geofences",
+  "question": "Can I draw a circle geofence?",
+  "expected_document": "modules/geofences.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/geofences.md",
+   "modules/trips_tracking.md",
+   "modules/routine_alarms.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-188",
+  "module": "Geofences",
+  "question": "What are geofence voice prompts?",
+  "expected_document": "modules/geofences.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/geofences.md",
+   "modules/features_not_in_app.md",
+   "modules/iris_assistant.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-189",
+  "module": "Geofences",
+  "question": "Which permission deletes a geofence?",
+  "expected_document": "modules/geofences.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 2,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/features_not_in_app.md",
+   "modules/geofences.md",
+   "modules/tenants_organizations.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-190",
+  "module": "Geofences",
+  "question": "What is Bound to?",
+  "expected_document": "modules/geofences.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/geofences.md",
+   "frequently_asked_questions.md",
+   "terminology.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-192",
+  "module": "Users",
+  "question": "How do I create a user?",
+  "expected_document": "modules/users_sub_accounts.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 3,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "roles_permissions.md",
+   "modules/tenants_organizations.md",
+   "modules/users_sub_accounts.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-193",
+  "module": "Users",
+  "question": "How do I unlock a locked user?",
+  "expected_document": "modules/users_sub_accounts.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/users_sub_accounts.md",
+   "modules/devices_vehicles_assets.md",
+   "roles_permissions.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-194",
+  "module": "Users",
+  "question": "How do I reset another user's password?",
+  "expected_document": "modules/users_sub_accounts.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 2,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/settings.md",
+   "modules/users_sub_accounts.md",
+   "modules/authentication_login.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-195",
+  "module": "Users",
+  "question": "What is a sub-account?",
+  "expected_document": "modules/users_sub_accounts.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/users_sub_accounts.md",
+   "modules/settings.md",
+   "modules/tenants_organizations.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-196",
+  "module": "Users",
+  "question": "Can I delete a user?",
+  "expected_document": "modules/users_sub_accounts.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 4,
+  "retrieval_top3": "FAIL",
+  "top3": [
+   "roles_permissions.md",
+   "modules/vehicle_registry.md",
+   "modules/geofences.md"
+  ],
+  "answerable_in_top3": "FAIL"
+ },
+ {
+  "id": "KT-197",
+  "module": "Users",
+  "question": "What user statuses exist?",
+  "expected_document": "modules/users_sub_accounts.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 3,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/workforce_shifts.md",
+   "modules/drivers.md",
+   "modules/users_sub_accounts.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-198",
+  "module": "Users",
+  "question": "How do I disable a user?",
+  "expected_document": "modules/users_sub_accounts.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/users_sub_accounts.md",
+   "roles_permissions.md",
+   "limitations.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-199",
+  "module": "Users",
+  "question": "Where is the account hierarchy?",
+  "expected_document": "modules/users_sub_accounts.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/users_sub_accounts.md",
+   "application_overview.md",
+   "modules/authentication_login.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-200",
+  "module": "Users",
+  "question": "What is required to create a user?",
+  "expected_document": "modules/users_sub_accounts.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/users_sub_accounts.md",
+   "modules/tenants_organizations.md",
+   "modules/settings.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-201",
+  "module": "Users",
+  "question": "Can I edit roles on the Users screen?",
+  "expected_document": "modules/users_sub_accounts.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 12,
+  "retrieval_top3": "FAIL",
+  "top3": [
+   "modules/features_not_in_app.md",
+   "modules/drivers.md",
+   "modules/vehicle_registry.md"
+  ],
+  "answerable_in_top3": "FAIL"
+ },
+ {
+  "id": "KT-202",
+  "module": "Tenants",
+  "question": "What is a tenant?",
+  "expected_document": "modules/tenants_organizations.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/tenants_organizations.md",
+   "modules/platform_overview.md",
+   "modules/authentication_login.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-203",
+  "module": "Tenants",
+  "question": "How do I select a tenant as Safe-Fare Admin?",
+  "expected_document": "modules/tenants_organizations.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 2,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/authentication_login.md",
+   "modules/tenants_organizations.md",
+   "modules/platform_overview.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-204",
+  "module": "Tenants",
+  "question": "How do I create a tenant?",
+  "expected_document": "modules/tenants_organizations.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/tenants_organizations.md",
+   "roles_permissions.md",
+   "workflows.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-205",
+  "module": "Tenants",
+  "question": "Why are create buttons missing for the admin?",
+  "expected_document": "modules/tenants_organizations.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 2,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "roles_permissions.md",
+   "modules/tenants_organizations.md",
+   "troubleshooting.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-206",
+  "module": "Tenants",
+  "question": "Can a fleet owner see another organisation's data?",
+  "expected_document": "modules/tenants_organizations.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/tenants_organizations.md",
+   "roles_permissions.md",
+   "application_overview.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-207",
+  "module": "Tenants",
+  "question": "How many organizations are registered?",
+  "expected_document": "modules/platform_overview.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/platform_overview.md",
+   "modules/vehicle_registry.md",
+   "modules/tenants_organizations.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-208",
+  "module": "Tenants",
+  "question": "Does creating a tenant create its admin user?",
+  "expected_document": "modules/tenants_organizations.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/tenants_organizations.md",
+   "modules/authentication_login.md",
+   "roles_permissions.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-209",
+  "module": "Tenants",
+  "question": "What time zone should a tenant have?",
+  "expected_document": "modules/tenants_organizations.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/tenants_organizations.md",
+   "modules/driver_assignments.md",
+   "modules/dashboard_overview.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-210",
+  "module": "Tenants",
+  "question": "Can I edit or delete a tenant?",
+  "expected_document": "modules/tenants_organizations.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 3,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "roles_permissions.md",
+   "modules/vehicle_registry.md",
+   "modules/tenants_organizations.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-211",
+  "module": "Tenants",
+  "question": "How do I go back to all tenants?",
+  "expected_document": "modules/tenants_organizations.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 4,
+  "retrieval_top3": "FAIL",
+  "top3": [
+   "modules/platform_overview.md",
+   "workflows.md",
+   "modules/trips_tracking.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-212",
+  "module": "Roles",
+  "question": "Why can't I access a menu?",
+  "expected_document": "roles_permissions.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "roles_permissions.md",
+   "modules/app_shell_navigation.md",
+   "modules/authentication_login.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-213",
+  "module": "Roles",
+  "question": "Why can't a driver access the admin dashboard?",
+  "expected_document": "roles_permissions.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "roles_permissions.md",
+   "modules/driver_my_work.md",
+   "modules/authentication_login.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-214",
+  "module": "Roles",
+  "question": "What roles exist in SafeFare?",
+  "expected_document": "roles_permissions.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 21,
+  "retrieval_top3": "FAIL",
+  "top3": [
+   "modules/iris_assistant.md",
+   "application_overview.md",
+   "README.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-215",
+  "module": "Roles",
+  "question": "What permission opens Live Monitoring?",
+  "expected_document": "roles_permissions.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 28,
+  "retrieval_top3": "FAIL",
+  "top3": [
+   "modules/live_monitoring.md",
+   "modules/iris_assistant.md",
+   "modules/app_shell_navigation.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-216",
+  "module": "Roles",
+  "question": "Is the Fleet Owner role code confirmed?",
+  "expected_document": "roles_permissions.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "roles_permissions.md",
+   "README.md",
+   "limitations.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-217",
+  "module": "Roles",
+  "question": "Can a tenant admin see other tenants?",
+  "expected_document": "roles_permissions.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 4,
+  "retrieval_top3": "FAIL",
+  "top3": [
+   "modules/tenants_organizations.md",
+   "modules/platform_overview.md",
+   "modules/authentication_login.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-218",
+  "module": "Roles",
+  "question": "What is the Safe-Fare Admin?",
+  "expected_document": "roles_permissions.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 2,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/platform_overview.md",
+   "roles_permissions.md",
+   "modules/authentication_login.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-219",
+  "module": "Roles",
+  "question": "Which permission is needed to handle alerts?",
+  "expected_document": "roles_permissions.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 2,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/alerts_incidents.md",
+   "roles_permissions.md",
+   "workflows.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-220",
+  "module": "Roles",
+  "question": "What does TENANT_ACCESS_DENIED mean?",
+  "expected_document": "roles_permissions.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 2,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/authentication_login.md",
+   "roles_permissions.md",
+   "modules/tenants_organizations.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-221",
+  "module": "Roles",
+  "question": "Which permission opens Device Commands?",
+  "expected_document": "roles_permissions.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 7,
+  "retrieval_top3": "FAIL",
+  "top3": [
+   "modules/device_commands.md",
+   "modules/notifications.md",
+   "modules/app_shell_navigation.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-222",
+  "module": "Settings",
+  "question": "How do I change my password?",
+  "expected_document": "modules/settings.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/settings.md",
+   "modules/users_sub_accounts.md",
+   "modules/authentication_login.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-223",
+  "module": "Settings",
+  "question": "I forgot my password",
+  "expected_document": "modules/settings.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/settings.md",
+   "modules/authentication_login.md",
+   "limitations.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-224",
+  "module": "Settings",
+  "question": "How do I update my phone number?",
+  "expected_document": "modules/settings.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/settings.md",
+   "modules/drivers.md",
+   "modules/devices_vehicles_assets.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-225",
+  "module": "Settings",
+  "question": "What workspace preferences can I change?",
+  "expected_document": "modules/settings.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/settings.md",
+   "modules/driver_my_work.md",
+   "modules/driver_assignments.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-226",
+  "module": "Settings",
+  "question": "How do I hide the Iris assistant?",
+  "expected_document": "modules/settings.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 3,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/iris_assistant.md",
+   "modules/driver_my_work.md",
+   "modules/settings.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-227",
+  "module": "Settings",
+  "question": "Are preferences saved on the server?",
+  "expected_document": "modules/settings.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/settings.md",
+   "modules/dispatch.md",
+   "troubleshooting.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-228",
+  "module": "Settings",
+  "question": "What video layouts are available?",
+  "expected_document": "modules/settings.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/settings.md",
+   "modules/historical_video.md",
+   "limitations.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-229",
+  "module": "Settings",
+  "question": "Is there a password strength rule?",
+  "expected_document": "modules/settings.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/settings.md",
+   "limitations.md",
+   "modules/users_sub_accounts.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-230",
+  "module": "Settings",
+  "question": "Can drivers open Settings?",
+  "expected_document": "modules/settings.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/settings.md",
+   "roles_permissions.md",
+   "modules/iris_assistant.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-231",
+  "module": "Settings",
+  "question": "What expiry reminder modes exist?",
+  "expected_document": "modules/settings.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 2,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/maintenance.md",
+   "modules/settings.md",
+   "modules/drivers.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-232",
+  "module": "Driver app",
+  "question": "How do I use the driver application?",
+  "expected_document": "modules/driver_my_work.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 2,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "application_overview.md",
+   "modules/driver_my_work.md",
+   "frequently_asked_questions.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-233",
+  "module": "Driver app",
+  "question": "What is my current shift?",
+  "expected_document": "modules/driver_my_work.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 2,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/workforce_shifts.md",
+   "modules/driver_my_work.md",
+   "modules/driver_assignments.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-234",
+  "module": "Driver app",
+  "question": "Show my assigned vehicle",
+  "expected_document": "modules/driver_my_work.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 5,
+  "retrieval_top3": "FAIL",
+  "top3": [
+   "modules/driver_assignments.md",
+   "modules/dispatch.md",
+   "modules/workforce_shifts.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-235",
+  "module": "Driver app",
+  "question": "What is my checklist status?",
+  "expected_document": "modules/driver_my_work.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/driver_my_work.md",
+   "modules/workforce_shifts.md",
+   "application_overview.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-236",
+  "module": "Driver app",
+  "question": "What is my leave request status?",
+  "expected_document": "modules/driver_my_work.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 2,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/leave_management.md",
+   "modules/driver_my_work.md",
+   "workflows.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-237",
+  "module": "Driver app",
+  "question": "Show my safety score",
+  "expected_document": "modules/driver_my_work.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 5,
+  "retrieval_top3": "FAIL",
+  "top3": [
+   "modules/safety_scores.md",
+   "modules/safety_analytics.md",
+   "modules/drivers.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-238",
+  "module": "Driver app",
+  "question": "How do I start a trip?",
+  "expected_document": "modules/driver_my_work.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/driver_my_work.md",
+   "modules/trips_tracking.md",
+   "modules/dispatch.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-239",
+  "module": "Driver app",
+  "question": "Why are trip buttons disabled?",
+  "expected_document": "modules/driver_my_work.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 3,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/features_not_in_app.md",
+   "modules/devices_vehicles_assets.md",
+   "modules/driver_my_work.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-240",
+  "module": "Driver app",
+  "question": "Why do I get not linked to a driver profile?",
+  "expected_document": "modules/driver_my_work.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/driver_my_work.md",
+   "roles_permissions.md",
+   "modules/global_search.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-241",
+  "module": "Driver app",
+  "question": "Is there a native driver mobile app?",
+  "expected_document": "modules/driver_my_work.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/driver_my_work.md",
+   "modules/features_not_in_app.md",
+   "limitations.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-242",
+  "module": "Driver app",
+  "question": "How do I end my shift?",
+  "expected_document": "modules/driver_my_work.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/driver_my_work.md",
+   "modules/workforce_shifts.md",
+   "modules/driver_assignments.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-243",
+  "module": "Driver app",
+  "question": "Can drivers use Iris today?",
+  "expected_document": "modules/driver_my_work.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 4,
+  "retrieval_top3": "FAIL",
+  "top3": [
+   "modules/iris_assistant.md",
+   "modules/ai_alarms.md",
+   "modules/drivers.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-244",
+  "module": "Auth",
+  "question": "Why is my login failing?",
+  "expected_document": "modules/authentication_login.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/authentication_login.md",
+   "modules/device_commands.md",
+   "troubleshooting.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-245",
+  "module": "Auth",
+  "question": "How does the Safe-Fare Admin sign in?",
+  "expected_document": "modules/authentication_login.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/authentication_login.md",
+   "modules/platform_overview.md",
+   "modules/roles_permissions_admin.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-246",
+  "module": "Auth",
+  "question": "What is a tenant code?",
+  "expected_document": "modules/authentication_login.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/authentication_login.md",
+   "modules/tenants_organizations.md",
+   "roles_permissions.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-247",
+  "module": "Auth",
+  "question": "Why was I signed out?",
+  "expected_document": "modules/authentication_login.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/authentication_login.md",
+   "modules/sensors_passenger_counting.md",
+   "modules/notifications.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-248",
+  "module": "Auth",
+  "question": "How do I sign out?",
+  "expected_document": "modules/authentication_login.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/authentication_login.md",
+   "modules/sensors_passenger_counting.md",
+   "modules/users_sub_accounts.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-249",
+  "module": "Auth",
+  "question": "Is there a forgot password link?",
+  "expected_document": "modules/authentication_login.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 3,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/settings.md",
+   "limitations.md",
+   "modules/authentication_login.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-250",
+  "module": "Auth",
+  "question": "What is the max password length?",
+  "expected_document": "modules/authentication_login.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/authentication_login.md",
+   "modules/devices_vehicles_assets.md",
+   "modules/settings.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-251",
+  "module": "Auth",
+  "question": "Where do I land after sign-in?",
+  "expected_document": "modules/authentication_login.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/authentication_login.md",
+   "modules/platform_overview.md",
+   "modules/driver_my_work.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-253",
+  "module": "Auth",
+  "question": "What does No access for this account yet mean?",
+  "expected_document": "modules/authentication_login.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/authentication_login.md",
+   "modules/app_shell_navigation.md",
+   "troubleshooting.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-254",
+  "module": "General",
+  "question": "What is SafeFare?",
+  "expected_document": "application_overview.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "application_overview.md",
+   "README.md",
+   "terminology.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-255",
+  "module": "General",
+  "question": "Who uses SafeFare?",
+  "expected_document": "application_overview.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "application_overview.md",
+   "README.md",
+   "modules/features_not_in_app.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-256",
+  "module": "General",
+  "question": "What time zone does SafeFare use?",
+  "expected_document": "application_overview.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "application_overview.md",
+   "modules/settings.md",
+   "modules/iris_assistant.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-257",
+  "module": "Troubleshooting",
+  "question": "Why am I not receiving notifications?",
+  "expected_document": "troubleshooting.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 2,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/notifications.md",
+   "troubleshooting.md",
+   "modules/app_shell_navigation.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-258",
+  "module": "Troubleshooting",
+  "question": "Why is the dashboard not loading?",
+  "expected_document": "troubleshooting.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 15,
+  "retrieval_top3": "FAIL",
+  "top3": [
+   "modules/dashboard_overview.md",
+   "modules/reports.md",
+   "modules/platform_overview.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-259",
+  "module": "Troubleshooting",
+  "question": "What does No data from vendor mean?",
+  "expected_document": "troubleshooting.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "troubleshooting.md",
+   "modules/devices_vehicles_assets.md",
+   "modules/dashboard_overview.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-260",
+  "module": "Notifications",
+  "question": "Show recent notifications",
+  "expected_document": "modules/notifications.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/notifications.md",
+   "modules/driver_my_work.md",
+   "modules/devices_vehicles_assets.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-261",
+  "module": "Notifications",
+  "question": "How do I mark all notifications as read?",
+  "expected_document": "modules/notifications.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/notifications.md",
+   "modules/driver_my_work.md",
+   "roles_permissions.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-262",
+  "module": "Notifications",
+  "question": "What notification types exist?",
+  "expected_document": "modules/notifications.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/notifications.md",
+   "troubleshooting.md",
+   "modules/device_commands.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-263",
+  "module": "Search",
+  "question": "How do I quickly find a vehicle?",
+  "expected_document": "modules/global_search.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/global_search.md",
+   "modules/live_monitoring.md",
+   "modules/historical_video.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-264",
+  "module": "Maintenance",
+  "question": "When is my vehicle's next maintenance?",
+  "expected_document": "modules/maintenance.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/maintenance.md",
+   "modules/devices_vehicles_assets.md",
+   "modules/vehicle_registry.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-265",
+  "module": "Maintenance",
+  "question": "Can I create a maintenance reminder?",
+  "expected_document": "modules/maintenance.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/maintenance.md",
+   "modules/features_not_in_app.md",
+   "modules/devices_vehicles_assets.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-266",
+  "module": "Commands",
+  "question": "Can I send a command to a device?",
+  "expected_document": "modules/device_commands.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/device_commands.md",
+   "modules/features_not_in_app.md",
+   "roles_permissions.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-267",
+  "module": "Commands",
+  "question": "What permission views command history?",
+  "expected_document": "modules/device_commands.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/device_commands.md",
+   "application_overview.md",
+   "modules/trips_tracking.md"
+  ],
+  "answerable_in_top3": "PASS"
+ },
+ {
+  "id": "KT-268",
+  "module": "Iris",
+  "question": "What can Iris do?",
+  "expected_document": "modules/iris_assistant.md",
+  "grounding": "PASS",
+  "missing_terms": [],
+  "retrieval_rank": 1,
+  "retrieval_top3": "PASS",
+  "top3": [
+   "modules/iris_assistant.md",
+   "README.md",
+   "troubleshooting.md"
+  ],
+  "answerable_in_top3": "PASS"
+ }
+]

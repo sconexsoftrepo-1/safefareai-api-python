@@ -1,0 +1,426 @@
+{
+  "generated": "2026-11-05",
+  "scope": "api/ (technical knowledge)",
+  "count": 32,
+  "cases": [
+    {
+      "id": "API-001",
+      "module": "Dashboard",
+      "question": "Which API gives the dashboard overview?",
+      "expected_answer": "GET /api/v1/dashboard/overview returning vehicles, trips, safety, health and operations.",
+      "expected_document": "modules/dashboard_overview_api.md",
+      "must_mention": [
+        "/dashboard/overview",
+        "OverviewDto"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "API-002",
+      "module": "Historical Video",
+      "question": "Which API lists recordings?",
+      "expected_answer": "GET /devices/{id}/recordings.",
+      "expected_document": "modules/historical_video_api.md",
+      "must_mention": [
+        "/recordings"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "API-003",
+      "module": "Driver Assignments",
+      "question": "Which API creates an assignment?",
+      "expected_answer": "POST /drivers/{id}/assignments.",
+      "expected_document": "modules/driver_assignments_api.md",
+      "must_mention": [
+        "/assignments"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "API-004",
+      "module": "AI alarms",
+      "question": "Which API returns AI alarms?",
+      "expected_answer": "GET /alarms/ai with from and to required.",
+      "expected_document": "modules/ai_alarms_api.md",
+      "must_mention": [
+        "/alarms/ai"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "API-005",
+      "module": "Routine alarms",
+      "question": "Is /alarms/routine/recent used?",
+      "expected_answer": "No.",
+      "expected_document": "modules/routine_alarms_api.md",
+      "must_mention": [
+        "not used"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "API-006",
+      "module": "Routine alarms",
+      "question": "Which API lists routine alarms?",
+      "expected_answer": "GET /alarms/routine.",
+      "expected_document": "modules/routine_alarms_api.md",
+      "must_mention": [
+        "/alarms/routine"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "API-007",
+      "module": "Safety scores",
+      "question": "Which API returns driver scores?",
+      "expected_answer": "GET /safety/scores/drivers.",
+      "expected_document": "modules/safety_scores_api.md",
+      "must_mention": [
+        "/safety/scores/drivers"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "API-008",
+      "module": "Geofences",
+      "question": "Which API returns geofence events?",
+      "expected_answer": "GET /geofences/events.",
+      "expected_document": "modules/geofences_api.md",
+      "must_mention": [
+        "/geofences/events"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "API-009",
+      "module": "Auth",
+      "question": "Which API signs in?",
+      "expected_answer": "POST /auth/login.",
+      "expected_document": "modules/authentication_login_api.md",
+      "must_mention": [
+        "/auth/login"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "API-010",
+      "module": "Dashboard",
+      "question": "Which endpoint gives online and offline device counts?",
+      "expected_answer": "GET /api/v1/monitor/realtime → onlineCount / offlineCount.",
+      "expected_document": "modules/live_monitoring_api.md",
+      "must_mention": [
+        "/monitor/realtime",
+        "onlineCount"
+      ],
+      "intent": "TOOL_MAPPING",
+      "requires_live_data": false,
+      "notes": "Technical question for the tool layer; not for end users."
+    },
+    {
+      "id": "API-011",
+      "module": "Vehicles",
+      "question": "Which API counts registered vehicles?",
+      "expected_answer": "GET /api/v1/vehicles (total in envelope); permission vehicle.read.",
+      "expected_document": "modules/vehicle_registry_api.md",
+      "must_mention": [
+        "/api/v1/vehicles",
+        "vehicle.read"
+      ],
+      "intent": "TOOL_MAPPING",
+      "requires_live_data": false,
+      "notes": "Technical question for the tool layer; not for end users."
+    },
+    {
+      "id": "API-012",
+      "module": "Vehicles",
+      "question": "Which API lists vehicles without a device?",
+      "expected_answer": "GET /vehicles?assigned=false or GET /vehicles/available.",
+      "expected_document": "modules/vehicle_registry_api.md",
+      "must_mention": [
+        "/vehicles/available"
+      ],
+      "intent": "TOOL_MAPPING",
+      "requires_live_data": false,
+      "notes": "Technical question for the tool layer; not for end users."
+    },
+    {
+      "id": "API-013",
+      "module": "Devices",
+      "question": "Which API lists devices?",
+      "expected_answer": "GET /api/v1/devices with groupId, keyword, paging.",
+      "expected_document": "modules/devices_vehicles_assets_api.md",
+      "must_mention": [
+        "/api/v1/devices"
+      ],
+      "intent": "TOOL_MAPPING",
+      "requires_live_data": false,
+      "notes": "Technical question for the tool layer; not for end users."
+    },
+    {
+      "id": "API-014",
+      "module": "Drivers",
+      "question": "Which API lists drivers?",
+      "expected_answer": "GET /api/v1/drivers with keyword, status, paging; driver.read.",
+      "expected_document": "modules/drivers_api.md",
+      "must_mention": [
+        "/api/v1/drivers"
+      ],
+      "intent": "TOOL_MAPPING",
+      "requires_live_data": false,
+      "notes": "Technical question for the tool layer; not for end users."
+    },
+    {
+      "id": "API-015",
+      "module": "Drivers",
+      "question": "Which API returns licence expiries?",
+      "expected_answer": "GET /api/v1/drivers/licence-expiries?withinDays.",
+      "expected_document": "modules/drivers_api.md",
+      "must_mention": [
+        "licence-expiries"
+      ],
+      "intent": "TOOL_MAPPING",
+      "requires_live_data": false,
+      "notes": "Technical question for the tool layer; not for end users."
+    },
+    {
+      "id": "API-016",
+      "module": "Trips",
+      "question": "Which API returns trips?",
+      "expected_answer": "GET /trips with from, to, deviceId, driverId.",
+      "expected_document": "modules/trips_tracking_api.md",
+      "must_mention": [
+        "/trips?from"
+      ],
+      "intent": "TOOL_MAPPING",
+      "requires_live_data": false,
+      "notes": "Technical question for the tool layer; not for end users."
+    },
+    {
+      "id": "API-017",
+      "module": "Alerts",
+      "question": "Which API lists alerts with filters?",
+      "expected_answer": "GET /alerts with from, to, openOnly, severity, kind…",
+      "expected_document": "modules/alerts_incidents_api.md",
+      "must_mention": [
+        "openOnly"
+      ],
+      "intent": "TOOL_MAPPING",
+      "requires_live_data": false,
+      "notes": "Technical question for the tool layer; not for end users."
+    },
+    {
+      "id": "API-018",
+      "module": "Leave",
+      "question": "Which API lists leave requests?",
+      "expected_answer": "GET /api/v1/leave-requests; workforce.read.",
+      "expected_document": "modules/leave_management_api.md",
+      "must_mention": [
+        "/api/v1/leave-requests"
+      ],
+      "intent": "TOOL_MAPPING",
+      "requires_live_data": false,
+      "notes": "Technical question for the tool layer; not for end users."
+    },
+    {
+      "id": "API-019",
+      "module": "Workforce",
+      "question": "Which API returns driver availability?",
+      "expected_answer": "GET /api/v1/drivers/availability?date.",
+      "expected_document": "modules/workforce_shifts_api.md",
+      "must_mention": [
+        "/drivers/availability"
+      ],
+      "intent": "TOOL_MAPPING",
+      "requires_live_data": false,
+      "notes": "Technical question for the tool layer; not for end users."
+    },
+    {
+      "id": "API-020",
+      "module": "Dispatch",
+      "question": "Which API lists dispatches?",
+      "expected_answer": "GET /api/v1/dispatches; dispatch.read.",
+      "expected_document": "modules/dispatch_api.md",
+      "must_mention": [
+        "/api/v1/dispatches"
+      ],
+      "intent": "TOOL_MAPPING",
+      "requires_live_data": false,
+      "notes": "Technical question for the tool layer; not for end users."
+    },
+    {
+      "id": "API-021",
+      "module": "Safety",
+      "question": "Which API returns safety analytics?",
+      "expected_answer": "GET /safety/analytics?from&to.",
+      "expected_document": "modules/safety_analytics_api.md",
+      "must_mention": [
+        "/safety/analytics"
+      ],
+      "intent": "TOOL_MAPPING",
+      "requires_live_data": false,
+      "notes": "Technical question for the tool layer; not for end users."
+    },
+    {
+      "id": "API-022",
+      "module": "Notifications",
+      "question": "Which API returns the unread notification count?",
+      "expected_answer": "GET /notifications/unread-count → {unread}.",
+      "expected_document": "modules/notifications_api.md",
+      "must_mention": [
+        "unread-count"
+      ],
+      "intent": "TOOL_MAPPING",
+      "requires_live_data": false,
+      "notes": "Technical question for the tool layer; not for end users."
+    },
+    {
+      "id": "API-023",
+      "module": "Driver app",
+      "question": "Which API returns the driver's current shift?",
+      "expected_answer": "GET /api/v1/driver/shifts/current; own.data.read.",
+      "expected_document": "modules/driver_my_work_api.md",
+      "must_mention": [
+        "/api/v1/driver/shifts/current"
+      ],
+      "intent": "TOOL_MAPPING",
+      "requires_live_data": false,
+      "notes": "Technical question for the tool layer; not for end users."
+    },
+    {
+      "id": "API-024",
+      "module": "Driver app",
+      "question": "Which API returns the driver's assigned vehicle?",
+      "expected_answer": "GET /api/v1/driver/assignment.",
+      "expected_document": "modules/driver_my_work_api.md",
+      "must_mention": [
+        "/api/v1/driver/assignment"
+      ],
+      "intent": "TOOL_MAPPING",
+      "requires_live_data": false,
+      "notes": "Technical question for the tool layer; not for end users."
+    },
+    {
+      "id": "API-025",
+      "module": "Tenants",
+      "question": "Which API lists tenants for the Safe-Fare Admin?",
+      "expected_answer": "GET /platform/tenants; tenant.all.",
+      "expected_document": "modules/tenants_organizations_api.md",
+      "must_mention": [
+        "/platform/tenants"
+      ],
+      "intent": "TOOL_MAPPING",
+      "requires_live_data": false,
+      "notes": "Technical question for the tool layer; not for end users."
+    },
+    {
+      "id": "API-026",
+      "module": "Sensors",
+      "question": "Which API returns the passenger summary?",
+      "expected_answer": "GET /devices/{id}/passenger-summary.",
+      "expected_document": "modules/sensors_passenger_counting_api.md",
+      "must_mention": [
+        "passenger-summary"
+      ],
+      "intent": "TOOL_MAPPING",
+      "requires_live_data": false,
+      "notes": "Technical question for the tool layer; not for end users."
+    },
+    {
+      "id": "API-027",
+      "module": "Auth",
+      "question": "Which API returns my permissions?",
+      "expected_answer": "GET /api/v1/me/permissions.",
+      "expected_document": "modules/authentication_login_api.md",
+      "must_mention": [
+        "/api/v1/me/permissions"
+      ],
+      "intent": "TOOL_MAPPING",
+      "requires_live_data": false,
+      "notes": "Technical question for the tool layer; not for end users."
+    },
+    {
+      "id": "API-028",
+      "module": "Permissions",
+      "question": "Which operations need alarm.handle?",
+      "expected_answer": "Alert acknowledge, comment, resolve, dismiss, reopen, assign, high-priority steps.",
+      "expected_document": "permission_api_map.md",
+      "must_mention": [
+        "alarm.handle"
+      ],
+      "intent": "TOOL_MAPPING",
+      "requires_live_data": false,
+      "notes": "Technical question for the tool layer; not for end users."
+    },
+    {
+      "id": "API-029",
+      "module": "Conventions",
+      "question": "What does VENDOR_EMPTY mean in a response?",
+      "expected_answer": "extend.fallbackReason VENDOR_EMPTY = vendor returned no data; msg 'No data from vendor'.",
+      "expected_document": "api_reference.md",
+      "must_mention": [
+        "VENDOR_EMPTY"
+      ],
+      "intent": "TOOL_MAPPING",
+      "requires_live_data": false,
+      "notes": "Technical question for the tool layer; not for end users."
+    },
+    {
+      "id": "API-030",
+      "module": "Conventions",
+      "question": "What does TENANT_REQUIRED mean?",
+      "expected_answer": "Safe-Fare Admin write without tenantId/X-Tenant-Id → 400.",
+      "expected_document": "api_reference.md",
+      "must_mention": [
+        "TENANT_REQUIRED"
+      ],
+      "intent": "TOOL_MAPPING",
+      "requires_live_data": false,
+      "notes": "Technical question for the tool layer; not for end users."
+    },
+    {
+      "id": "API-031",
+      "module": "Gaps",
+      "question": "Why can't Iris list offline vehicles directly?",
+      "expected_answer": "No per-device online field/filter; realtime statusCode undocumented.",
+      "expected_document": "backend_gaps.md",
+      "must_mention": [
+        "statusCode"
+      ],
+      "intent": "TOOL_MAPPING",
+      "requires_live_data": false,
+      "notes": "Technical question for the tool layer; not for end users."
+    },
+    {
+      "id": "API-032",
+      "module": "Trips",
+      "question": "Which API returns trips?",
+      "expected_answer": " with from, to, deviceId, driverId.",
+      "expected_document": "modules/trips_tracking_api.md",
+      "must_mention": [
+        "/trips"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    }
+  ]
+}

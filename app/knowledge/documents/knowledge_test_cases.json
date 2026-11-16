@@ -1,0 +1,3411 @@
+{
+  "generated": "2026-11-05",
+  "count": 258,
+  "cases": [
+    {
+      "id": "KT-001",
+      "module": "Dashboard",
+      "question": "What is the purpose of the dashboard?",
+      "expected_answer": "Fleet Overview shows devices online/offline, device health, safety events, today's operations, reminders and quick links for a date range.",
+      "expected_document": "modules/dashboard_overview.md",
+      "must_mention": [
+        "Fleet Overview",
+        "Online",
+        "Offline"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-002",
+      "module": "Dashboard",
+      "question": "What does the Online number on the dashboard mean?",
+      "expected_answer": "Server count of devices currently reporting, from onlineCount.",
+      "expected_document": "modules/dashboard_overview.md",
+      "must_mention": [
+        "Server counts",
+        "currently reporting"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-003",
+      "module": "Dashboard",
+      "question": "What is Stale > 24 h?",
+      "expected_answer": "Server count of devices with no report for over 24 hours.",
+      "expected_document": "modules/dashboard_overview.md",
+      "must_mention": [
+        "Stale > 24 h",
+        "24 hours"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-004",
+      "module": "Dashboard",
+      "question": "What does Moving now mean?",
+      "expected_answer": "Devices with speed > 0 and a report no older than 5 minutes.",
+      "expected_document": "modules/dashboard_overview.md",
+      "must_mention": [
+        "Moving now",
+        "5 min"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-005",
+      "module": "Dashboard",
+      "question": "How do I change the dashboard date range?",
+      "expected_answer": "Use the Date range selector: Today, Last 7 days (default), Last 30 days.",
+      "expected_document": "modules/dashboard_overview.md",
+      "must_mention": [
+        "Today",
+        "Last 7 days",
+        "Last 30 days"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-006",
+      "module": "Dashboard",
+      "question": "Why does the dashboard show a dash instead of a number?",
+      "expected_answer": "The server didn't return the value or the request failed; the app never shows 0 instead.",
+      "expected_document": "modules/dashboard_overview.md",
+      "must_mention": [
+        "never as 0"
+      ],
+      "intent": "TROUBLESHOOTING",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-007",
+      "module": "Dashboard",
+      "question": "What permission do I need to see Fleet Overview?",
+      "expected_answer": "device.read.",
+      "expected_document": "modules/dashboard_overview.md",
+      "must_mention": [
+        "device.read"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-008",
+      "module": "Dashboard",
+      "question": "Where do I see pending leave and pending swaps?",
+      "expected_answer": "Fleet Overview → Today's operations (Pending leave, Pending swaps).",
+      "expected_document": "modules/dashboard_overview.md",
+      "must_mention": [
+        "Pending leave",
+        "Pending swaps"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-009",
+      "module": "Dashboard",
+      "question": "What is the Expiring tile?",
+      "expected_answer": "Devices whose service expiry is within 30 days.",
+      "expected_document": "modules/dashboard_overview.md",
+      "must_mention": [
+        "Expiring",
+        "30 days"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-011",
+      "module": "Dashboard",
+      "question": "Why can't I see the Fleet groups widget?",
+      "expected_answer": "It needs group.read; without it the widget shows no permission.",
+      "expected_document": "modules/dashboard_overview.md",
+      "must_mention": [
+        "group.read"
+      ],
+      "intent": "TROUBLESHOOTING",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-012",
+      "module": "Live Monitoring",
+      "question": "How do I find a vehicle on the live map?",
+      "expected_answer": "Live Monitoring → Search vehicles by name or device ID → pick it.",
+      "expected_document": "modules/live_monitoring.md",
+      "must_mention": [
+        "Search vehicles",
+        "Name or device ID"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-013",
+      "module": "Live Monitoring",
+      "question": "How often does Live Monitoring refresh?",
+      "expected_answer": "Every 30 seconds by default (min 10 s), or press Refresh.",
+      "expected_document": "modules/live_monitoring.md",
+      "must_mention": [
+        "30 s"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-014",
+      "module": "Live Monitoring",
+      "question": "Why is a device showing offline?",
+      "expected_answer": "Server reports it isn't reporting; check last report, battery, service expiry; possible causes power, network, SIM, expiry, hardware — unverified per device.",
+      "expected_document": "modules/live_monitoring.md",
+      "must_mention": [
+        "offline",
+        "SIM"
+      ],
+      "intent": "TROUBLESHOOTING",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-015",
+      "module": "Live Monitoring",
+      "question": "Why is my vehicle not on the map?",
+      "expected_answer": "No valid coordinates (no GPS fix or 0,0) or filtered out.",
+      "expected_document": "modules/live_monitoring.md",
+      "must_mention": [
+        "0,0",
+        "filtered"
+      ],
+      "intent": "TROUBLESHOOTING",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-016",
+      "module": "Live Monitoring",
+      "question": "How can I see the live camera of a vehicle?",
+      "expected_answer": "Pick the device in Live Monitoring; the Live video popup opens.",
+      "expected_document": "modules/live_monitoring.md",
+      "must_mention": [
+        "Live video"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-017",
+      "module": "Live Monitoring",
+      "question": "Why does live video say unavailable?",
+      "expected_answer": "No terminal number or the live video token isn't configured.",
+      "expected_document": "modules/live_monitoring.md",
+      "must_mention": [
+        "Live video unavailable",
+        "configured"
+      ],
+      "intent": "TROUBLESHOOTING",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-018",
+      "module": "Live Monitoring",
+      "question": "What does report age ≤ 5 min mean?",
+      "expected_answer": "The device reported within the last 5 minutes.",
+      "expected_document": "modules/live_monitoring.md",
+      "must_mention": [
+        "≤ 5 min"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-019",
+      "module": "Live Monitoring",
+      "question": "Can I filter only devices with an active alarm?",
+      "expected_answer": "Yes, the Alarms toggle shows only devices reporting an active alarm.",
+      "expected_document": "modules/live_monitoring.md",
+      "must_mention": [
+        "active alarm"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-020",
+      "module": "Live Monitoring",
+      "question": "How do I open a vehicle's track history from the map?",
+      "expected_answer": "Device panel → Track history.",
+      "expected_document": "modules/live_monitoring.md",
+      "must_mention": [
+        "Track history"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-021",
+      "module": "Live Monitoring",
+      "question": "Is there an online/offline filter on Live Monitoring?",
+      "expected_answer": "No; use report age filter; the Overview offline link is ignored.",
+      "expected_document": "modules/live_monitoring.md",
+      "must_mention": [
+        "no online/offline filter"
+      ],
+      "intent": "UNSUPPORTED",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-022",
+      "module": "Historical Video",
+      "question": "How can I view historical videos?",
+      "expected_answer": "Historical Video → device → channel → calendar day → recordings; export clip; playback not available yet.",
+      "expected_document": "modules/historical_video.md",
+      "must_mention": [
+        "Recording calendar",
+        "Request export"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-023",
+      "module": "Historical Video",
+      "question": "Why is historical video unavailable?",
+      "expected_answer": "In-app playback needs the vendor SDK, not provided.",
+      "expected_document": "modules/historical_video.md",
+      "must_mention": [
+        "vendor",
+        "SDK"
+      ],
+      "intent": "TROUBLESHOOTING",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-024",
+      "module": "Historical Video",
+      "question": "How do I download a video clip?",
+      "expected_answer": "Export clip → Request export, then Download from Clip exports when ready.",
+      "expected_document": "modules/historical_video.md",
+      "must_mention": [
+        "Clip exports",
+        "Download"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-025",
+      "module": "Historical Video",
+      "question": "What permission is needed for Historical Video?",
+      "expected_answer": "video.playback.",
+      "expected_document": "modules/historical_video.md",
+      "must_mention": [
+        "video.playback"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-026",
+      "module": "Historical Video",
+      "question": "What does Link not usable mean on an export?",
+      "expected_answer": "The server returned a placeholder/non-web address.",
+      "expected_document": "modules/historical_video.md",
+      "must_mention": [
+        "Link not usable"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-027",
+      "module": "Historical Video",
+      "question": "Can I choose a camera channel?",
+      "expected_answer": "Yes, Channel: All channels or 1..n.",
+      "expected_document": "modules/historical_video.md",
+      "must_mention": [
+        "Channel"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-028",
+      "module": "Historical Video",
+      "question": "Does exporting video cost money?",
+      "expected_answer": "Not documented; may consume vendor credit — unverified.",
+      "expected_document": "modules/historical_video.md",
+      "must_mention": [
+        "NOT VERIFIED"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-029",
+      "module": "Historical Video",
+      "question": "Why does my export have no download link?",
+      "expected_answer": "Still processing; list doesn't auto-refresh.",
+      "expected_document": "modules/historical_video.md",
+      "must_mention": [
+        "auto-refresh"
+      ],
+      "intent": "TROUBLESHOOTING",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-030",
+      "module": "Historical Video",
+      "question": "Which days have recordings?",
+      "expected_answer": "The recording calendar highlights them.",
+      "expected_document": "modules/historical_video.md",
+      "must_mention": [
+        "calendar"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-032",
+      "module": "Trips",
+      "question": "How can I check today's trips?",
+      "expected_answer": "Trips & Tracking → Trips → Date range Today.",
+      "expected_document": "modules/trips_tracking.md",
+      "must_mention": [
+        "Today",
+        "Trips"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-033",
+      "module": "Trips",
+      "question": "What is a trip?",
+      "expected_answer": "A journey detected by the server from GPS data.",
+      "expected_document": "modules/trips_tracking.md",
+      "must_mention": [
+        "detected"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-034",
+      "module": "Trips",
+      "question": "What's the difference between a trip and a dispatch?",
+      "expected_answer": "Dispatch = planned job; trip = what was driven.",
+      "expected_document": "modules/trips_tracking.md",
+      "must_mention": [
+        "dispatch"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-035",
+      "module": "Trips",
+      "question": "How do I replay a vehicle's route?",
+      "expected_answer": "Track playback → device → time range → play.",
+      "expected_document": "modules/trips_tracking.md",
+      "must_mention": [
+        "Track playback"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-036",
+      "module": "Trips",
+      "question": "What time ranges does track playback support?",
+      "expected_answer": "24 h, 3 days, 7 days, Custom.",
+      "expected_document": "modules/trips_tracking.md",
+      "must_mention": [
+        "24 h",
+        "3 days",
+        "Custom"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-037",
+      "module": "Trips",
+      "question": "Can I create a trip?",
+      "expected_answer": "Not in the app; API exists but unused.",
+      "expected_document": "modules/trips_tracking.md",
+      "must_mention": [
+        "unused"
+      ],
+      "intent": "UNSUPPORTED",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-038",
+      "module": "Trips",
+      "question": "What columns are in the trip list?",
+      "expected_answer": "Started, Vehicle, Driver, Distance, Duration, Alarms.",
+      "expected_document": "modules/trips_tracking.md",
+      "must_mention": [
+        "Distance",
+        "Duration",
+        "Alarms"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-039",
+      "module": "Trips",
+      "question": "Why does the track show no points?",
+      "expected_answer": "Empty track for the range or no usable positions.",
+      "expected_document": "modules/trips_tracking.md",
+      "must_mention": [
+        "No points in this range"
+      ],
+      "intent": "TROUBLESHOOTING",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-040",
+      "module": "Trips",
+      "question": "What permission is needed for trips?",
+      "expected_answer": "track.read.",
+      "expected_document": "modules/trips_tracking.md",
+      "must_mention": [
+        "track.read"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-042",
+      "module": "Reports",
+      "question": "How can I generate reports?",
+      "expected_answer": "Reports → type → time range → device.",
+      "expected_document": "modules/reports.md",
+      "must_mention": [
+        "Mileage",
+        "Driving",
+        "Parking",
+        "Media"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-043",
+      "module": "Reports",
+      "question": "How can I download reports?",
+      "expected_answer": "No download button; API export unused.",
+      "expected_document": "modules/reports.md",
+      "must_mention": [
+        "no download"
+      ],
+      "intent": "UNSUPPORTED",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-044",
+      "module": "Reports",
+      "question": "What report types exist?",
+      "expected_answer": "Mileage, Driving, Parking, Media.",
+      "expected_document": "modules/reports.md",
+      "must_mention": [
+        "Mileage",
+        "Media"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-045",
+      "module": "Reports",
+      "question": "How do I see total distance driven?",
+      "expected_answer": "Mileage report sums km from rows.",
+      "expected_document": "modules/reports.md",
+      "must_mention": [
+        "total km"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-046",
+      "module": "Reports",
+      "question": "Can I schedule reports?",
+      "expected_answer": "Not in the app.",
+      "expected_document": "modules/reports.md",
+      "must_mention": [
+        "schedules"
+      ],
+      "intent": "UNSUPPORTED",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-047",
+      "module": "Reports",
+      "question": "What permission is needed for reports?",
+      "expected_answer": "report.read.",
+      "expected_document": "modules/reports.md",
+      "must_mention": [
+        "report.read"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-048",
+      "module": "Reports",
+      "question": "Are reports paged?",
+      "expected_answer": "Driving, Parking, Media paged 20; Mileage not.",
+      "expected_document": "modules/reports.md",
+      "must_mention": [
+        "20"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-049",
+      "module": "Reports",
+      "question": "What does Type · trigger mean in media report?",
+      "expected_answer": "Raw codes; meanings undocumented.",
+      "expected_document": "modules/reports.md",
+      "must_mention": [
+        "Raw codes"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-050",
+      "module": "Reports",
+      "question": "Is there an idle report?",
+      "expected_answer": "API only; no tab.",
+      "expected_document": "modules/reports.md",
+      "must_mention": [
+        "idle"
+      ],
+      "intent": "UNSUPPORTED",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-051",
+      "module": "Reports",
+      "question": "Can I filter a report by device?",
+      "expected_answer": "Yes, All devices or one device.",
+      "expected_document": "modules/reports.md",
+      "must_mention": [
+        "All devices"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-052",
+      "module": "Vehicles",
+      "question": "How can I add a vehicle?",
+      "expected_answer": "Vehicles → Register vehicle → Vehicle number required.",
+      "expected_document": "modules/vehicle_registry.md",
+      "must_mention": [
+        "Register vehicle",
+        "Vehicle number"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-053",
+      "module": "Vehicles",
+      "question": "What is a vehicle?",
+      "expected_answer": "The registered physical vehicle.",
+      "expected_document": "modules/vehicle_registry.md",
+      "must_mention": [
+        "registered"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-054",
+      "module": "Vehicles",
+      "question": "What is the difference between a vehicle and a device?",
+      "expected_answer": "Vehicle = bus/van; device = tracker fitted in it.",
+      "expected_document": "modules/vehicle_registry.md",
+      "must_mention": [
+        "Vehicle",
+        "Device"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-055",
+      "module": "Vehicles",
+      "question": "Why can't I delete a vehicle?",
+      "expected_answer": "A device is fitted (409 RESOURCE_IN_USE).",
+      "expected_document": "modules/vehicle_registry.md",
+      "must_mention": [
+        "RESOURCE_IN_USE"
+      ],
+      "intent": "TROUBLESHOOTING",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-056",
+      "module": "Vehicles",
+      "question": "Can two vehicles have the same number?",
+      "expected_answer": "No, unique per organisation, case-insensitive; 409 DUPLICATE.",
+      "expected_document": "modules/vehicle_registry.md",
+      "must_mention": [
+        "DUPLICATE"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-057",
+      "module": "Vehicles",
+      "question": "How do I deactivate a vehicle?",
+      "expected_answer": "Edit → Status Inactive.",
+      "expected_document": "modules/vehicle_registry.md",
+      "must_mention": [
+        "Inactive"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-058",
+      "module": "Vehicles",
+      "question": "What vehicle types can I choose?",
+      "expected_answer": "Free text; suggestions BUS, MINI_BUS, VAN, CAR, TRUCK, AMBULANCE.",
+      "expected_document": "modules/vehicle_registry.md",
+      "must_mention": [
+        "MINI_BUS"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-059",
+      "module": "Vehicles",
+      "question": "Which vehicles have no device?",
+      "expected_answer": "View Without a device.",
+      "expected_document": "modules/vehicle_registry.md",
+      "must_mention": [
+        "Without a device"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-060",
+      "module": "Vehicles",
+      "question": "What permission registers a vehicle?",
+      "expected_answer": "vehicle.create.",
+      "expected_document": "modules/vehicle_registry.md",
+      "must_mention": [
+        "vehicle.create"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-061",
+      "module": "Vehicles",
+      "question": "Can I set bus passenger capacity?",
+      "expected_answer": "Not in the form; API field exists.",
+      "expected_document": "modules/vehicle_registry.md",
+      "must_mention": [
+        "Passenger capacity",
+        "not in the vehicle form"
+      ],
+      "intent": "UNSUPPORTED",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-062",
+      "module": "Devices",
+      "question": "How can I check device status?",
+      "expected_answer": "Vehicles & Assets → device → View → Latest reported state.",
+      "expected_document": "modules/devices_vehicles_assets.md",
+      "must_mention": [
+        "Latest reported state"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-063",
+      "module": "Devices",
+      "question": "What is a device?",
+      "expected_answer": "GPS/camera terminal identified by Device ID.",
+      "expected_document": "modules/devices_vehicles_assets.md",
+      "must_mention": [
+        "terminal"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-064",
+      "module": "Devices",
+      "question": "How do I register a new tracking device?",
+      "expected_answer": "Vehicles & Assets → Add vehicle → required fields.",
+      "expected_document": "modules/devices_vehicles_assets.md",
+      "must_mention": [
+        "Add vehicle",
+        "Device ID"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-065",
+      "module": "Devices",
+      "question": "What format is the device ID?",
+      "expected_answer": "11–20 letters or digits, no spaces.",
+      "expected_document": "modules/devices_vehicles_assets.md",
+      "must_mention": [
+        "11–20"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-066",
+      "module": "Devices",
+      "question": "Why can't I delete or transfer a device?",
+      "expected_answer": "Disabled until backend confirms.",
+      "expected_document": "modules/devices_vehicles_assets.md",
+      "must_mention": [
+        "disabled"
+      ],
+      "intent": "UNSUPPORTED",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-067",
+      "module": "Devices",
+      "question": "What does the charge confirmation mean when registering a device?",
+      "expected_answer": "Server says it's chargeable; tick acceptance to resend.",
+      "expected_document": "modules/devices_vehicles_assets.md",
+      "must_mention": [
+        "CHARGEABLE_CHANGE"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-068",
+      "module": "Devices",
+      "question": "Which device fields can I edit?",
+      "expected_answer": "Descriptive fields only; model, protocol, cameras, terminal, group, object type locked.",
+      "expected_document": "modules/devices_vehicles_assets.md",
+      "must_mention": [
+        "locked"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-069",
+      "module": "Devices",
+      "question": "Why is a vehicle not appearing in the list?",
+      "expected_answer": "Filters, tenant, other org, 503 no-match defect.",
+      "expected_document": "modules/devices_vehicles_assets.md",
+      "must_mention": [
+        "unavailable",
+        "filters"
+      ],
+      "intent": "TROUBLESHOOTING",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-070",
+      "module": "Devices",
+      "question": "How do I filter devices expiring soon?",
+      "expected_answer": "Expiry filter Expiring ≤ 30 d.",
+      "expected_document": "modules/devices_vehicles_assets.md",
+      "must_mention": [
+        "Expiring ≤ 30 d"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-071",
+      "module": "Devices",
+      "question": "What is the Asset tree?",
+      "expected_answer": "View of groups and their devices.",
+      "expected_document": "modules/devices_vehicles_assets.md",
+      "must_mention": [
+        "Asset tree"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-072",
+      "module": "Sensors",
+      "question": "What is BMS?",
+      "expected_answer": "Bus boarding records used as ground truth.",
+      "expected_document": "modules/sensors_passenger_counting.md",
+      "must_mention": [
+        "BMS"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-073",
+      "module": "Sensors",
+      "question": "Why is the sensor count different from BMS?",
+      "expected_answer": "IR sensor miscounts; see Difference and Notes.",
+      "expected_document": "modules/sensors_passenger_counting.md",
+      "must_mention": [
+        "Difference"
+      ],
+      "intent": "TROUBLESHOOTING",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-074",
+      "module": "Sensors",
+      "question": "How do I check the alcohol test result?",
+      "expected_answer": "Sensors → bus → Alcohol check · latest reading.",
+      "expected_document": "modules/sensors_passenger_counting.md",
+      "must_mention": [
+        "Alcohol check"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-075",
+      "module": "Sensors",
+      "question": "What is the default bus capacity?",
+      "expected_answer": "44 when the vehicle has no passengerCapacity.",
+      "expected_document": "modules/sensors_passenger_counting.md",
+      "must_mention": [
+        "44"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-076",
+      "module": "Sensors",
+      "question": "What does OVER_CAPACITY mean?",
+      "expected_answer": "More passengers than capacity.",
+      "expected_document": "modules/sensors_passenger_counting.md",
+      "must_mention": [
+        "OVER_CAPACITY"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-077",
+      "module": "Sensors",
+      "question": "What does Recalculate do?",
+      "expected_answer": "Rebuilds stop visits and raises alerts for the window; idempotent.",
+      "expected_document": "modules/sensors_passenger_counting.md",
+      "must_mention": [
+        "Recalculate"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-078",
+      "module": "Sensors",
+      "question": "Can I add a sensor reading manually?",
+      "expected_answer": "Add reading with sensor.ingest.",
+      "expected_document": "modules/sensors_passenger_counting.md",
+      "must_mention": [
+        "Add reading",
+        "sensor.ingest"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-079",
+      "module": "Sensors",
+      "question": "What time windows can I choose?",
+      "expected_answer": "Last 24 h, Today, Yesterday, 7 days, Custom.",
+      "expected_document": "modules/sensors_passenger_counting.md",
+      "must_mention": [
+        "Yesterday"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-080",
+      "module": "Sensors",
+      "question": "Does NO_READING mean no alcohol?",
+      "expected_answer": "No, it never means not detected.",
+      "expected_document": "modules/sensors_passenger_counting.md",
+      "must_mention": [
+        "NO_READING"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-081",
+      "module": "Sensors",
+      "question": "What permission is needed for Sensors?",
+      "expected_answer": "sensor.read.",
+      "expected_document": "modules/sensors_passenger_counting.md",
+      "must_mention": [
+        "sensor.read"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-082",
+      "module": "Drivers",
+      "question": "What is a driver?",
+      "expected_answer": "Person driving fleet vehicles; optionally linked to a login.",
+      "expected_document": "modules/drivers.md",
+      "must_mention": [
+        "driver"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-083",
+      "module": "Drivers",
+      "question": "How do I add a driver?",
+      "expected_answer": "Drivers → New driver → Full name.",
+      "expected_document": "modules/drivers.md",
+      "must_mention": [
+        "New driver",
+        "Full name"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-084",
+      "module": "Drivers",
+      "question": "How can I check a driver's safety score?",
+      "expected_answer": "Drivers → open driver → Safety panel.",
+      "expected_document": "modules/drivers.md",
+      "must_mention": [
+        "Safety"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-085",
+      "module": "Drivers",
+      "question": "Which drivers have licences expiring soon?",
+      "expected_answer": "View Licence expiries 30/60/90 days.",
+      "expected_document": "modules/drivers.md",
+      "must_mention": [
+        "Licence expiries"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-086",
+      "module": "Drivers",
+      "question": "How do I give a driver app access?",
+      "expected_answer": "Create DRIVER user, set Linked user id.",
+      "expected_document": "modules/drivers.md",
+      "must_mention": [
+        "Linked user id"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-087",
+      "module": "Drivers",
+      "question": "What licence statuses exist?",
+      "expected_answer": "VALID, EXPIRING, EXPIRED, MISSING.",
+      "expected_document": "modules/drivers.md",
+      "must_mention": [
+        "EXPIRING"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-088",
+      "module": "Drivers",
+      "question": "What fields are required for a driver?",
+      "expected_answer": "Full name only.",
+      "expected_document": "modules/drivers.md",
+      "must_mention": [
+        "Full name"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-089",
+      "module": "Drivers",
+      "question": "What permission deletes a driver?",
+      "expected_answer": "driver.delete.",
+      "expected_document": "modules/drivers.md",
+      "must_mention": [
+        "driver.delete"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-090",
+      "module": "Drivers",
+      "question": "Can I filter drivers by status?",
+      "expected_answer": "Any status / Active / Inactive.",
+      "expected_document": "modules/drivers.md",
+      "must_mention": [
+        "Any status"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-091",
+      "module": "Drivers",
+      "question": "Who calculates licence status?",
+      "expected_answer": "The server from the expiry date.",
+      "expected_document": "modules/drivers.md",
+      "must_mention": [
+        "calculated by the server"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-092",
+      "module": "Driver Assignments",
+      "question": "How can I assign a driver to a vehicle?",
+      "expected_answer": "Drivers → driver → Assign vehicle → Review → confirm.",
+      "expected_document": "modules/driver_assignments.md",
+      "must_mention": [
+        "Assign vehicle",
+        "Review"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-093",
+      "module": "Driver Assignments",
+      "question": "How do I end an assignment?",
+      "expected_answer": "Vehicle assignments → End.",
+      "expected_document": "modules/driver_assignments.md",
+      "must_mention": [
+        "End"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-094",
+      "module": "Driver Assignments",
+      "question": "What happens if the vehicle already has a driver?",
+      "expected_answer": "Tick Replace the current assignment.",
+      "expected_document": "modules/driver_assignments.md",
+      "must_mention": [
+        "Replace the current assignment"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-095",
+      "module": "Driver Assignments",
+      "question": "What is a driver assignment?",
+      "expected_answer": "Link between driver and vehicle for a period.",
+      "expected_document": "modules/driver_assignments.md",
+      "must_mention": [
+        "period"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-096",
+      "module": "Driver Assignments",
+      "question": "Can I leave the start time blank?",
+      "expected_answer": "Yes, server uses current time.",
+      "expected_document": "modules/driver_assignments.md",
+      "must_mention": [
+        "current time"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-097",
+      "module": "Driver Assignments",
+      "question": "Where do I see a vehicle's assignment history?",
+      "expected_answer": "Device detail → Assignment & work.",
+      "expected_document": "modules/driver_assignments.md",
+      "must_mention": [
+        "Assignment history"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-098",
+      "module": "Driver Assignments",
+      "question": "What permission is needed to assign?",
+      "expected_answer": "driver.update.",
+      "expected_document": "modules/driver_assignments.md",
+      "must_mention": [
+        "driver.update"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-099",
+      "module": "Driver Assignments",
+      "question": "Why can't I choose a vehicle in the assign dialog?",
+      "expected_answer": "Needs device.read.",
+      "expected_document": "modules/driver_assignments.md",
+      "must_mention": [
+        "device.read"
+      ],
+      "intent": "TROUBLESHOOTING",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-100",
+      "module": "Driver Assignments",
+      "question": "Does the alarm driver come from the assignment?",
+      "expected_answer": "No, as reported by the server.",
+      "expected_document": "modules/driver_assignments.md",
+      "must_mention": [
+        "never derives"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-102",
+      "module": "Dispatch",
+      "question": "What is dispatch?",
+      "expected_answer": "Assigning a planned trip to a driver and vehicle.",
+      "expected_document": "modules/dispatch.md",
+      "must_mention": [
+        "dispatch"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-103",
+      "module": "Dispatch",
+      "question": "How do I create a dispatch?",
+      "expected_answer": "New dispatch → fields → Check conflicts → save.",
+      "expected_document": "modules/dispatch.md",
+      "must_mention": [
+        "Check conflicts"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-104",
+      "module": "Dispatch",
+      "question": "Why is Save disabled on a new dispatch?",
+      "expected_answer": "Must run Check conflicts on the current draft.",
+      "expected_document": "modules/dispatch.md",
+      "must_mention": [
+        "Check conflicts"
+      ],
+      "intent": "TROUBLESHOOTING",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-105",
+      "module": "Dispatch",
+      "question": "How do I approve a swap request?",
+      "expected_answer": "Swap requests view → Approve.",
+      "expected_document": "modules/dispatch.md",
+      "must_mention": [
+        "Swap requests",
+        "Approve"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-106",
+      "module": "Dispatch",
+      "question": "What dispatch statuses exist?",
+      "expected_answer": "ASSIGNED, ACCEPTED, DECLINED, IN_PROGRESS, COMPLETED, CANCELLED.",
+      "expected_document": "modules/dispatch.md",
+      "must_mention": [
+        "IN_PROGRESS"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-107",
+      "module": "Dispatch",
+      "question": "How do I cancel a dispatch?",
+      "expected_answer": "Open → Cancel dispatch.",
+      "expected_document": "modules/dispatch.md",
+      "must_mention": [
+        "Cancel dispatch"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-108",
+      "module": "Dispatch",
+      "question": "Can I delete a dispatch?",
+      "expected_answer": "No delete endpoint.",
+      "expected_document": "modules/dispatch.md",
+      "must_mention": [
+        "cancelled but not deleted"
+      ],
+      "intent": "UNSUPPORTED",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-109",
+      "module": "Dispatch",
+      "question": "What fields are required for a dispatch?",
+      "expected_answer": "Title, Driver, Vehicle, Scheduled start/end.",
+      "expected_document": "modules/dispatch.md",
+      "must_mention": [
+        "Title",
+        "Scheduled start"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-110",
+      "module": "Dispatch",
+      "question": "What does the Conflicts view show?",
+      "expected_answer": "Server-detected scheduling conflicts.",
+      "expected_document": "modules/dispatch.md",
+      "must_mention": [
+        "Conflicts"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-111",
+      "module": "Dispatch",
+      "question": "Which permission creates dispatches?",
+      "expected_answer": "dispatch.create.",
+      "expected_document": "modules/dispatch.md",
+      "must_mention": [
+        "dispatch.create"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-112",
+      "module": "Workforce/Leave",
+      "question": "How can I approve a leave request?",
+      "expected_answer": "Workforce → Leave → Approve.",
+      "expected_document": "modules/leave_management.md",
+      "must_mention": [
+        "Approve",
+        "Leave"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-113",
+      "module": "Workforce/Leave",
+      "question": "Which leave types exist?",
+      "expected_answer": "CASUAL, SICK, ANNUAL, UNPAID, OTHER.",
+      "expected_document": "modules/leave_management.md",
+      "must_mention": [
+        "CASUAL",
+        "SICK"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-114",
+      "module": "Workforce/Leave",
+      "question": "How does a driver request leave?",
+      "expected_answer": "My Leave → Request leave.",
+      "expected_document": "modules/leave_management.md",
+      "must_mention": [
+        "Request leave"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-115",
+      "module": "Workforce/Leave",
+      "question": "What leave statuses are there?",
+      "expected_answer": "PENDING, APPROVED, REJECTED, CANCELLED.",
+      "expected_document": "modules/leave_management.md",
+      "must_mention": [
+        "PENDING"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-116",
+      "module": "Workforce/Leave",
+      "question": "Can I request leave on behalf of a driver?",
+      "expected_answer": "Request leave for a driver.",
+      "expected_document": "modules/leave_management.md",
+      "must_mention": [
+        "Request leave for a driver"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-117",
+      "module": "Workforce/Leave",
+      "question": "What permission approves leave?",
+      "expected_answer": "workforce.update.",
+      "expected_document": "modules/leave_management.md",
+      "must_mention": [
+        "workforce.update"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-118",
+      "module": "Workforce/Leave",
+      "question": "Can a driver cancel leave?",
+      "expected_answer": "Cancel request.",
+      "expected_document": "modules/leave_management.md",
+      "must_mention": [
+        "Cancel request"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-119",
+      "module": "Workforce/Leave",
+      "question": "What happens to dispatches when leave is approved?",
+      "expected_answer": "Server decides; dialog lists affected dispatches.",
+      "expected_document": "modules/leave_management.md",
+      "must_mention": [
+        "affected"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-120",
+      "module": "Workforce/Leave",
+      "question": "Which drivers have pending leave requests?",
+      "expected_answer": "Leave tab PENDING; Overview Pending leave.",
+      "expected_document": "modules/leave_management.md",
+      "must_mention": [
+        "PENDING"
+      ],
+      "intent": "LIVE_DATA",
+      "requires_live_data": true,
+      "notes": "Live-data questions: the document only explains where the data is; Iris must call the API for the actual numbers."
+    },
+    {
+      "id": "KT-121",
+      "module": "Workforce/Leave",
+      "question": "What is the max reason length?",
+      "expected_answer": "500 characters.",
+      "expected_document": "modules/leave_management.md",
+      "must_mention": [
+        "500"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-122",
+      "module": "Workforce/Shifts",
+      "question": "What is a shift?",
+      "expected_answer": "Driver's working period started/ended in My Work.",
+      "expected_document": "modules/workforce_shifts.md",
+      "must_mention": [
+        "shift"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-123",
+      "module": "Workforce/Shifts",
+      "question": "Who is on shift now?",
+      "expected_answer": "Workforce → Availability → On shift.",
+      "expected_document": "modules/workforce_shifts.md",
+      "must_mention": [
+        "On shift"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-124",
+      "module": "Workforce/Shifts",
+      "question": "What availability statuses exist?",
+      "expected_answer": "AVAILABLE, ASSIGNED, ON_SHIFT, ON_TRIP, ON_LEAVE.",
+      "expected_document": "modules/workforce_shifts.md",
+      "must_mention": [
+        "ON_TRIP"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-125",
+      "module": "Workforce/Shifts",
+      "question": "Where are submitted checklists?",
+      "expected_answer": "Workforce → Checklists.",
+      "expected_document": "modules/workforce_shifts.md",
+      "must_mention": [
+        "Checklists"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-126",
+      "module": "Workforce/Shifts",
+      "question": "What is the pre-trip checklist?",
+      "expected_answer": "Pass/Fail checks before driving.",
+      "expected_document": "modules/workforce_shifts.md",
+      "must_mention": [
+        "Pass/Fail"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-127",
+      "module": "Workforce/Shifts",
+      "question": "How far back does the Shifts tab show?",
+      "expected_answer": "Last 7 days.",
+      "expected_document": "modules/workforce_shifts.md",
+      "must_mention": [
+        "last 7 days"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-128",
+      "module": "Workforce/Shifts",
+      "question": "Can I edit the checklist template?",
+      "expected_answer": "No.",
+      "expected_document": "modules/workforce_shifts.md",
+      "must_mention": [
+        "template"
+      ],
+      "intent": "UNSUPPORTED",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-129",
+      "module": "Workforce/Shifts",
+      "question": "What permission opens Workforce?",
+      "expected_answer": "workforce.read.",
+      "expected_document": "modules/workforce_shifts.md",
+      "must_mention": [
+        "workforce.read"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-130",
+      "module": "Workforce/Shifts",
+      "question": "Can I filter shifts by driver?",
+      "expected_answer": "Yes, Driver filter.",
+      "expected_document": "modules/workforce_shifts.md",
+      "must_mention": [
+        "All drivers"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-131",
+      "module": "Workforce/Shifts",
+      "question": "What tabs does Workforce have?",
+      "expected_answer": "Availability, Shifts, Leave, Checklists.",
+      "expected_document": "modules/workforce_shifts.md",
+      "must_mention": [
+        "Availability",
+        "Checklists"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-132",
+      "module": "Alerts",
+      "question": "How do I view alarms?",
+      "expected_answer": "Alerts & Events → Incidents / AI events / Routine alarms.",
+      "expected_document": "modules/alerts_incidents.md",
+      "must_mention": [
+        "Incidents",
+        "AI events",
+        "Routine alarms"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-133",
+      "module": "Alerts",
+      "question": "How do I resolve an alert?",
+      "expected_answer": "Open → Resolve → choose Outcome.",
+      "expected_document": "modules/alerts_incidents.md",
+      "must_mention": [
+        "Resolve",
+        "Outcome"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-134",
+      "module": "Alerts",
+      "question": "What is the difference between an alarm and an alert?",
+      "expected_answer": "Alarm = device event; alert = handling record.",
+      "expected_document": "modules/alerts_incidents.md",
+      "must_mention": [
+        "handling record"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-135",
+      "module": "Alerts",
+      "question": "What outcomes can I choose when resolving?",
+      "expected_answer": "CONFIRMED_ALARM, FALSE_POSITIVE, TEST, DISPATCH_EMERGENCY, DISPATCH_TERMINAL, VOICE_COMMAND.",
+      "expected_document": "modules/alerts_incidents.md",
+      "must_mention": [
+        "FALSE_POSITIVE"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-136",
+      "module": "Alerts",
+      "question": "Can I assign an alert to someone?",
+      "expected_answer": "Not yet; spec defect.",
+      "expected_document": "modules/alerts_incidents.md",
+      "must_mention": [
+        "Not yet"
+      ],
+      "intent": "UNSUPPORTED",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-137",
+      "module": "Alerts",
+      "question": "What permission is needed to handle alerts?",
+      "expected_answer": "alarm.handle.",
+      "expected_document": "modules/alerts_incidents.md",
+      "must_mention": [
+        "alarm.handle"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-138",
+      "module": "Alerts",
+      "question": "Why is an alarm missing?",
+      "expected_answer": "Tab, time range, filters, vendor 503.",
+      "expected_document": "modules/alerts_incidents.md",
+      "must_mention": [
+        "time range"
+      ],
+      "intent": "TROUBLESHOOTING",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-139",
+      "module": "Alerts",
+      "question": "How do I reopen a dismissed alert?",
+      "expected_answer": "Reopen.",
+      "expected_document": "modules/alerts_incidents.md",
+      "must_mention": [
+        "Reopen"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-140",
+      "module": "Alerts",
+      "question": "What alert statuses exist?",
+      "expected_answer": "NEW, ACKNOWLEDGED, IN_PROGRESS, RESOLVED, DISMISSED.",
+      "expected_document": "modules/alerts_incidents.md",
+      "must_mention": [
+        "ACKNOWLEDGED"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-141",
+      "module": "Alerts",
+      "question": "What does Acknowledge do?",
+      "expected_answer": "Records that you have seen the alert.",
+      "expected_document": "modules/alerts_incidents.md",
+      "must_mention": [
+        "Records that you have seen"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-142",
+      "module": "AI alarms",
+      "question": "How can I view AI alarms?",
+      "expected_answer": "Alerts & Events → AI events → Time range.",
+      "expected_document": "modules/ai_alarms.md",
+      "must_mention": [
+        "AI events"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-143",
+      "module": "AI alarms",
+      "question": "What is an AI event?",
+      "expected_answer": "AI camera detection ADAS/DSM/BSD.",
+      "expected_document": "modules/ai_alarms.md",
+      "must_mention": [
+        "ADAS",
+        "DSM",
+        "BSD"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-144",
+      "module": "AI alarms",
+      "question": "How do I see the image or video of an AI event?",
+      "expected_answer": "Open the row; evidence in the drawer.",
+      "expected_document": "modules/ai_alarms.md",
+      "must_mention": [
+        "Evidence"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-145",
+      "module": "AI alarms",
+      "question": "What does DSM mean?",
+      "expected_answer": "Driver status monitoring (fatigue, distraction).",
+      "expected_document": "modules/ai_alarms.md",
+      "must_mention": [
+        "DSM"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-146",
+      "module": "AI alarms",
+      "question": "Can I filter AI events by type?",
+      "expected_answer": "All alarm types filter.",
+      "expected_document": "modules/ai_alarms.md",
+      "must_mention": [
+        "All alarm types"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-147",
+      "module": "AI alarms",
+      "question": "What is severity?",
+      "expected_answer": "Raw value; scale undocumented.",
+      "expected_document": "modules/ai_alarms.md",
+      "must_mention": [
+        "Severity"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-149",
+      "module": "AI alarms",
+      "question": "Where do I handle an AI event?",
+      "expected_answer": "Incidents tab.",
+      "expected_document": "modules/ai_alarms.md",
+      "must_mention": [
+        "Incidents"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-150",
+      "module": "AI alarms",
+      "question": "Show the latest AI events",
+      "expected_answer": "Live data: AI events Today, newest first.",
+      "expected_document": "modules/ai_alarms.md",
+      "must_mention": [
+        "Today"
+      ],
+      "intent": "LIVE_DATA",
+      "requires_live_data": true,
+      "notes": "Live-data questions: the document only explains where the data is; Iris must call the API for the actual numbers."
+    },
+    {
+      "id": "KT-151",
+      "module": "AI alarms",
+      "question": "How do I see the vehicle's track for an AI event?",
+      "expected_answer": "Track history for this device.",
+      "expected_document": "modules/ai_alarms.md",
+      "must_mention": [
+        "Track history"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-152",
+      "module": "Routine alarms",
+      "question": "Show today's alarms",
+      "expected_answer": "Routine and AI tabs, Time range Today.",
+      "expected_document": "modules/routine_alarms.md",
+      "must_mention": [
+        "Today"
+      ],
+      "intent": "LIVE_DATA",
+      "requires_live_data": true,
+      "notes": "Live-data questions: the document only explains where the data is; Iris must call the API for the actual numbers."
+    },
+    {
+      "id": "KT-153",
+      "module": "Routine alarms",
+      "question": "What is a routine alarm?",
+      "expected_answer": "Non-AI terminal alarm.",
+      "expected_document": "modules/routine_alarms.md",
+      "must_mention": [
+        "Non-AI"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-154",
+      "module": "Routine alarms",
+      "question": "How many alarms this month?",
+      "expected_answer": "Last 30 days option; ask Iris.",
+      "expected_document": "modules/routine_alarms.md",
+      "must_mention": [
+        "Last 30 days"
+      ],
+      "intent": "LIVE_DATA",
+      "requires_live_data": true,
+      "notes": "Live-data questions: the document only explains where the data is; Iris must call the API for the actual numbers."
+    },
+    {
+      "id": "KT-155",
+      "module": "Routine alarms",
+      "question": "Why does it say routine alarms unavailable?",
+      "expected_answer": "503 from server/vendor.",
+      "expected_document": "modules/routine_alarms.md",
+      "must_mention": [
+        "503"
+      ],
+      "intent": "TROUBLESHOOTING",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-158",
+      "module": "Routine alarms",
+      "question": "Can I configure alarm rules?",
+      "expected_answer": "No screen; API only.",
+      "expected_document": "modules/routine_alarms.md",
+      "must_mention": [
+        "Alarm rules"
+      ],
+      "intent": "UNSUPPORTED",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-159",
+      "module": "Routine alarms",
+      "question": "Where are routine alarms on the dashboard?",
+      "expected_answer": "Fleet activity chart.",
+      "expected_document": "modules/routine_alarms.md",
+      "must_mention": [
+        "Fleet activity"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-160",
+      "module": "Routine alarms",
+      "question": "What permission shows routine alarms?",
+      "expected_answer": "alarm.read.",
+      "expected_document": "modules/routine_alarms.md",
+      "must_mention": [
+        "alarm.read"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-161",
+      "module": "Routine alarms",
+      "question": "Do routine alarms have the same filters as AI events?",
+      "expected_answer": "Yes.",
+      "expected_document": "modules/routine_alarms.md",
+      "must_mention": [
+        "Same filters"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-162",
+      "module": "Safety",
+      "question": "Show safety analytics",
+      "expected_answer": "Safety Analytics with date range.",
+      "expected_document": "modules/safety_analytics.md",
+      "must_mention": [
+        "Safety Analytics"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-163",
+      "module": "Safety",
+      "question": "Which vehicles have the highest risk?",
+      "expected_answer": "Most events · vehicles / vehicle scores.",
+      "expected_document": "modules/safety_analytics.md",
+      "must_mention": [
+        "Most events · vehicles"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-164",
+      "module": "Safety",
+      "question": "What date ranges does Safety Analytics support?",
+      "expected_answer": "Today, 7 days, 30 days (default).",
+      "expected_document": "modules/safety_analytics.md",
+      "must_mention": [
+        "Last 30 days (default)"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-165",
+      "module": "Safety",
+      "question": "What breakdowns are available in Safety Analytics?",
+      "expected_answer": "By event type, severity, hour of day.",
+      "expected_document": "modules/safety_analytics.md",
+      "must_mention": [
+        "By hour of day"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-166",
+      "module": "Safety",
+      "question": "Is there a safety heatmap?",
+      "expected_answer": "API only.",
+      "expected_document": "modules/safety_analytics.md",
+      "must_mention": [
+        "heatmap"
+      ],
+      "intent": "UNSUPPORTED",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-167",
+      "module": "Safety",
+      "question": "What is a severe event?",
+      "expected_answer": "Server classification; scale undocumented.",
+      "expected_document": "modules/safety_analytics.md",
+      "must_mention": [
+        "severe"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-168",
+      "module": "Safety",
+      "question": "Who has most events among drivers?",
+      "expected_answer": "Most events · drivers.",
+      "expected_document": "modules/safety_analytics.md",
+      "must_mention": [
+        "Most events · drivers"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-169",
+      "module": "Safety",
+      "question": "What permission opens Safety Analytics?",
+      "expected_answer": "alarm.read.",
+      "expected_document": "modules/safety_analytics.md",
+      "must_mention": [
+        "alarm.read"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-170",
+      "module": "Safety",
+      "question": "Are scores computed in the browser?",
+      "expected_answer": "No, server only.",
+      "expected_document": "modules/safety_analytics.md",
+      "must_mention": [
+        "server"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-171",
+      "module": "Safety",
+      "question": "What is safety analytics?",
+      "expected_answer": "Charts of safety events to find risk.",
+      "expected_document": "modules/safety_analytics.md",
+      "must_mention": [
+        "trends"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-172",
+      "module": "Safety scores",
+      "question": "Show the safety scores of my vehicles",
+      "expected_answer": "Safety scores → Vehicles.",
+      "expected_document": "modules/safety_scores.md",
+      "must_mention": [
+        "Vehicles"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-173",
+      "module": "Safety scores",
+      "question": "How is the safety score calculated?",
+      "expected_answer": "By the server; formula not documented.",
+      "expected_document": "modules/safety_scores.md",
+      "must_mention": [
+        "not documented"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-174",
+      "module": "Safety scores",
+      "question": "What columns are in the score table?",
+      "expected_answer": "Score, Alarms, Severe, Penalty pts, Trips, Distance.",
+      "expected_document": "modules/safety_scores.md",
+      "must_mention": [
+        "Penalty pts"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-175",
+      "module": "Safety scores",
+      "question": "How does a driver see their score?",
+      "expected_answer": "My Work → My Safety.",
+      "expected_document": "modules/safety_scores.md",
+      "must_mention": [
+        "My Safety"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-176",
+      "module": "Safety scores",
+      "question": "Why does a driver have no score?",
+      "expected_answer": "No data for the period.",
+      "expected_document": "modules/safety_scores.md",
+      "must_mention": [
+        "no score"
+      ],
+      "intent": "TROUBLESHOOTING",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-177",
+      "module": "Safety scores",
+      "question": "What is penalty points?",
+      "expected_answer": "Points from events used in scoring.",
+      "expected_document": "modules/safety_scores.md",
+      "must_mention": [
+        "Penalty points"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-178",
+      "module": "Safety scores",
+      "question": "What period does the driver drawer score cover?",
+      "expected_answer": "Last 30 days.",
+      "expected_document": "modules/safety_scores.md",
+      "must_mention": [
+        "last 30 days"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-179",
+      "module": "Safety scores",
+      "question": "Is there a grade?",
+      "expected_answer": "Yes, score and grade.",
+      "expected_document": "modules/safety_scores.md",
+      "must_mention": [
+        "grade"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-181",
+      "module": "Safety scores",
+      "question": "Can I compare two drivers' scores?",
+      "expected_answer": "Use the Drivers score table.",
+      "expected_document": "modules/safety_scores.md",
+      "must_mention": [
+        "Drivers"
+      ],
+      "intent": "COMPARISON",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-182",
+      "module": "Geofences",
+      "question": "What is a geofence?",
+      "expected_answer": "Virtual zone or route line with rules.",
+      "expected_document": "modules/geofences.md",
+      "must_mention": [
+        "zone",
+        "LINE"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-183",
+      "module": "Geofences",
+      "question": "Show the latest geofence events",
+      "expected_answer": "Geofence events, Today/7 days.",
+      "expected_document": "modules/geofences.md",
+      "must_mention": [
+        "Geofence events"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-184",
+      "module": "Geofences",
+      "question": "How do I create a geofence?",
+      "expected_answer": "Not available in the app.",
+      "expected_document": "modules/geofences.md",
+      "must_mention": [
+        "NOT AVAILABLE"
+      ],
+      "intent": "UNSUPPORTED",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-185",
+      "module": "Geofences",
+      "question": "How do I delete a geofence?",
+      "expected_answer": "Delete → Delete geofence.",
+      "expected_document": "modules/geofences.md",
+      "must_mention": [
+        "Delete geofence"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-186",
+      "module": "Geofences",
+      "question": "What shapes are supported?",
+      "expected_answer": "AREA and LINE.",
+      "expected_document": "modules/geofences.md",
+      "must_mention": [
+        "AREA",
+        "LINE"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-187",
+      "module": "Geofences",
+      "question": "Can I draw a circle geofence?",
+      "expected_answer": "No.",
+      "expected_document": "modules/geofences.md",
+      "must_mention": [
+        "circle"
+      ],
+      "intent": "UNSUPPORTED",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-188",
+      "module": "Geofences",
+      "question": "What are geofence voice prompts?",
+      "expected_answer": "Read-only list of voice broadcasts.",
+      "expected_document": "modules/geofences.md",
+      "must_mention": [
+        "voice prompts"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-189",
+      "module": "Geofences",
+      "question": "Which permission deletes a geofence?",
+      "expected_answer": "geofence.delete.",
+      "expected_document": "modules/geofences.md",
+      "must_mention": [
+        "geofence.delete"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-190",
+      "module": "Geofences",
+      "question": "What is Bound to?",
+      "expected_answer": "Groups/devices the geofence applies to.",
+      "expected_document": "modules/geofences.md",
+      "must_mention": [
+        "Bound to"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-192",
+      "module": "Users",
+      "question": "How do I create a user?",
+      "expected_answer": "Users & Sub-Accounts → New user.",
+      "expected_document": "modules/users_sub_accounts.md",
+      "must_mention": [
+        "New user"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-193",
+      "module": "Users",
+      "question": "How do I unlock a locked user?",
+      "expected_answer": "Open user → Unlock.",
+      "expected_document": "modules/users_sub_accounts.md",
+      "must_mention": [
+        "Unlock"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-194",
+      "module": "Users",
+      "question": "How do I reset another user's password?",
+      "expected_answer": "Reset password.",
+      "expected_document": "modules/users_sub_accounts.md",
+      "must_mention": [
+        "Reset password"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-195",
+      "module": "Users",
+      "question": "What is a sub-account?",
+      "expected_answer": "User under a parent user.",
+      "expected_document": "modules/users_sub_accounts.md",
+      "must_mention": [
+        "parent"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-196",
+      "module": "Users",
+      "question": "Can I delete a user?",
+      "expected_answer": "Not exposed.",
+      "expected_document": "modules/users_sub_accounts.md",
+      "must_mention": [
+        "Delete user not exposed"
+      ],
+      "intent": "UNSUPPORTED",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-197",
+      "module": "Users",
+      "question": "What user statuses exist?",
+      "expected_answer": "Active, Invited, Disabled.",
+      "expected_document": "modules/users_sub_accounts.md",
+      "must_mention": [
+        "Invited"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-198",
+      "module": "Users",
+      "question": "How do I disable a user?",
+      "expected_answer": "Disable.",
+      "expected_document": "modules/users_sub_accounts.md",
+      "must_mention": [
+        "Disable"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-199",
+      "module": "Users",
+      "question": "Where is the account hierarchy?",
+      "expected_answer": "View Hierarchy.",
+      "expected_document": "modules/users_sub_accounts.md",
+      "must_mention": [
+        "Hierarchy"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-200",
+      "module": "Users",
+      "question": "What is required to create a user?",
+      "expected_answer": "Display name, initial password, role.",
+      "expected_document": "modules/users_sub_accounts.md",
+      "must_mention": [
+        "Initial password"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-201",
+      "module": "Users",
+      "question": "Can I edit roles on the Users screen?",
+      "expected_answer": "No, read-only.",
+      "expected_document": "modules/users_sub_accounts.md",
+      "must_mention": [
+        "read-only"
+      ],
+      "intent": "UNSUPPORTED",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-202",
+      "module": "Tenants",
+      "question": "What is a tenant?",
+      "expected_answer": "Organisation's isolated space.",
+      "expected_document": "modules/tenants_organizations.md",
+      "must_mention": [
+        "tenant"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-203",
+      "module": "Tenants",
+      "question": "How do I select a tenant as Safe-Fare Admin?",
+      "expected_answer": "Tenant switcher → pick tenant.",
+      "expected_document": "modules/tenants_organizations.md",
+      "must_mention": [
+        "tenant switcher"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-204",
+      "module": "Tenants",
+      "question": "How do I create a tenant?",
+      "expected_answer": "Tenants → Create tenant → Review.",
+      "expected_document": "modules/tenants_organizations.md",
+      "must_mention": [
+        "Create tenant"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-205",
+      "module": "Tenants",
+      "question": "Why are create buttons missing for the admin?",
+      "expected_answer": "All tenants mode; select tenant.",
+      "expected_document": "modules/tenants_organizations.md",
+      "must_mention": [
+        "TENANT_REQUIRED"
+      ],
+      "intent": "TROUBLESHOOTING",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-206",
+      "module": "Tenants",
+      "question": "Can a fleet owner see another organisation's data?",
+      "expected_answer": "No; 404.",
+      "expected_document": "modules/tenants_organizations.md",
+      "must_mention": [
+        "404"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-207",
+      "module": "Tenants",
+      "question": "How many organizations are registered?",
+      "expected_answer": "Platform tenants list (admin).",
+      "expected_document": "modules/platform_overview.md",
+      "must_mention": [
+        "Tenants count"
+      ],
+      "intent": "LIVE_DATA",
+      "requires_live_data": true,
+      "notes": "Live-data questions: the document only explains where the data is; Iris must call the API for the actual numbers."
+    },
+    {
+      "id": "KT-208",
+      "module": "Tenants",
+      "question": "Does creating a tenant create its admin user?",
+      "expected_answer": "No.",
+      "expected_document": "modules/tenants_organizations.md",
+      "must_mention": [
+        "No users"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-209",
+      "module": "Tenants",
+      "question": "What time zone should a tenant have?",
+      "expected_answer": "IANA zone e.g. Asia/Kolkata.",
+      "expected_document": "modules/tenants_organizations.md",
+      "must_mention": [
+        "Asia/Kolkata"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-210",
+      "module": "Tenants",
+      "question": "Can I edit or delete a tenant?",
+      "expected_answer": "API only, no screen.",
+      "expected_document": "modules/tenants_organizations.md",
+      "must_mention": [
+        "no screen"
+      ],
+      "intent": "UNSUPPORTED",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-211",
+      "module": "Tenants",
+      "question": "How do I go back to all tenants?",
+      "expected_answer": "Return to all tenants.",
+      "expected_document": "modules/tenants_organizations.md",
+      "must_mention": [
+        "Return to all tenants"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-212",
+      "module": "Roles",
+      "question": "Why can't I access a menu?",
+      "expected_answer": "Missing screen permission code.",
+      "expected_document": "roles_permissions.md",
+      "must_mention": [
+        "permission"
+      ],
+      "intent": "TROUBLESHOOTING",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-213",
+      "module": "Roles",
+      "question": "Why can't a driver access the admin dashboard?",
+      "expected_answer": "Drivers have driver.app + own.data.read only.",
+      "expected_document": "roles_permissions.md",
+      "must_mention": [
+        "own.data.read",
+        "device.read"
+      ],
+      "intent": "TROUBLESHOOTING",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-214",
+      "module": "Roles",
+      "question": "What roles exist in SafeFare?",
+      "expected_answer": "Safe-Fare Admin, tenant ADMIN, Fleet Owner (unconfirmed), Driver.",
+      "expected_document": "roles_permissions.md",
+      "must_mention": [
+        "Fleet Owner",
+        "DRIVER"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-215",
+      "module": "Roles",
+      "question": "What permission opens Live Monitoring?",
+      "expected_answer": "device.read.",
+      "expected_document": "roles_permissions.md",
+      "must_mention": [
+        "device.read"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-216",
+      "module": "Roles",
+      "question": "Is the Fleet Owner role code confirmed?",
+      "expected_answer": "No; MANAGER exists.",
+      "expected_document": "roles_permissions.md",
+      "must_mention": [
+        "MANAGER"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-217",
+      "module": "Roles",
+      "question": "Can a tenant admin see other tenants?",
+      "expected_answer": "No.",
+      "expected_document": "roles_permissions.md",
+      "must_mention": [
+        "tenant"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-218",
+      "module": "Roles",
+      "question": "What is the Safe-Fare Admin?",
+      "expected_answer": "platform=true admin.",
+      "expected_document": "roles_permissions.md",
+      "must_mention": [
+        "platform"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-219",
+      "module": "Roles",
+      "question": "Which permission is needed to handle alerts?",
+      "expected_answer": "alarm.handle.",
+      "expected_document": "roles_permissions.md",
+      "must_mention": [
+        "alarm.handle"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-220",
+      "module": "Roles",
+      "question": "What does TENANT_ACCESS_DENIED mean?",
+      "expected_answer": "Another tenant's id.",
+      "expected_document": "roles_permissions.md",
+      "must_mention": [
+        "TENANT_ACCESS_DENIED"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-221",
+      "module": "Roles",
+      "question": "Which permission opens Device Commands?",
+      "expected_answer": "command.send.",
+      "expected_document": "roles_permissions.md",
+      "must_mention": [
+        "command.send"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-222",
+      "module": "Settings",
+      "question": "How do I change my password?",
+      "expected_answer": "Settings → Change password.",
+      "expected_document": "modules/settings.md",
+      "must_mention": [
+        "Change password"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-223",
+      "module": "Settings",
+      "question": "I forgot my password",
+      "expected_answer": "No self-service reset; ask admin.",
+      "expected_document": "modules/settings.md",
+      "must_mention": [
+        "Reset password"
+      ],
+      "intent": "TROUBLESHOOTING",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-224",
+      "module": "Settings",
+      "question": "How do I update my phone number?",
+      "expected_answer": "Settings → Profile → Phone → Save.",
+      "expected_document": "modules/settings.md",
+      "must_mention": [
+        "Phone"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-225",
+      "module": "Settings",
+      "question": "What workspace preferences can I change?",
+      "expected_answer": "Video layout, expiry reminders, clustering, night mode…",
+      "expected_document": "modules/settings.md",
+      "must_mention": [
+        "Video layout",
+        "Night mode"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-226",
+      "module": "Settings",
+      "question": "How do I hide the Iris assistant?",
+      "expected_answer": "This browser → Show AI assistant.",
+      "expected_document": "modules/settings.md",
+      "must_mention": [
+        "Show AI assistant"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-227",
+      "module": "Settings",
+      "question": "Are preferences saved on the server?",
+      "expected_answer": "Workspace yes; This browser local only.",
+      "expected_document": "modules/settings.md",
+      "must_mention": [
+        "This browser"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-228",
+      "module": "Settings",
+      "question": "What video layouts are available?",
+      "expected_answer": "GRID_1, GRID_4, GRID_9, GRID_16.",
+      "expected_document": "modules/settings.md",
+      "must_mention": [
+        "GRID_4"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-229",
+      "module": "Settings",
+      "question": "Is there a password strength rule?",
+      "expected_answer": "None documented; max 72, differ from current.",
+      "expected_document": "modules/settings.md",
+      "must_mention": [
+        "72"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-230",
+      "module": "Settings",
+      "question": "Can drivers open Settings?",
+      "expected_answer": "No; My Profile.",
+      "expected_document": "modules/settings.md",
+      "must_mention": [
+        "driver"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-231",
+      "module": "Settings",
+      "question": "What expiry reminder modes exist?",
+      "expected_answer": "NONE, BADGE, POPUP_AND_BADGE.",
+      "expected_document": "modules/settings.md",
+      "must_mention": [
+        "POPUP_AND_BADGE"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-232",
+      "module": "Driver app",
+      "question": "How do I use the driver application?",
+      "expected_answer": "Sign in as tenant user → My Work daily flow.",
+      "expected_document": "modules/driver_my_work.md",
+      "must_mention": [
+        "My Work"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-233",
+      "module": "Driver app",
+      "question": "What is my current shift?",
+      "expected_answer": "My Shifts → Current shift.",
+      "expected_document": "modules/driver_my_work.md",
+      "must_mention": [
+        "Current shift"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-234",
+      "module": "Driver app",
+      "question": "Show my assigned vehicle",
+      "expected_answer": "My Work → Today → Vehicle.",
+      "expected_document": "modules/driver_my_work.md",
+      "must_mention": [
+        "Vehicle"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-235",
+      "module": "Driver app",
+      "question": "What is my checklist status?",
+      "expected_answer": "Shift Checklist → Recent submissions.",
+      "expected_document": "modules/driver_my_work.md",
+      "must_mention": [
+        "Recent submissions"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-236",
+      "module": "Driver app",
+      "question": "What is my leave request status?",
+      "expected_answer": "My Leave → Requests by status.",
+      "expected_document": "modules/driver_my_work.md",
+      "must_mention": [
+        "My Leave"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-237",
+      "module": "Driver app",
+      "question": "Show my safety score",
+      "expected_answer": "My Safety.",
+      "expected_document": "modules/driver_my_work.md",
+      "must_mention": [
+        "My Safety"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-238",
+      "module": "Driver app",
+      "question": "How do I start a trip?",
+      "expected_answer": "Accept → Start trip.",
+      "expected_document": "modules/driver_my_work.md",
+      "must_mention": [
+        "Start trip"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-239",
+      "module": "Driver app",
+      "question": "Why are trip buttons disabled?",
+      "expected_answer": "Trip completed/cancelled/declined or already started.",
+      "expected_document": "modules/driver_my_work.md",
+      "must_mention": [
+        "already started"
+      ],
+      "intent": "TROUBLESHOOTING",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-240",
+      "module": "Driver app",
+      "question": "Why do I get not linked to a driver profile?",
+      "expected_answer": "Login not linked; set Linked user id.",
+      "expected_document": "modules/driver_my_work.md",
+      "must_mention": [
+        "not linked to a driver profile"
+      ],
+      "intent": "TROUBLESHOOTING",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-241",
+      "module": "Driver app",
+      "question": "Is there a native driver mobile app?",
+      "expected_answer": "Not in the project; My Work web.",
+      "expected_document": "modules/driver_my_work.md",
+      "must_mention": [
+        "native"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-242",
+      "module": "Driver app",
+      "question": "How do I end my shift?",
+      "expected_answer": "My Shifts → End shift.",
+      "expected_document": "modules/driver_my_work.md",
+      "must_mention": [
+        "End shift"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-243",
+      "module": "Driver app",
+      "question": "Can drivers use Iris today?",
+      "expected_answer": "No; needs device.read.",
+      "expected_document": "modules/driver_my_work.md",
+      "must_mention": [
+        "device.read"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-244",
+      "module": "Auth",
+      "question": "Why is my login failing?",
+      "expected_answer": "Account type/tenant code/credentials; INVALID_CREDENTIALS.",
+      "expected_document": "modules/authentication_login.md",
+      "must_mention": [
+        "INVALID_CREDENTIALS"
+      ],
+      "intent": "TROUBLESHOOTING",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-245",
+      "module": "Auth",
+      "question": "How does the Safe-Fare Admin sign in?",
+      "expected_answer": "Account type Safe-Fare Admin, no tenant code.",
+      "expected_document": "modules/authentication_login.md",
+      "must_mention": [
+        "Safe-Fare Admin"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-246",
+      "module": "Auth",
+      "question": "What is a tenant code?",
+      "expected_answer": "Organisation code entered at sign-in.",
+      "expected_document": "modules/authentication_login.md",
+      "must_mention": [
+        "Tenant code"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-247",
+      "module": "Auth",
+      "question": "Why was I signed out?",
+      "expected_answer": "Token expired or tab closed.",
+      "expected_document": "modules/authentication_login.md",
+      "must_mention": [
+        "tab was closed"
+      ],
+      "intent": "TROUBLESHOOTING",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-248",
+      "module": "Auth",
+      "question": "How do I sign out?",
+      "expected_answer": "Profile menu → Sign out.",
+      "expected_document": "modules/authentication_login.md",
+      "must_mention": [
+        "Sign out"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-249",
+      "module": "Auth",
+      "question": "Is there a forgot password link?",
+      "expected_answer": "No.",
+      "expected_document": "modules/authentication_login.md",
+      "must_mention": [
+        "forgot password"
+      ],
+      "intent": "UNSUPPORTED",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-250",
+      "module": "Auth",
+      "question": "What is the max password length?",
+      "expected_answer": "72.",
+      "expected_document": "modules/authentication_login.md",
+      "must_mention": [
+        "72"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-251",
+      "module": "Auth",
+      "question": "Where do I land after sign-in?",
+      "expected_answer": "Platform Overview (admin), Fleet Overview, or My Work.",
+      "expected_document": "modules/authentication_login.md",
+      "must_mention": [
+        "Platform Overview"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-253",
+      "module": "Auth",
+      "question": "What does No access for this account yet mean?",
+      "expected_answer": "No permissions for any screen.",
+      "expected_document": "modules/authentication_login.md",
+      "must_mention": [
+        "No access for this account yet"
+      ],
+      "intent": "TROUBLESHOOTING",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-254",
+      "module": "General",
+      "question": "What is SafeFare?",
+      "expected_answer": "AI fleet management and driver-safety app.",
+      "expected_document": "application_overview.md",
+      "must_mention": [
+        "fleet management"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-255",
+      "module": "General",
+      "question": "Who uses SafeFare?",
+      "expected_answer": "Safe-Fare Admin, fleet users, drivers.",
+      "expected_document": "application_overview.md",
+      "must_mention": [
+        "Driver"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-256",
+      "module": "General",
+      "question": "What time zone does SafeFare use?",
+      "expected_answer": "IST in UI; UTC in API.",
+      "expected_document": "application_overview.md",
+      "must_mention": [
+        "IST"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-257",
+      "module": "Troubleshooting",
+      "question": "Why am I not receiving notifications?",
+      "expected_answer": "No polling/push; reload.",
+      "expected_document": "troubleshooting.md",
+      "must_mention": [
+        "no polling"
+      ],
+      "intent": "TROUBLESHOOTING",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-258",
+      "module": "Troubleshooting",
+      "question": "Why is the dashboard not loading?",
+      "expected_answer": "Permission, session, vendor 503, timeout.",
+      "expected_document": "troubleshooting.md",
+      "must_mention": [
+        "503"
+      ],
+      "intent": "TROUBLESHOOTING",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-259",
+      "module": "Troubleshooting",
+      "question": "What does No data from vendor mean?",
+      "expected_answer": "VENDOR_EMPTY.",
+      "expected_document": "troubleshooting.md",
+      "must_mention": [
+        "No data from vendor",
+        "provider returned nothing"
+      ],
+      "intent": "TROUBLESHOOTING",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-260",
+      "module": "Notifications",
+      "question": "Show recent notifications",
+      "expected_answer": "Bell.",
+      "expected_document": "modules/notifications.md",
+      "must_mention": [
+        "bell"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-261",
+      "module": "Notifications",
+      "question": "How do I mark all notifications as read?",
+      "expected_answer": "Bell → Mark all as read.",
+      "expected_document": "modules/notifications.md",
+      "must_mention": [
+        "Mark all as read"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-262",
+      "module": "Notifications",
+      "question": "What notification types exist?",
+      "expected_answer": "ALARM, AI_EVENT, GEOFENCE, DISPATCH, LEAVE, …",
+      "expected_document": "modules/notifications.md",
+      "must_mention": [
+        "AI event",
+        "Geofence"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-263",
+      "module": "Search",
+      "question": "How do I quickly find a vehicle?",
+      "expected_answer": "Ctrl K search.",
+      "expected_document": "modules/global_search.md",
+      "must_mention": [
+        "Ctrl K"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-264",
+      "module": "Maintenance",
+      "question": "When is my vehicle's next maintenance?",
+      "expected_answer": "Overview reminders / device Dates & reminders.",
+      "expected_document": "modules/maintenance.md",
+      "must_mention": [
+        "Next maintenance"
+      ],
+      "intent": "HOW_TO",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-265",
+      "module": "Maintenance",
+      "question": "Can I create a maintenance reminder?",
+      "expected_answer": "API only.",
+      "expected_document": "modules/maintenance.md",
+      "must_mention": [
+        "no maintenance screen"
+      ],
+      "intent": "UNSUPPORTED",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-266",
+      "module": "Commands",
+      "question": "Can I send a command to a device?",
+      "expected_answer": "No, disabled.",
+      "expected_document": "modules/device_commands.md",
+      "must_mention": [
+        "disabled"
+      ],
+      "intent": "UNSUPPORTED",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-267",
+      "module": "Commands",
+      "question": "What permission views command history?",
+      "expected_answer": "command.send.",
+      "expected_document": "modules/device_commands.md",
+      "must_mention": [
+        "command.send"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    },
+    {
+      "id": "KT-268",
+      "module": "Iris",
+      "question": "What can Iris do?",
+      "expected_answer": "Answer fleet questions from allowed data, explain screens.",
+      "expected_document": "modules/iris_assistant.md",
+      "must_mention": [
+        "Iris"
+      ],
+      "intent": "STATIC",
+      "requires_live_data": false,
+      "notes": ""
+    }
+  ],
+  "scope": "documents/ (user-facing knowledge)"
+}
