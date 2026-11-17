@@ -24,6 +24,10 @@ from app.workers.s3_polling_worker import (
 from app.api.bms_comparison import bms_router, bms_sensor_router
 from app.workers.bms_comparison_worker import start_bms_comparison_worker
 
+# Alarm media migration (GPS TrackTech server -> AWS S3), background worker
+from app.workers.alarm_media_worker import start_alarm_media_worker
+from app.api.alarm_media import alarm_media_router
+
 # Tyre Maintenance routes + background scheduler
 from app.api.v1.endpoints.tyre_maintenance import router as tyre_maintenance_router
 from app.jobs.tyre_maintenance_scheduler import (
@@ -80,6 +84,17 @@ async def lifespan(app: FastAPI):
     bms_worker_thread.start()
     logger.info("BMS comparison worker launched.")
 
+    # --- Alarm media: copies alarm images / videos (alarm_media.s3_key IS NULL) to S3 every 5 seconds ---
+    alarm_media_stop = threading.Event()
+    alarm_media_thread = threading.Thread(
+        target=start_alarm_media_worker,
+        args=(alarm_media_stop,),
+        name="Alarm-Media-Worker",
+        daemon=True
+    )
+    alarm_media_thread.start()
+    logger.info("Alarm media migration worker launched.")
+
     # --- Tyre maintenance: asyncio background task ---
     start_tyre_maintenance_scheduler()
 
@@ -90,6 +105,8 @@ async def lifespan(app: FastAPI):
     try:
         yield
     finally:
+        alarm_media_stop.set()                    # graceful stop: running copies are aborted, their records stay NULL
+        alarm_media_thread.join(timeout=15)
         shutdown_vehicle_maintenance(app)
         await stop_tyre_maintenance_scheduler()
         logger.info("SafeFare Backend shutting down.")
@@ -101,7 +118,7 @@ app = FastAPI(
     description=(
         "Combined API: Iris AI (SafeFare AI Assistant) + "
         "IoT Sensor Data Ingestion (AWS S3 to SQL Server) + "
-        "Tyre Maintenance + Vehicle Maintenance + BMS vs Sensor comparison"
+        "Tyre Maintenance + Vehicle Maintenance + BMS vs Sensor comparison + Alarm media migration"
     ),
     version="1.0.0",
     lifespan=lifespan,
@@ -152,3 +169,4 @@ app.include_router(tyre_maintenance_router)      # /api/v1/tyre-maintenance/...
 app.include_router(vehicle_maintenance_router)   # /api/vehicle-maintenance/...
 app.include_router(bms_router)                   # /api/bms/...
 app.include_router(bms_sensor_router)            # /api/bms-sensor/...
+app.include_router(alarm_media_router)           # /api/alarm-media/urls (signed viewing links)
